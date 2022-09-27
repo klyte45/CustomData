@@ -1,0 +1,3 @@
+[submodule "KwyttoUtilityCD/Kwytto"]
+	path = KwyttoUtilityCD/Kwytto
+	url = https://github.com/klyte45/KwyttoUtility.git
