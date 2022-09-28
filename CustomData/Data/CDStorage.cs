@@ -1,7 +1,6 @@
 ﻿using Kwytto.Data;
 using Kwytto.Utils;
 using System.Xml.Serialization;
-using UnityEngine;
 
 namespace CustomData.Xml
 {

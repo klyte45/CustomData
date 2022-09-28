@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace CustomData.Xml
 {
-
+    [XmlRoot("InstanceEntry")]
     public class InstanceDataExtensionXml : IIdentifiable
     {
         [XmlIgnore]
@@ -43,10 +43,22 @@ namespace CustomData.Xml
         }
         [XmlAttribute("generatedId")]
         public string generatedId;
+        [XmlAttribute("mainReference")]
+        public string mainReference;
+        [XmlAttribute("qualifiedReference")]
+        public string qualifiedReference;
+        [XmlAttribute("shortReference")]
+        public string shortReference;
+        [XmlAttribute("flags")]
+        public ulong flags;
+        [XmlAttribute("generalFloatValue")]
+        public float generalFloatValue;
         [XmlAttribute("sourceEnumeratorReceivedId")]
         public uint sourceEnumeratorReceivedId;
         [XmlAttribute("sourceEnumeratorNextId")]
         public uint sourceEnumeratorNextId;
+        [XmlElement("color")]
+        public Color color;
         [XmlIgnore]
         public Texture2D icon;
         [XmlElement("icon")]
