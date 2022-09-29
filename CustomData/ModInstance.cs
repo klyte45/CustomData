@@ -1,9 +1,7 @@
-﻿using ColossalFramework.UI;
-using CustomData.Localization;
-using CustomData.Xml;
+﻿using CustomData.Localization;
+using CustomData.UI;
 using ICities;
 using Kwytto.Interfaces;
-using Kwytto.LiteUI;
 using Kwytto.Utils;
 using System.Globalization;
 using System.Reflection;
@@ -29,6 +27,16 @@ namespace CustomData
         protected override void OnLevelLoadedInherit(LoadMode mode) { }
 
         protected override void SetLocaleCulture(CultureInfo culture) => Str.Culture = culture;
-        
+
+        private IUUIButtonContainerPlaceholder[] cachedUUI;
+        public override IUUIButtonContainerPlaceholder[] UUIButtons => cachedUUI ?? (cachedUUI = new IUUIButtonContainerPlaceholder[]
+        {
+            new UUIWindowButtonContainerPlaceholder(
+             buttonName: GeneralName,
+             tooltip: GeneralName,
+             iconPath: IconName,
+             windowGetter: ()=>CDMainWindow.Instance
+             ),
+        });
     }
 }
