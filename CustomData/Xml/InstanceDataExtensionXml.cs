@@ -41,8 +41,8 @@ namespace CustomData.Xml
             get => m_randomSeed ?? (m_randomSeed = BitConverter.ToUInt64(Guid.NewGuid().ToByteArray(), 0)) ?? 0L;
             set => m_randomSeed = value;
         }
-        [XmlAttribute("generatedId")]
-        public string generatedId;
+        [XmlAttribute("givenStringId")]
+        public string givenStringId;
         [XmlAttribute("mainReference")]
         public string mainReference;
         [XmlAttribute("qualifiedReference")]
@@ -50,15 +50,17 @@ namespace CustomData.Xml
         [XmlAttribute("shortReference")]
         public string shortReference;
         [XmlAttribute("flags")]
-        public ulong flags;
+        public ulong? flags;
+        [XmlAttribute("genericId")]
+        public int? genericId;
         [XmlAttribute("generalFloatValue")]
-        public float generalFloatValue;
+        public float? generalFloatValue;
         [XmlAttribute("sourceEnumeratorReceivedId")]
-        public uint sourceEnumeratorReceivedId;
+        public uint? sourceEnumeratorReceivedId;
         [XmlAttribute("sourceEnumeratorNextId")]
-        public uint sourceEnumeratorNextId;
+        public uint? sourceEnumeratorNextId;
         [XmlElement("color")]
-        public Color color;
+        public Color? color;
         [XmlIgnore]
         public Texture2D icon;
         [XmlElement("icon")]
@@ -67,5 +69,12 @@ namespace CustomData.Xml
             get => icon?.ToBase64();
             set => icon = value is null ? null : TextureUtils.Base64ToTexture2D(value);
         }
+
+        public bool HasAnyFlag(ulong flagsTst) => ((flags ?? 0u) & flagsTst) != 0;
+        public bool HasAllFlags(ulong flagsTst) => ((flags ?? 0u) & flagsTst) == flagsTst;
+        public ulong AddFlag(ulong flagsTst) => (ulong)(flags = ((flags ?? 0) | flagsTst));
+        public ulong RemoveFlag(ulong flagsTst) => (ulong)(flags = ((flags ?? 0) & ~flagsTst));
+        public ulong GetFromPattern(ulong pattern, int bytesRoll) => ((flags ?? 0) & pattern) >> bytesRoll;
+        public ulong SetToPattern(ulong value, ulong pattern, int bytesRoll) => (ulong)(flags = ((flags ?? 0) & ~pattern) | ((value << bytesRoll) & pattern));
     }
 }
