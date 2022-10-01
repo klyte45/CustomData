@@ -553,17 +553,17 @@ namespace CustomData.Utils
             public override string ToString() => $"[n{nodeReference} s{segmentReference} h:{isHighway} p:{isPassing} w{width} l{lanes}]";
         }
 
-        public static byte GetCardinalDirectionSegment(ushort segmentID, MileageStartSource axis)
+        public static CardinalPoint GetCardinalDirectionSegment(ushort segmentID, MileageStartSource axis)
         {
             SegmentUtils.GetSegmentRoadEdges(segmentID, true, true, true, out ComparableRoad startRef, out ComparableRoad endRef, out _, out _, out _);
             return GetCardinalDirection(startRef, endRef, axis);
         }
-        public static byte GetCardinalDirection(ComparableRoad startRef, ComparableRoad endRef, MileageStartSource axis)
+        public static CardinalPoint GetCardinalDirection(ComparableRoad startRef, ComparableRoad endRef, MileageStartSource axis)
         {
             ref NetNode nodeS = ref NetManager.instance.m_nodes.m_buffer[startRef.nodeReference];
             ref NetNode nodeE = ref NetManager.instance.m_nodes.m_buffer[endRef.nodeReference];
 
-            return GetCardinalDirection(axis, nodeS.m_position, nodeE.m_position, NetManager.instance.m_segments.m_buffer[startRef.segmentReference].m_startNode == startRef.nodeReference).GetCardinalIndex8();
+            return GetCardinalDirection(axis, nodeS.m_position, nodeE.m_position, NetManager.instance.m_segments.m_buffer[startRef.segmentReference].m_startNode == startRef.nodeReference);
         }
 
         private static CardinalPoint GetCardinalDirection(MileageStartSource axis, Vector3 nodeS, Vector3 nodeE, bool invert)

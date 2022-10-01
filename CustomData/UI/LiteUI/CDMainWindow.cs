@@ -142,4 +142,5 @@ namespace CustomData.UI
         private static readonly Color FOREST = ColorExtensions.FromRGB("38b73e").SetBrightness(.6f);
         private static readonly Color GROUND = ColorExtensions.FromRGB("cdff8d").SetBrightness(.7f);
     }
+
 }

@@ -1,4 +1,5 @@
 ﻿using CustomData.Localization;
+using CustomData.Utils;
 using CustomData.Wrappers;
 using CustomData.Xml;
 using Kwytto.LiteUI;
@@ -88,8 +89,8 @@ namespace CustomData.UI
 
                     }
                     GUILayout.Space(10);
-                    root.ComboBoxWithButtons(tabAreaSize, selectedDistrictId == 0 ? Str.cd_districtTab_roadNamingsFileDefault : Str.cd_districtTab_roadNamingsFile, m_parsedData.RoadNamesFile, CDController.LoadedGeneralNamesIdx, (x) => m_parsedData.RoadNamesFile = x, CDController.GeneralNamesPath, CDController.LoadGeneralNames);
-                    root.ComboBoxWithButtons(tabAreaSize, selectedDistrictId == 0 ? Str.cd_districtTab_roadFormattingFileDefault : Str.cd_districtTab_roadFormattingFile, m_parsedData.RoadQualifierFile, CDController.LoadedRoadPatternsIdx, (x) => m_parsedData.RoadQualifierFile = x, CDController.RoadPatternPath, CDController.LoadRoadPatternFiles);
+                    root.ComboBoxWithButtons(tabAreaSize, selectedDistrictId == 0 ? Str.cd_districtTab_roadNamingsFileDefault : Str.cd_districtTab_roadNamingsFile, m_parsedData.RoadNamesFile, CDController.LoadedGeneralNamesIdx, ApplyNameFile, CDController.GeneralNamesPath, CDController.LoadGeneralNames);
+                    root.ComboBoxWithButtons(tabAreaSize, selectedDistrictId == 0 ? Str.cd_districtTab_roadFormattingFileDefault : Str.cd_districtTab_roadFormattingFile, m_parsedData.RoadQualifierFile, CDController.LoadedRoadPatternsIdx, ApplyQualifierFile, CDController.RoadPatternPath, CDController.LoadRoadPatternFiles);
                     using (new GUILayout.HorizontalScope())
                     {
                         GUIKwyttoCommons.AddIntField(tabAreaSize.x - 20, selectedDistrictId == 0 ? Str.cd_districtTab_postalCodeDigitsFallback : Str.cd_districtTab_postalCodeDigits, m_parsedData.DigitsPostalCode ?? selectedDistrictId, (x) => m_parsedData.DigitsPostalCode = x, true, 0, 999, "000");
@@ -111,6 +112,18 @@ namespace CustomData.UI
                     GUI.DrawTexture(mapRect, m_overlayDistrictTexture, ScaleMode.ScaleToFit, true, 1);
                 }
             }
+        }
+
+        private void ApplyQualifierFile(string x)
+        {
+            m_parsedData.RoadQualifierFile = x;
+            SegmentUtils.UpdateSegmentNamesView();
+        }
+
+        private void ApplyNameFile(string x)
+        {
+            m_parsedData.RoadNamesFile = x;
+            SegmentUtils.UpdateSegmentNamesView();
         }
 
         private void ReloadDistrictOptions()

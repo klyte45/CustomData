@@ -22,9 +22,9 @@ namespace CustomData
         public static string RoadPatternPath { get; } = FOLDER_PATH + Path.DirectorySeparatorChar + ROADPREFIX_SUBFOLDER_NAME;
 
 
-        private static Dictionary<string, string[]> m_loadedGeneralNames;
+        internal static Dictionary<string, string[]> LoadedGeneralNames { get; } = new Dictionary<string, string[]>();
         public static string[] LoadedGeneralNamesIdx { get; private set; }
-        private static Dictionary<string, RoadPrefixFileIndexer> m_loadedRoadPatterns = new Dictionary<string, RoadPrefixFileIndexer>();
+        internal static Dictionary<string, RoadPrefixFileIndexer> LoadedRoadPatterns { get; } = new Dictionary<string, RoadPrefixFileIndexer>();
         public static string[] LoadedRoadPatternsIdx { get; private set; }
 
         public void Awake()
@@ -34,12 +34,12 @@ namespace CustomData
             LoadGeneralNames();
             LoadRoadPatternFiles();
         }
-        public static void LoadGeneralNames() => LoadedGeneralNamesIdx = LoadSimpleNamesFiles(out m_loadedGeneralNames, GeneralNamesPath).Select(x => x.Key).ToArray();
+        public static void LoadGeneralNames() => LoadedGeneralNamesIdx = LoadSimpleNamesFiles(LoadedGeneralNames, GeneralNamesPath).Select(x => x.Key).ToArray();
         // public static void LoadRoadNamePatterns() => LoadSimpleNamesFiles(out m_loadedRoadPatterns, GeneralNamesPath);
 
-        private static Dictionary<string, string[]> LoadSimpleNamesFiles(out Dictionary<string, string[]> result, string path)
+        private static Dictionary<string, string[]> LoadSimpleNamesFiles(Dictionary<string, string[]> result, string path)
         {
-            result = new Dictionary<string, string[]>();
+            result.Clear();
             foreach (string filename in Directory.GetFiles(path, "*.txt").Select(x => x.Split(Path.DirectorySeparatorChar).Last()))
             {
                 string fileContents = File.ReadAllText(path + Path.DirectorySeparatorChar + filename, Encoding.UTF8);
@@ -50,8 +50,8 @@ namespace CustomData
         }
         public static void LoadRoadPatternFiles()
         {
-            m_loadedRoadPatterns.Clear();
-            m_loadedRoadPatterns.AddRange(Directory.GetFiles(RoadPatternPath, "*.txt").Select(x =>
+            LoadedRoadPatterns.Clear();
+            LoadedRoadPatterns.AddRange(Directory.GetFiles(RoadPatternPath, "*.txt").Select(x =>
                {
                    var name = x.Split(Path.DirectorySeparatorChar).Last();
                    string fileContents = File.ReadAllText(x, Encoding.UTF8);
@@ -60,7 +60,7 @@ namespace CustomData
                    LogUtils.DoLog("LOADED PREFIX NAMES ({0})", name);
                    return Tuple.New(name, data);
                }).ToDictionary(x => x.First, x => x.Second));
-            LoadedRoadPatternsIdx = m_loadedRoadPatterns.Keys.ToArray();
+            LoadedRoadPatternsIdx = LoadedRoadPatterns.Keys.ToArray();
         }
 
         protected override void StartActions()
