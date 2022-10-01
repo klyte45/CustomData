@@ -1,6 +1,5 @@
 ﻿using CustomData.Localization;
 using CustomData.UI;
-using ICities;
 using Kwytto.Interfaces;
 using Kwytto.Utils;
 using System.Globalization;
@@ -23,9 +22,6 @@ namespace CustomData
         public override string Description => Str.root_modDescription;
 
         public override BaseController GetController() => Controller;
-
-        protected override void OnLevelLoadedInherit(LoadMode mode) { }
-
         protected override void SetLocaleCulture(CultureInfo culture) => Str.Culture = culture;
 
         private IUUIButtonContainerPlaceholder[] cachedUUI;

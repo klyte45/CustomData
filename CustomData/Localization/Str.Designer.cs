@@ -61,6 +61,96 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a City color.
+        /// </summary>
+        internal static string cd_districtTab_cityColor {
+            get {
+                return ResourceManager.GetString("cd_districtTab_cityColor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a District color.
+        /// </summary>
+        internal static string cd_districtTab_districtColor {
+            get {
+                return ResourceManager.GetString("cd_districtTab_districtColor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Select district.
+        /// </summary>
+        internal static string cd_districtTab_districtToChange {
+            get {
+                return ResourceManager.GetString("cd_districtTab_districtToChange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Postal code digits (000 to 999).
+        /// </summary>
+        internal static string cd_districtTab_postalCodeDigits {
+            get {
+                return ResourceManager.GetString("cd_districtTab_postalCodeDigits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a City postal code.
+        /// </summary>
+        internal static string cd_districtTab_postalCodeDigitsFallback {
+            get {
+                return ResourceManager.GetString("cd_districtTab_postalCodeDigitsFallback", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Road name pattern file.
+        /// </summary>
+        internal static string cd_districtTab_roadFormattingFile {
+            get {
+                return ResourceManager.GetString("cd_districtTab_roadFormattingFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a City default road pattern file.
+        /// </summary>
+        internal static string cd_districtTab_roadFormattingFileDefault {
+            get {
+                return ResourceManager.GetString("cd_districtTab_roadFormattingFileDefault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Road naming file.
+        /// </summary>
+        internal static string cd_districtTab_roadNamingsFile {
+            get {
+                return ResourceManager.GetString("cd_districtTab_roadNamingsFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a City default road naming file.
+        /// </summary>
+        internal static string cd_districtTab_roadNamingsFileDefault {
+            get {
+                return ResourceManager.GetString("cd_districtTab_roadNamingsFileDefault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a District data.
+        /// </summary>
+        internal static string cd_districtTab_title {
+            get {
+                return ResourceManager.GetString("cd_districtTab_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Data storage to extra stuff for game Intances.
         /// </summary>
         internal static string root_modDescription {

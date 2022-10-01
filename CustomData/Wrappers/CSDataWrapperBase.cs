@@ -1,11 +1,11 @@
-﻿using CustomData.Utils;
-using CustomData.Xml;
+﻿using CustomData.Xml;
 
 namespace CustomData.Wrappers
 {
     public abstract class CSDataWrapperBase
     {
         protected InstanceDataExtensionXml xml;
+        public InstanceID Id => xml.Id;
         protected abstract InstanceType RequiredType { get; }
         protected abstract bool ExclusiveToIndex { get; }
         protected abstract bool AnyButIndex { get; }

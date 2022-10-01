@@ -8,15 +8,15 @@ namespace CustomData.Wrappers
     {
         protected override InstanceType RequiredType => (InstanceType)InstanceIdUtils.TYPE_DISTRICT;
         protected override bool ExclusiveToIndex => false;
-        protected override bool AnyButIndex => true;
+        protected override bool AnyButIndex => false;
         protected override int RefIndex { get; } = 0;
         public DistrictDW(InstanceDataExtensionXml xml) : base(xml)
         {
         }
         public string RoadQualifierFile { get => xml.qualifiedReference; set => xml.qualifiedReference = value; }
         public string RoadNamesFile { get => xml.mainReference; set => xml.mainReference = value; }
-        public uint DigitsPostalCode { get => (uint)xml.flags % 1000; set => xml.flags = value % 1000; }
-        public Color Color { get => xml.color ?? Color.white; set => xml.color = value; }
+        public int? DigitsPostalCode { get => xml.genericId is null ? null : xml.genericId % 1000; set => xml.genericId = value is null ? null : value % 1000; }
+        public Color? Color { get => xml.color; set => xml.color = value; }
 
     }
 }
