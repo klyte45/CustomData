@@ -6,7 +6,7 @@ using System.Globalization;
 using System.Reflection;
 using UnityEngine;
 
-[assembly: AssemblyVersion("0.0.0.60000")]
+[assembly: AssemblyVersion("0.0.0.60001")]
 namespace CustomData
 {
     public class ModInstance : BasicIUserMod<ModInstance, CDController>

@@ -81,7 +81,13 @@ namespace CustomData.UI
                             else
                             {
                                 var cell = cells[coordX + (coordY * rowWidth)];
-                                return cell.m_district1 == selectedDistrictId ? Color.clear : new Color(0, 0, 0, .85f);
+                                var minAlpha = selectedDistrictId == 0 ? 255 : 1;
+                                var isHighlight =
+                                   (cell.m_district2 == selectedDistrictId && cell.m_alpha2 >= minAlpha)
+                                || (cell.m_district1 == selectedDistrictId && cell.m_alpha1 >= minAlpha)
+                                || (cell.m_district3 == selectedDistrictId && cell.m_alpha3 >= minAlpha)
+                                || (cell.m_district4 == selectedDistrictId && cell.m_alpha4 >= minAlpha);
+                                return isHighlight ? Color.clear : new Color(0, 0, 0, .85f);
                             }
                         }).ToArray());
 
@@ -93,7 +99,7 @@ namespace CustomData.UI
                     root.ComboBoxWithButtons(tabAreaSize, selectedDistrictId == 0 ? Str.cd_districtTab_roadFormattingFileDefault : Str.cd_districtTab_roadFormattingFile, m_parsedData.RoadQualifierFile, CDController.LoadedRoadPatternsIdx, ApplyQualifierFile, CDController.RoadPatternPath, CDController.LoadRoadPatternFiles);
                     using (new GUILayout.HorizontalScope())
                     {
-                        GUIKwyttoCommons.AddIntField(tabAreaSize.x - 20, selectedDistrictId == 0 ? Str.cd_districtTab_postalCodeDigitsFallback : Str.cd_districtTab_postalCodeDigits, m_parsedData.DigitsPostalCode ?? selectedDistrictId, (x) => m_parsedData.DigitsPostalCode = x, true, 0, 999, "000");
+                        GUIKwyttoCommons.AddIntField(tabAreaSize.x - 20 * GUIWindow.ResolutionMultiplier, selectedDistrictId == 0 ? Str.cd_districtTab_postalCodeDigitsFallback : Str.cd_districtTab_postalCodeDigits, m_parsedData.DigitsPostalCode ?? selectedDistrictId, (x) => m_parsedData.DigitsPostalCode = x, true, 0, 999, "000");
                         if (GUILayout.Button(root.m_clearButton, root.m_reloadBtnStyle))
                         {
                             m_parsedData.DigitsPostalCode = null;
@@ -107,7 +113,7 @@ namespace CustomData.UI
                             m_parsedData.Color = null;
                         }
                     }
-                    var mapRect = GUILayoutUtility.GetRect(256, 512, 256, 512);
+                    var mapRect = GUILayoutUtility.GetRect(256 * GUIWindow.ResolutionMultiplier, 512 * GUIWindow.ResolutionMultiplier, 256 * GUIWindow.ResolutionMultiplier, 512 * GUIWindow.ResolutionMultiplier);
                     GUI.DrawTexture(mapRect, root.CityTexture, ScaleMode.ScaleToFit, true, 1);
                     GUI.DrawTexture(mapRect, m_overlayDistrictTexture, ScaleMode.ScaleToFit, true, 1);
                 }

@@ -82,12 +82,12 @@ namespace CustomData.UI
             {
                 m_reloadBtnStyle = new GUIStyle(GUI.skin.button)
                 {
-                    fixedHeight = 20,
-                    fixedWidth = 20,
+                    fixedHeight = 20 * ResolutionMultiplier,
+                    fixedWidth = 20 * ResolutionMultiplier,
                     padding = new RectOffset(0, 0, 0, 0),
                 };
             }
-            m_tabsContainer.DrawListTabs(new Rect(default, size), 200);
+            m_tabsContainer.DrawListTabs(new Rect(default, size), 200 * ResolutionMultiplier);
         }
         protected override void OnWindowOpened()
         {
@@ -105,7 +105,7 @@ namespace CustomData.UI
         {
             using (new GUILayout.HorizontalScope())
             {
-                if (GUIKwyttoCommons.AddComboBox(tabAreaSize.x - 60, lbl, Array.IndexOf(array, value), array, out var newValue, this))
+                if (GUIKwyttoCommons.AddComboBox(tabAreaSize.x - 60 * ResolutionMultiplier, lbl, Array.IndexOf(array, value), array, out var newValue, this))
                 {
                     onSet(array[newValue]);
                 };
