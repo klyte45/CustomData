@@ -272,8 +272,9 @@ namespace CustomData.Overrides
                 float angle = Vector2.zero.GetAngleToPoint(VectorUtils.XZ(node.m_position));
                 LogUtils.DoLog($"[Node {refer.nodeReference}] angle => {angle}, pos => {node.m_position} ");
 
-                ///Requires neighbors editor support
-                sourceDistrict = "Some City";//OutsideConnectionAIOverrides.GetNameBasedInAngle(angle, out _);
+                sourceDistrict = CDStorage.Instance.GetCityAtAngle(angle)?.SafeName ??
+                    (BuildingManager.instance.m_buildings.m_buffer[NetManager.instance.m_nodes.m_buffer[refer.nodeReference].m_building].Info.m_buildingAI is OutsideConnectionAI ai ? ai.GenerateName(NetManager.instance.m_nodes.m_buffer[refer.nodeReference].m_building, default)
+                    : "Some City");
             }
             else
             {

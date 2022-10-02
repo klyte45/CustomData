@@ -147,6 +147,21 @@
   <data name="cd_districtTab_title" xml:space="preserve">
     <value>District data</value>
   </data>
+  <data name="cd_neighborTab_actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="cd_neighborTab_azimuthDirectionShort" xml:space="preserve">
+    <value>Azimuth (°)</value>
+  </data>
+  <data name="cd_neighborTab_cityName" xml:space="preserve">
+    <value>City Name</value>
+  </data>
+  <data name="cd_neighborTab_neighborNamesFile" xml:space="preserve">
+    <value>Default city names file</value>
+  </data>
+  <data name="cd_neighborTab_title" xml:space="preserve">
+    <value>Neighbors</value>
+  </data>
   <data name="root_modDescription" xml:space="preserve">
     <value>Data storage to extra stuff for game Intances</value>
   </data>

@@ -81,6 +81,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Str.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI\LiteUI\CDNeighborDataTab.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\KwyttoUtilityCD\KwyttoUtilityCD.csproj">

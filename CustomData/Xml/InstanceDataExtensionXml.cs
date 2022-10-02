@@ -76,5 +76,10 @@ namespace CustomData.Xml
         public ulong RemoveFlag(ulong flagsTst) => (ulong)(flags = ((flags ?? 0) & ~flagsTst));
         public ulong GetFromPattern(ulong pattern, int bytesRoll) => ((flags ?? 0) & pattern) >> bytesRoll;
         public ulong SetToPattern(ulong value, ulong pattern, int bytesRoll) => (ulong)(flags = ((flags ?? 0) & ~pattern) | ((value << bytesRoll) & pattern));
+
+        ~InstanceDataExtensionXml()
+        {
+            GameObject.Destroy(icon);
+        }
     }
 }

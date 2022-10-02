@@ -151,6 +151,51 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Actions.
+        /// </summary>
+        internal static string cd_neighborTab_actions {
+            get {
+                return ResourceManager.GetString("cd_neighborTab_actions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Azimuth (°).
+        /// </summary>
+        internal static string cd_neighborTab_azimuthDirectionShort {
+            get {
+                return ResourceManager.GetString("cd_neighborTab_azimuthDirectionShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a City Name.
+        /// </summary>
+        internal static string cd_neighborTab_cityName {
+            get {
+                return ResourceManager.GetString("cd_neighborTab_cityName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Default city names file.
+        /// </summary>
+        internal static string cd_neighborTab_neighborNamesFile {
+            get {
+                return ResourceManager.GetString("cd_neighborTab_neighborNamesFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Neighbors.
+        /// </summary>
+        internal static string cd_neighborTab_title {
+            get {
+                return ResourceManager.GetString("cd_neighborTab_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Data storage to extra stuff for game Intances.
         /// </summary>
         internal static string root_modDescription {

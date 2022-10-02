@@ -12,6 +12,13 @@ namespace CustomData.Wrappers
         public RegionCitiesCommonDW(InstanceDataExtensionXml xml) : base(xml)
         {
         }
-        public string NameGenerator { get => xml.mainReference; set => xml.mainReference = value; }
+        public string NameGenerator
+        {
+            get => xml.mainReference; set
+            {
+                xml.mainReference = value;
+                CDStorage.Instance.ResetCachedCitiesRegion();
+            }
+        }
     }
 }

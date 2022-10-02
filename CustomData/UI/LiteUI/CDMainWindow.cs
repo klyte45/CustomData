@@ -18,7 +18,7 @@ namespace CustomData.UI
                 if (instance == null)
                 {
                     instance = GameObjectUtils.CreateElement<CDMainWindow>(UIView.GetAView().transform);
-                    instance.Init(ModInstance.Instance.GeneralName, new Rect(128, 128, 680, 420), resizable: true, minSize: new Vector2(440, 260));
+                    instance.Init(ModInstance.Instance.GeneralName, new Rect(128, 128, 680, 420), resizable: true, minSize: new Vector2(600, 420));
                     instance.Visible = false;
                 }
                 return instance;
@@ -26,8 +26,10 @@ namespace CustomData.UI
         }
         protected override bool showOverModals => false;
         internal Texture2D m_reloadButton;
+        internal Texture2D m_excludeButton;
         internal Texture2D m_clearButton;
         internal Texture2D m_folderButton;
+        internal Texture2D m_addButton;
         internal GUIStyle m_reloadBtnStyle;
 
         internal GUIColorPicker m_colorPicker;
@@ -53,11 +55,14 @@ namespace CustomData.UI
             m_reloadButton = KResourceLoader.LoadTextureKwytto(CommonsSpriteNames.K45_Reload);
             m_clearButton = KResourceLoader.LoadTextureKwytto(CommonsSpriteNames.K45_Delete);
             m_folderButton = KResourceLoader.LoadTextureKwytto(CommonsSpriteNames.K45_Load);
+            m_excludeButton = KResourceLoader.LoadTextureKwytto(CommonsSpriteNames.K45_X);
+            m_addButton = KResourceLoader.LoadTextureKwytto(CommonsSpriteNames.K45_Plus);
             m_colorPicker = GameObjectUtils.CreateElement<GUIColorPicker>(transform).Init();
             m_colorPicker.Visible = false;
 
             var tabs = new IGUIVerticalITab[] {
-                        new CDDistrictDataTab(this)
+                        new CDDistrictDataTab(this),
+                        new CDNeighborDataTab(this)
                     };
             m_tabsContainer = new GUIVerticalTabsContainer(tabs)
             {
