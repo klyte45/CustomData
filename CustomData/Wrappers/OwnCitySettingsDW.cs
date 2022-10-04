@@ -1,5 +1,6 @@
 ﻿using CustomData.Utils;
 using CustomData.Xml;
+using static CustomData.Xml.InstanceDataExtensionXml;
 
 namespace CustomData.Wrappers
 {
@@ -12,9 +13,10 @@ namespace CustomData.Wrappers
         public OwnCitySettingsDW(InstanceDataExtensionXml xml) : base(xml)
         {
         }
-        public string DistrictNameGeneratorFile { get => xml.mainReference; set => xml.mainReference = value; }
-        public string DistrictNameQualifierFile { get => xml.qualifiedReference; set => xml.qualifiedReference = value; }
+        public ReferenceData GetDistrictGeneratorFile(DistrictAreaType type) => xml.SafeGetReference((long)type) ?? (xml.references[(long)type] = new ReferenceData());
         public int PostalCodeDigits { get => (xml.genericId ?? 0) % 1000; set => xml.genericId = value % 1000; }
         public string PostalCodeFormat { get => xml.givenStringId; set => xml.givenStringId = value; }
     }
+
 }
+

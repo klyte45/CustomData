@@ -63,7 +63,8 @@ namespace CustomData.UI
             var tabs = new IGUIVerticalITab[] {
                         new CDDistrictDataTab(this),
                         new CDNeighborDataTab(this),
-                        new CDCitizenNamingTab(this)
+                        new CDCitizenNamingTab(this),
+                        new CDAreasNamingTab(this)
                     };
             m_tabsContainer = new GUIVerticalTabsContainer(tabs)
             {
@@ -107,11 +108,11 @@ namespace CustomData.UI
         }
 
 
-        internal void ComboBoxWithButtons(Vector2 tabAreaSize, string lbl, string value, string[] array, Action<string> onSet, string targetFolder, Action onReload)
+        internal void ComboBoxWithButtons(Vector2 tabAreaSize, string lbl, string value, string[] array, Action<string> onSet, string targetFolder, Action onReload, string namePrefix = "")
         {
             using (new GUILayout.HorizontalScope())
             {
-                if (GUIKwyttoCommons.AddComboBox(tabAreaSize.x - 60 * ResolutionMultiplier, lbl, Array.IndexOf(array, value), array, out var newValue, this))
+                if (GUIKwyttoCommons.AddComboBox(tabAreaSize.x - 60 * ResolutionMultiplier, lbl, Array.IndexOf(array, value), array, out var newValue, this, name: namePrefix + lbl))
                 {
                     onSet(array[newValue]);
                 };

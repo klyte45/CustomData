@@ -43,12 +43,8 @@ namespace CustomData.Xml
         }
         [XmlAttribute("givenStringId")]
         public string givenStringId;
-        [XmlAttribute("mainReference")]
-        public string mainReference;
-        [XmlAttribute("qualifiedReference")]
-        public string qualifiedReference;
-        [XmlAttribute("shortReference")]
-        public string shortReference;
+        [XmlElement("referencesQualifier")]
+        public SimpleNonSequentialList<ReferenceData> references = new SimpleNonSequentialList<ReferenceData>();
         [XmlAttribute("flags")]
         public ulong? flags;
         [XmlAttribute("genericId")]
@@ -77,9 +73,28 @@ namespace CustomData.Xml
         public ulong GetFromPattern(ulong pattern, int bytesRoll) => ((flags ?? 0) & pattern) >> bytesRoll;
         public ulong SetToPattern(ulong value, ulong pattern, int bytesRoll) => (ulong)(flags = ((flags ?? 0) & ~pattern) | ((value << bytesRoll) & pattern));
 
+        public ReferenceData SafeGetReference(long idx)
+        {
+            if (!references.TryGetValue(idx, out ReferenceData refData))
+            {
+                references[idx] = refData = new ReferenceData();
+            }
+            return refData;
+        }
+
         ~InstanceDataExtensionXml()
         {
             GameObject.Destroy(icon);
+        }
+
+        public class ReferenceData
+        {
+            [XmlAttribute("mainReference")]
+            public string mainReference;
+            [XmlAttribute("qualifiedReference")]
+            public string qualifiedReference;
+            [XmlAttribute("shortReference")]
+            public string shortReference;
         }
     }
 }

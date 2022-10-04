@@ -91,5 +91,8 @@ namespace CustomData.Xml
 
         #endregion
         public CitizenGeneralDW GetCitizenData() => new CitizenGeneralDW(SafeGet(new InstanceID { Citizen = 0 }));
+
+        public OwnCitySettingsDW GetOwnCitySettings() => new OwnCitySettingsDW(SafeGet(new InstanceID { Index = 0xff, Type = (InstanceType)InstanceIdUtils.TYPE_CD_REGIONCITIES }));
+
     }
 }

@@ -61,6 +61,42 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Names file.
+        /// </summary>
+        internal static string cd_areasNamingTab_namesFile {
+            get {
+                return ResourceManager.GetString("cd_areasNamingTab_namesFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Simple patterns file.
+        /// </summary>
+        internal static string cd_areasNamingTab_simplePatternFile {
+            get {
+                return ResourceManager.GetString("cd_areasNamingTab_simplePatternFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;i&gt;&lt;color=#FFFF00&gt;NOTE:&lt;/color&gt; Simple pattern files are like the name files, but requires to have a placeholder &quot;&lt;color=#00ff00&gt;{0}&lt;/color&gt;&quot; to be replaced by the generated name.&lt;/i&gt;.
+        /// </summary>
+        internal static string cd_areasNamingTab_simplePatternNote {
+            get {
+                return ResourceManager.GetString("cd_areasNamingTab_simplePatternNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Areas&apos; Naming.
+        /// </summary>
+        internal static string cd_areasNamingTab_title {
+            get {
+                return ResourceManager.GetString("cd_areasNamingTab_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Female given names file.
         /// </summary>
         internal static string cd_cimNamingTab_femaleNamesTitle {
@@ -193,6 +229,132 @@ namespace CustomData.Localization {
         internal static string cd_districtTab_title {
             get {
                 return ResourceManager.GetString("cd_districtTab_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#00FFFF&gt;Airport Areas&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Airports {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Airports", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#0044FF&gt;Liberal Arts College&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Campus_Liberal {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Campus_Liberal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#0044FF&gt;University&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Campus_Regular {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Campus_Regular", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#0044FF&gt;Trade School&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Campus_Trade {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Campus_Trade", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#FFFF00&gt;Farming Industry Areas&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Industry_Farming {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Industry_Farming", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#FFFF00&gt;Forest Industry Areas&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Industry_Forest {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Industry_Forest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#FFFF00&gt;Mining Inudstry Areas&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Industry_Mining {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Industry_Mining", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#FFFF00&gt;Oil Industry Areas&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Industry_Oil {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Industry_Oil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#00FF00&gt;Amusement Parks&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Parks_Amusement {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Parks_Amusement", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#00FF00&gt;City Park Areas&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Parks_CityPark {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Parks_CityPark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#00FF00&gt;Natural Reserves&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Parks_Natural {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Parks_Natural", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#00FF00&gt;Zoo Areas&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Parks_Zoo {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Parks_Zoo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#888888&gt;Pedestrian Areas&lt;/color&gt;.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Pedestrian {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Pedestrian", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Regular districts.
+        /// </summary>
+        internal static string cd_Enum__DistrictAreaType_Regular {
+            get {
+                return ResourceManager.GetString("cd_Enum__DistrictAreaType_Regular", resourceCulture);
             }
         }
         

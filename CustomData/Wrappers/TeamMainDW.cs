@@ -10,7 +10,7 @@ namespace CustomData.Wrappers
         protected override int RefIndex { get; } = 0;
         protected TeamMainDW(InstanceDataExtensionXml xml) : base(xml) { }
 
-        public string OpponentsGenerationFile { get => xml.mainReference; set => xml.mainReference = value; }
+        public string OpponentsGenerationFile { get => xml.SafeGetReference(0).mainReference; set => xml.SafeGetReference(0).mainReference = value; }
     }
 
     public class SoccerMainTeamDW : TeamMainDW { public SoccerMainTeamDW(InstanceDataExtensionXml xml) : base(xml) { } protected override InstanceType RequiredType { get; } = (InstanceType)InstanceIdUtils.TYPE_CD_SOCCERTEAMS; }

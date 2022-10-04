@@ -16,9 +16,9 @@ namespace CustomData.Wrappers
         public HighwayTypeDW(InstanceDataExtensionXml xml) : base(xml)
         {
         }
-        public string SimpleQualifier { get => xml.shortReference; set => xml.shortReference = value; }
-        public string ExtensiveQualifier { get => xml.qualifiedReference; set => xml.qualifiedReference = value; }
-        public string Name { get => xml.mainReference; set => xml.mainReference = value; }
+        public string SimpleQualifier { get => xml.SafeGetReference(0).shortReference; set => xml.SafeGetReference(0).shortReference = value; }
+        public string ExtensiveQualifier { get => xml.SafeGetReference(0).qualifiedReference; set => xml.SafeGetReference(0).qualifiedReference = value; }
+        public string Name { get => xml.SafeGetReference(0).mainReference; set => xml.SafeGetReference(0).mainReference = value; }
         public bool AddSpaceSimple { get => xml.HasAnyFlag(FLAG_SIMPLE_SPACE); set => _ = value ? xml.AddFlag(FLAG_SIMPLE_SPACE) : xml.RemoveFlag(FLAG_SIMPLE_SPACE); }
         public bool AddSpaceExtensive { get => xml.HasAnyFlag(FLAG_EXTENSIVE_SPACE); set => _ = value ? xml.AddFlag(FLAG_EXTENSIVE_SPACE) : xml.RemoveFlag(FLAG_EXTENSIVE_SPACE); }
         public bool SimpleIsBeforeId { get => xml.HasAnyFlag(FLAG_SIMPLE_BEFORE); set => _ = value ? xml.AddFlag(FLAG_SIMPLE_BEFORE) : xml.RemoveFlag(FLAG_SIMPLE_BEFORE); }

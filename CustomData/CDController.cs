@@ -17,25 +17,38 @@ namespace CustomData
 
         public const string GENERAL_NAMING_FOLDER = "Namings";
         public const string ROADPREFIX_SUBFOLDER_NAME = "RoadsPatterns";
+        public const string SIMPLEPATTERNS_SUBFOLDER_NAME = "SimplePatterns";
 
         public static string GeneralNamesPath { get; } = FOLDER_PATH + Path.DirectorySeparatorChar + GENERAL_NAMING_FOLDER;
         public static string RoadPatternPath { get; } = FOLDER_PATH + Path.DirectorySeparatorChar + ROADPREFIX_SUBFOLDER_NAME;
+        public static string SimplePatternPath { get; } = FOLDER_PATH + Path.DirectorySeparatorChar + SIMPLEPATTERNS_SUBFOLDER_NAME;
 
 
         internal static Dictionary<string, string[]> LoadedGeneralNames { get; } = new Dictionary<string, string[]>();
         public static string[] LoadedGeneralNamesIdx { get; private set; }
         internal static Dictionary<string, RoadPrefixFileIndexer> LoadedRoadPatterns { get; } = new Dictionary<string, RoadPrefixFileIndexer>();
         public static string[] LoadedRoadPatternsIdx { get; private set; }
+        internal static Dictionary<string, string[]> LoadedSimplePatterns { get; } = new Dictionary<string, string[]>();
+        public static string[] LoadedSimplePatternsIdx { get; private set; }
 
         public void Awake()
         {
             KFileUtils.EnsureFolderCreation(GeneralNamesPath);
             KFileUtils.EnsureFolderCreation(RoadPatternPath);
+            KFileUtils.EnsureFolderCreation(SimplePatternPath);
             LoadGeneralNames();
             LoadRoadPatternFiles();
+            LoadSimplePatterns();
         }
-        public static void LoadGeneralNames() => LoadedGeneralNamesIdx = LoadSimpleNamesFiles(LoadedGeneralNames, GeneralNamesPath).Select(x => x.Key).ToArray();
-        // public static void LoadRoadNamePatterns() => LoadSimpleNamesFiles(out m_loadedRoadPatterns, GeneralNamesPath);
+        public static void LoadGeneralNames()
+        {
+            LoadedGeneralNamesIdx = LoadSimpleNamesFiles(LoadedGeneralNames, GeneralNamesPath).Select(x => x.Key).ToArray();
+
+            DistrictManager.instance.NamesModified();
+            DistrictManager.instance.ParkNamesModified();
+        }
+
+        public static void LoadSimplePatterns() => LoadedSimplePatternsIdx = LoadSimpleNamesFiles(LoadedSimplePatterns, SimplePatternPath).Select(x => x.Key).ToArray();
 
         private static Dictionary<string, string[]> LoadSimpleNamesFiles(Dictionary<string, string[]> result, string path)
         {
@@ -61,6 +74,8 @@ namespace CustomData
                    return Tuple.New(name, data);
                }).ToDictionary(x => x.First, x => x.Second));
             LoadedRoadPatternsIdx = LoadedRoadPatterns.Keys.ToArray();
+            DistrictManager.instance.NamesModified();
+            DistrictManager.instance.ParkNamesModified();
         }
 
         protected override void StartActions()

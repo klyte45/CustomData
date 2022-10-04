@@ -3,7 +3,6 @@ using CustomData.Wrappers;
 using CustomData.Xml;
 using Kwytto.LiteUI;
 using Kwytto.UI;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace CustomData.UI

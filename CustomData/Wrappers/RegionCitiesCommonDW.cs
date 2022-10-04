@@ -14,9 +14,9 @@ namespace CustomData.Wrappers
         }
         public string NameGenerator
         {
-            get => xml.mainReference; set
+            get => xml.SafeGetReference(0).mainReference; set
             {
-                xml.mainReference = value;
+                xml.SafeGetReference(0).mainReference = value;
                 CDStorage.Instance.ResetCachedCitiesRegion();
             }
         }

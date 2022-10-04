@@ -13,8 +13,8 @@ namespace CustomData.Wrappers
         public DistrictDW(InstanceDataExtensionXml xml) : base(xml)
         {
         }
-        public string RoadQualifierFile { get => xml.qualifiedReference; set => xml.qualifiedReference = value; }
-        public string RoadNamesFile { get => xml.mainReference; set => xml.mainReference = value; }
+        public string RoadQualifierFile { get => xml.SafeGetReference(0).qualifiedReference; set => xml.SafeGetReference(0).qualifiedReference = value; }
+        public string RoadNamesFile { get => xml.SafeGetReference(0).mainReference; set => xml.SafeGetReference(0).mainReference = value; }
         public int? DigitsPostalCode { get => xml.genericId is null ? null : xml.genericId % 1000; set => xml.genericId = value is null ? null : value % 1000; }
         public Color? Color { get => xml.color; set => xml.color = value; }
 
