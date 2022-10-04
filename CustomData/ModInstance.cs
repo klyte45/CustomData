@@ -6,7 +6,7 @@ using System.Globalization;
 using System.Reflection;
 using UnityEngine;
 
-[assembly: AssemblyVersion("0.0.0.60002")]
+[assembly: AssemblyVersion("0.0.0.60003")]
 namespace CustomData
 {
     public class ModInstance : BasicIUserMod<ModInstance, CDController>
@@ -21,7 +21,6 @@ namespace CustomData
 
         public override string Description => Str.root_modDescription;
 
-        public override BaseController GetController() => Controller;
         protected override void SetLocaleCulture(CultureInfo culture) => Str.Culture = culture;
 
         private IUUIButtonContainerPlaceholder[] cachedUUI;
