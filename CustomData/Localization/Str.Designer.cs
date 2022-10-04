@@ -142,9 +142,19 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Special Area name (Park, industry, etc...).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_addressLineDescription_F {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_addressLineDescription_F", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a There are all letters that represents a special meaning in addresses lines.
         ///Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;&quot;between double quotes&quot;&lt;/color&gt;.
-        ///The text written between brackets &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; won&apos;t be shown if there&apos;s no district..
+        ///The text written between brackets &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; won&apos;t be shown if there&apos;s no district.
+        ///The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won&apos;t be shown if there&apos;s no special area..
         /// </summary>
         internal static string cd_addressingSettingsTab_addressLineHelpHeaderText {
             get {
@@ -352,7 +362,7 @@ namespace CustomData.Localization {
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a There are all letters that have a special value in the postal code formatting.
-        ///Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;&quot;between double quotes&quot;&lt;/color&gt;.
+        ///Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally.
         ///Unlisted characters will always be shown literally..
         /// </summary>
         internal static string cd_addressingSettingsTab_postalCodeHelpHeaderText {

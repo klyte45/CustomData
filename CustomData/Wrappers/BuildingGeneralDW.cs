@@ -12,8 +12,8 @@ namespace CustomData.Wrappers
         public BuildingGeneralDW(InstanceDataExtensionXml xml) : base(xml)
         {
         }
-        public string AddressLine1 { get => xml.SafeGetReference(0).mainReference ?? "B A"; set => xml.SafeGetReference(0).mainReference = value; }
-        public string AddressLine2 { get => xml.SafeGetReference(0).qualifiedReference ?? "[D -]C"; set => xml.SafeGetReference(0).qualifiedReference = value; }
+        public string AddressLine1 { get => xml.SafeGetReference(0).mainReference ?? "B A( - F)"; set => xml.SafeGetReference(0).mainReference = value; }
+        public string AddressLine2 { get => xml.SafeGetReference(0).qualifiedReference ?? "[D - ]C"; set => xml.SafeGetReference(0).qualifiedReference = value; }
         public string AddressLine3 { get => xml.SafeGetReference(0).shortReference ?? "E"; set => xml.SafeGetReference(0).shortReference = value; }
         public bool GetIsAutogen(UseGeneratedNameCategories cat) => xml.HasAnyFlag(1ul << (int)cat);
         public void SetAutogen(UseGeneratedNameCategories cat) => xml.AddFlag(1ul << (int)cat);

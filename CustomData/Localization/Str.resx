@@ -266,15 +266,17 @@
   <data name="cd_addressingSettingsTab_postalCodeDescription_Y" xml:space="preserve">    <value>Map tile coordinate in North-South axis (0-8)</value>  </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_y_" xml:space="preserve">    <value>Tenths of tile coordinate in North-South axis (0-9)</value>  </data>
   <data name="cd_addressingSettingsTab_postalCodeHelpHeaderText" xml:space="preserve">    <value>There are all letters that have a special value in the postal code formatting.
-Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;"between double quotes"&lt;/color&gt;.
+Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally.
 Unlisted characters will always be shown literally.</value>  </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_A" xml:space="preserve">    <value>Street name</value>  </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_B" xml:space="preserve">    <value>Number (distance from start of street)</value>  </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_C" xml:space="preserve">    <value>City Name</value>  </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_D" xml:space="preserve">    <value>District</value>  </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_E" xml:space="preserve">    <value>Postal Code</value>  </data>
+  <data name="cd_addressingSettingsTab_addressLineDescription_F" xml:space="preserve">    <value>Special Area name (Park, industry, etc...)</value>  </data>
   <data name="cd_addressingSettingsTab_addressLineHelpHeaderText" xml:space="preserve">    <value>There are all letters that represents a special meaning in addresses lines.
 Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;"between double quotes"&lt;/color&gt;.
-The text written between brackets &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; won't be shown if there's no district.</value>  </data>
+The text written between brackets &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; won't be shown if there's no district.
+The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won't be shown if there's no special area.</value>  </data>
 
 </root>

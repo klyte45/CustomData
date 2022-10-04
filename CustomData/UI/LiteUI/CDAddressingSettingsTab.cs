@@ -87,6 +87,7 @@ B - {Str.cd_addressingSettingsTab_addressLineDescription_B}
 C - {Str.cd_addressingSettingsTab_addressLineDescription_C}
 D - {Str.cd_addressingSettingsTab_addressLineDescription_D}
 E - {Str.cd_addressingSettingsTab_addressLineDescription_E}
+F - {Str.cd_addressingSettingsTab_addressLineDescription_F}
 "
             });
         }

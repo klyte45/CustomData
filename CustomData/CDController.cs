@@ -1,4 +1,5 @@
-﻿using CustomData.Utils;
+﻿using CustomData.UI;
+using CustomData.Utils;
 using Kwytto.Interfaces;
 using Kwytto.Utils;
 using MonoMod.Utils;
@@ -39,6 +40,8 @@ namespace CustomData
             LoadGeneralNames();
             LoadRoadPatternFiles();
             LoadSimplePatterns();
+
+            _ = CDAddressWindow.Instance;
         }
         public static void LoadGeneralNames()
         {
