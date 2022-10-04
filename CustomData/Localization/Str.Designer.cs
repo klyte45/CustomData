@@ -152,7 +152,7 @@ namespace CustomData.Localization {
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a There are all letters that represents a special meaning in addresses lines.
-        ///Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;&quot;between double quotes&quot;&lt;/color&gt;.
+        ///Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally.
         ///The text written between brackets &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; won&apos;t be shown if there&apos;s no district.
         ///The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won&apos;t be shown if there&apos;s no special area..
         /// </summary>
@@ -362,7 +362,7 @@ namespace CustomData.Localization {
         
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a There are all letters that have a special value in the postal code formatting.
-        ///Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally.
+        ///Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;&quot;between double quotes&quot;&lt;/color&gt;.
         ///Unlisted characters will always be shown literally..
         /// </summary>
         internal static string cd_addressingSettingsTab_postalCodeHelpHeaderText {
@@ -381,7 +381,7 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Addressing Settings.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Addressing settings.
         /// </summary>
         internal static string cd_addressingSettingsTab_title {
             get {
@@ -417,11 +417,47 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Areas&apos; Naming.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Areas&apos; naming.
         /// </summary>
         internal static string cd_areasNamingTab_title {
             get {
                 return ResourceManager.GetString("cd_areasNamingTab_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cargo stations.
+        /// </summary>
+        internal static string cd_autoNamingBuildingTab_cargoStationsNamingHeader {
+            get {
+                return ResourceManager.GetString("cd_autoNamingBuildingTab_cargoStationsNamingHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Passenger stations.
+        /// </summary>
+        internal static string cd_autoNamingBuildingTab_passengerStationsNamingHeader {
+            get {
+                return ResourceManager.GetString("cd_autoNamingBuildingTab_passengerStationsNamingHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Use address&apos; first line as name.
+        /// </summary>
+        internal static string cd_autoNamingBuildingTab_ricoNamingHeader {
+            get {
+                return ResourceManager.GetString("cd_autoNamingBuildingTab_ricoNamingHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Building auto naming.
+        /// </summary>
+        internal static string cd_autoNamingBuildingTab_title {
+            get {
+                return ResourceManager.GetString("cd_autoNamingBuildingTab_title", resourceCulture);
             }
         }
         
@@ -463,7 +499,7 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Cims&apos; Naming.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cims&apos; naming.
         /// </summary>
         internal static string cd_cimNamingTab_title {
             get {
@@ -684,6 +720,195 @@ namespace CustomData.Localization {
         internal static string cd_Enum__DistrictAreaType_Regular {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Regular", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cargo Airports.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_AirplaneCargo {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_AirplaneCargo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Passenger Airports.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_AirplanePassenger {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_AirplanePassenger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Blimps Stops.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_Blimps {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Blimps", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Bus Stations.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_Bus {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Bus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cable Car Buildings.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_CableCar {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_CableCar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Commercial Zone.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_CommercialZone {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_CommercialZone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Ferryboats Harbors.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_Ferry {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Ferry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Helicopter Stops.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_Helicopters {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Helicopters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Industrial Zone.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_IndustrialZone {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_IndustrialZone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Intercity Bus Stations.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_IntercityBus {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_IntercityBus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Metro Stations.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_Metro {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Metro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Monorail Stations.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_Monorail {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Monorail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Offices Zone.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_OfficeZone {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_OfficeZone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Residential Zone.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_ResidentialZone {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_ResidentialZone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cargo Harbors.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_ShipCargo {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_ShipCargo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Passenger Harbors.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_ShipPassenger {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_ShipPassenger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Taxi Stands.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_Taxi {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Taxi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cargo Train Stations.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_TrainCargo {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_TrainCargo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Passenger Train Stations.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_TrainPassenger {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_TrainPassenger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Tram Stations.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_Tram {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Tram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Trolleybus Stations.
+        /// </summary>
+        internal static string cd_Enum__UseGeneratedNameCategories_Trolleybus {
+            get {
+                return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Trolleybus", resourceCulture);
             }
         }
         

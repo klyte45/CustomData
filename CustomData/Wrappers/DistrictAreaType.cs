@@ -2,7 +2,7 @@
 
 namespace CustomData.Wrappers
 {
-    public enum DistrictAreaType : long
+    public enum DistrictAreaType
     {
         Regular,
         Parks_Amusement,

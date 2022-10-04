@@ -84,8 +84,9 @@ namespace CustomData.UI
                 {
                     m_lastBuildingId = WorldInfoPanel.GetCurrentInstanceID().Building;
                     ref Building building = ref BuildingManager.instance.m_buildings.m_buffer[m_lastBuildingId];
-                    CDStorage.Instance.GetAddressLines(building.CalculateSidewalkPosition(), building.m_position, out addressesLines);
+                    CDStorage.Instance.GetOwnCitySettings().GetAddressLines(building.CalculateSidewalkPosition(), building.m_position, out addressesLines);
                     Visible = addressesLines != null;
+                    Title = BuildingManager.instance.GetBuildingName(m_lastBuildingId, default);
                 }
 
             }
@@ -93,10 +94,6 @@ namespace CustomData.UI
             {
                 Visible = false;
                 m_lastBuildingId = 0;
-            }
-            if (Visible)
-            {
-                Title = BuildingManager.instance.GetBuildingName(m_lastBuildingId, default);
             }
         }
         protected override void OnWindowDestroyed()

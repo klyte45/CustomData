@@ -4,7 +4,9 @@ using Kwytto.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using UnityEngine;
+using static CustomData.Utils.SegmentUtils;
 using static CustomData.Xml.InstanceDataExtensionXml;
 
 namespace CustomData.Wrappers
@@ -28,6 +30,115 @@ namespace CustomData.Wrappers
                 m_cachedPostalCodeTokens = null;
             }
         }
+        public string AddressLine1 { get => xml.SafeGetReference(long.MaxValue).mainReference ?? "B A( - F)"; set => xml.SafeGetReference(0).mainReference = value; }
+        public string AddressLine2 { get => xml.SafeGetReference(long.MaxValue).qualifiedReference ?? "[D - ]C"; set => xml.SafeGetReference(0).qualifiedReference = value; }
+        public string AddressLine3 { get => xml.SafeGetReference(long.MaxValue).shortReference ?? "E"; set => xml.SafeGetReference(0).shortReference = value; }
+
+
+        #region Addresses
+
+        public void GetAddressLines(Vector3 sidewalk, Vector3 midPosBuilding, out string[] addressLines)
+        {
+            addressLines = null;
+            string line1 = AddressLine1;
+            string line2 = AddressLine2;
+            string line3 = AddressLine3;
+            string format = (line1 + "≠" + line2 + "≠" + line3);
+
+            Regex regexEscape = new Regex(@"\\([ABCDEF[\]\\()])", RegexOptions.Compiled);
+            foreach (Match escapeMatch in regexEscape.Matches(format))
+            {
+                format = format.Replace($"\\{escapeMatch.Groups[1].Value}", char.ConvertFromUtf32(0xFF00 + escapeMatch.Groups[1].Value[0]));
+            }
+
+
+            string a = "";//street
+            int b = 0;//number
+            string c = SimulationManager.instance.m_metaData.m_CityName;//city
+            string d = "";//district
+            string e = "";//zipcode
+            string f = "";//area name
+
+            if (format.ToCharArray().Intersect("AB".ToCharArray()).Count() > 0)
+            {
+                if (!GetStreetAndNumber(sidewalk, midPosBuilding, out a, out b))
+                {
+                    return;
+                }
+            }
+
+            if (format.ToCharArray().Intersect("D[]".ToCharArray()).Count() > 0)
+            {
+                int districtId = DistrictManager.instance.GetDistrict(midPosBuilding);
+                if (districtId > 0)
+                {
+                    d = DistrictManager.instance.GetDistrictName(districtId);
+                    format = Regex.Replace(format, @"\]|\[", "", RegexOptions.IgnoreCase | RegexOptions.Multiline);
+                }
+                else
+                {
+                    format = Regex.Replace(format, @"\[[^]]*\]", "", RegexOptions.IgnoreCase | RegexOptions.Multiline);
+                }
+
+            }
+
+            if (format.Contains("E"))
+            {
+                e = TokenToPostalCode(sidewalk);
+            }
+            if (format.Intersect("F()".ToCharArray()).Count() > 0)
+            {
+                int parkId = DistrictManager.instance.GetPark(midPosBuilding);
+                if (parkId > 0)
+                {
+                    f = DistrictManager.instance.GetParkName(parkId);
+                    format = Regex.Replace(format, @"\)|\(", "", RegexOptions.IgnoreCase | RegexOptions.Multiline);
+                }
+                else
+                {
+                    format = Regex.Replace(format, @"\([^\)]*\)", "", RegexOptions.IgnoreCase | RegexOptions.Multiline);
+                }
+            }
+            ParseToFormatableString(ref format, 6);
+
+            addressLines = new string(string.Format(format, a, b, c, d, e, f).Select(x => x > 0xff00 && x < 0xffff ? (char)(x - 0xFF00) : x).ToArray()).Split("≠".ToCharArray());
+        }
+
+        internal static bool GetStreetAndNumber(Vector3 sidewalk, Vector3 midPosBuilding, out string streetName, out int number)
+        {
+            SegmentUtils.GetNearestSegment(sidewalk, out Vector3 targetPosition, out float targetLength, out ushort targetSegmentId);
+            if (targetSegmentId == 0)
+            {
+                streetName = string.Empty;
+                number = 0;
+                return false;
+            }
+            var seed = NetManager.instance.m_segments.m_buffer[targetSegmentId].m_nameSeed;
+            var startSrc = MileageStartSource.DEFAULT;
+            var offsetMeters = 0;
+            //if (AdrNameSeedDataXml.Instance.NameSeedConfigs.TryGetValue(seed, out AdrNameSeedConfig seedConf))
+            //{
+            //    startSrc = seedConf.MileageStartSrc;
+            //    offsetMeters = (int)seedConf.MileageOffset;
+            //}
+
+            return SegmentUtils.GetAddressStreetAndNumber(targetPosition, targetSegmentId, targetLength, midPosBuilding, startSrc, offsetMeters, out number, out streetName);
+        }
+
+        private static void ParseToFormatableString(ref string input, byte count)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                var targetChar = ((char)('A' + i)).ToString();
+                input = input.Replace($"\\{targetChar}", "☆").Replace(targetChar, $"{{{i}}}").Replace("☆", targetChar);
+            }
+        }
+        #endregion
+
+
+
+
+        #region Postal Code
 
         private PostalCodeTokenContainer[] m_cachedPostalCodeTokens;
 
@@ -304,6 +415,7 @@ namespace CustomData.Wrappers
             CY_I,
             CY_D,
         }
+        #endregion
     }
 
 }

@@ -1,4 +1,5 @@
-﻿using CustomData.UI;
+﻿using CustomData.Overrides;
+using CustomData.UI;
 using CustomData.Utils;
 using Kwytto.Interfaces;
 using Kwytto.Utils;
@@ -31,6 +32,8 @@ namespace CustomData
         public static string[] LoadedRoadPatternsIdx { get; private set; }
         internal static Dictionary<string, string[]> LoadedSimplePatterns { get; } = new Dictionary<string, string[]>();
         public static string[] LoadedSimplePatternsIdx { get; private set; }
+
+        public CDFacade Facade { get; } = new CDFacade();
 
         public void Awake()
         {

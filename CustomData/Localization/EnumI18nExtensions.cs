@@ -2,6 +2,8 @@
 using Kwytto.Localization;
 using System;
 using System.Linq;
+using static CustomData.Wrappers.BuildingGeneralDW;
+
 namespace CustomData.Localization
 {
     internal static class EnumI18nExtensions
@@ -24,6 +26,27 @@ namespace CustomData.Localization
                 case DistrictAreaType.Campus_Regular: return Str.cd_Enum__DistrictAreaType_Campus_Regular;
                 case DistrictAreaType.Airports: return Str.cd_Enum__DistrictAreaType_Airports;
                 case DistrictAreaType.Pedestrian: return Str.cd_Enum__DistrictAreaType_Pedestrian;
+                case UseGeneratedNameCategories.Bus: return Str.cd_Enum__UseGeneratedNameCategories_Bus;
+                case UseGeneratedNameCategories.IntercityBus: return Str.cd_Enum__UseGeneratedNameCategories_IntercityBus;
+                case UseGeneratedNameCategories.Trolleybus: return Str.cd_Enum__UseGeneratedNameCategories_Trolleybus;
+                case UseGeneratedNameCategories.Tram: return Str.cd_Enum__UseGeneratedNameCategories_Tram;
+                case UseGeneratedNameCategories.TrainPassenger: return Str.cd_Enum__UseGeneratedNameCategories_TrainPassenger;
+                case UseGeneratedNameCategories.Monorail: return Str.cd_Enum__UseGeneratedNameCategories_Monorail;
+                case UseGeneratedNameCategories.Metro: return Str.cd_Enum__UseGeneratedNameCategories_Metro;
+                case UseGeneratedNameCategories.CableCar: return Str.cd_Enum__UseGeneratedNameCategories_CableCar;
+                case UseGeneratedNameCategories.Ferry: return Str.cd_Enum__UseGeneratedNameCategories_Ferry;
+                case UseGeneratedNameCategories.ShipPassenger: return Str.cd_Enum__UseGeneratedNameCategories_ShipPassenger;
+                case UseGeneratedNameCategories.Helicopters: return Str.cd_Enum__UseGeneratedNameCategories_Helicopters;
+                case UseGeneratedNameCategories.Blimps: return Str.cd_Enum__UseGeneratedNameCategories_Blimps;
+                case UseGeneratedNameCategories.AirplanePassenger: return Str.cd_Enum__UseGeneratedNameCategories_AirplanePassenger;
+                case UseGeneratedNameCategories.ShipCargo: return Str.cd_Enum__UseGeneratedNameCategories_ShipCargo;
+                case UseGeneratedNameCategories.TrainCargo: return Str.cd_Enum__UseGeneratedNameCategories_TrainCargo;
+                case UseGeneratedNameCategories.AirplaneCargo: return Str.cd_Enum__UseGeneratedNameCategories_AirplaneCargo;
+                case UseGeneratedNameCategories.ResidentialZone: return Str.cd_Enum__UseGeneratedNameCategories_ResidentialZone;
+                case UseGeneratedNameCategories.CommercialZone: return Str.cd_Enum__UseGeneratedNameCategories_CommercialZone;
+                case UseGeneratedNameCategories.IndustrialZone: return Str.cd_Enum__UseGeneratedNameCategories_IndustrialZone;
+                case UseGeneratedNameCategories.OfficeZone: return Str.cd_Enum__UseGeneratedNameCategories_OfficeZone;
+                case UseGeneratedNameCategories.Taxi: return Str.cd_Enum__UseGeneratedNameCategories_Taxi;
             }
             return variable.ValueToI18nKwytto();
         }

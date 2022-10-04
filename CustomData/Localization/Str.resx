@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="cd_cimNamingTab_title" xml:space="preserve">
-    <value>Cims' Naming</value>
+    <value>Cims' naming</value>
   </data>
   <data name="cd_districtTab_cityColor" xml:space="preserve">
     <value>City color</value>
@@ -185,7 +185,7 @@
     <value>&lt;i&gt;&lt;color=#FFFF00&gt;NOTE:&lt;/color&gt; Simple pattern files are like the name files, but requires to have a placeholder "&lt;color=#00ff00&gt;{0}&lt;/color&gt;" to be replaced by the generated name.&lt;/i&gt;</value>
   </data>
   <data name="cd_areasNamingTab_title" xml:space="preserve">
-    <value>Areas' Naming</value>
+    <value>Areas' naming</value>
   </data>
   <data name="cd_areasNamingTab_simplePatternFile" xml:space="preserve">
     <value>Simple patterns file</value>
@@ -236,47 +236,191 @@
     <value>Regular districts</value>
   </data>
   <data name="cd_addressingSettingsTab_title" xml:space="preserve">
-    <value>Addressing Settings</value>
+    <value>Addressing settings</value>
   </data>
-  <data name="cd_addressingSettingsTab_addressesLines" xml:space="preserve">    <value>Addresses lines</value>  </data>
-  <data name="cd_addressingSettingsTab_addressLine1" xml:space="preserve">    <value>Address line 1</value>  </data>
-  <data name="cd_addressingSettingsTab_addressLine2" xml:space="preserve">    <value>Address line 2</value>  </data>
-  <data name="cd_addressingSettingsTab_addressLine3" xml:space="preserve">    <value>Address line 3</value>  </data>
-  <data name="cd_addressingSettingsTab_citywidePostalCode" xml:space="preserve">    <value>City postal code digits</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeFormat" xml:space="preserve">    <value>Postal code format</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeSettings" xml:space="preserve">    <value>Postal code settings</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_A" xml:space="preserve">    <value>1st digit of name seed id of the segment (0-6)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_B" xml:space="preserve">    <value>2nd digit of name seed id of the segment (0-9)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_C" xml:space="preserve">    <value>3rd digit of name seed id of the segment (0-9)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_D" xml:space="preserve">    <value>4th digit of name seed id of the segment (0-9)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_E" xml:space="preserve">    <value>5th digit of name seed id of the segment (0-9)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_F" xml:space="preserve">    <value>1st digit of segment id of the segment (0-3)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_G" xml:space="preserve">    <value>2nd digit of segment id of the segment (0-9)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_H" xml:space="preserve">    <value>3rd digit of segment id of the segment (0-9)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_I" xml:space="preserve">    <value>4th digit of segment id of the segment (0-9)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_J" xml:space="preserve">    <value>5th digit of segment id of the segment (0-9)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_K" xml:space="preserve">    <value>Hundreds digit from citywide postal code</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_L" xml:space="preserve">    <value>Tens digit from citywide postal code</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_M" xml:space="preserve">    <value>Units digit from citywide postal code</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_N" xml:space="preserve">    <value>Hundreds digit from district postal code</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_O" xml:space="preserve">    <value>Tens digit from district postal code</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_P" xml:space="preserve">    <value>Units digit from district postal code</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_X" xml:space="preserve">    <value>Map tile coordinate in East-West axis (0-8)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_x_" xml:space="preserve">    <value>Tenths of tile coordinate in East-West axis (0-9)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_Y" xml:space="preserve">    <value>Map tile coordinate in North-South axis (0-8)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeDescription_y_" xml:space="preserve">    <value>Tenths of tile coordinate in North-South axis (0-9)</value>  </data>
-  <data name="cd_addressingSettingsTab_postalCodeHelpHeaderText" xml:space="preserve">    <value>There are all letters that have a special value in the postal code formatting.
-Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally.
-Unlisted characters will always be shown literally.</value>  </data>
-  <data name="cd_addressingSettingsTab_addressLineDescription_A" xml:space="preserve">    <value>Street name</value>  </data>
-  <data name="cd_addressingSettingsTab_addressLineDescription_B" xml:space="preserve">    <value>Number (distance from start of street)</value>  </data>
-  <data name="cd_addressingSettingsTab_addressLineDescription_C" xml:space="preserve">    <value>City Name</value>  </data>
-  <data name="cd_addressingSettingsTab_addressLineDescription_D" xml:space="preserve">    <value>District</value>  </data>
-  <data name="cd_addressingSettingsTab_addressLineDescription_E" xml:space="preserve">    <value>Postal Code</value>  </data>
-  <data name="cd_addressingSettingsTab_addressLineDescription_F" xml:space="preserve">    <value>Special Area name (Park, industry, etc...)</value>  </data>
-  <data name="cd_addressingSettingsTab_addressLineHelpHeaderText" xml:space="preserve">    <value>There are all letters that represents a special meaning in addresses lines.
+  <data name="cd_addressingSettingsTab_addressesLines" xml:space="preserve">
+    <value>Addresses lines</value>
+  </data>
+  <data name="cd_addressingSettingsTab_addressLine1" xml:space="preserve">
+    <value>Address line 1</value>
+  </data>
+  <data name="cd_addressingSettingsTab_addressLine2" xml:space="preserve">
+    <value>Address line 2</value>
+  </data>
+  <data name="cd_addressingSettingsTab_addressLine3" xml:space="preserve">
+    <value>Address line 3</value>
+  </data>
+  <data name="cd_addressingSettingsTab_citywidePostalCode" xml:space="preserve">
+    <value>City postal code digits</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeFormat" xml:space="preserve">
+    <value>Postal code format</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeSettings" xml:space="preserve">
+    <value>Postal code settings</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_A" xml:space="preserve">
+    <value>1st digit of name seed id of the segment (0-6)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_B" xml:space="preserve">
+    <value>2nd digit of name seed id of the segment (0-9)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_C" xml:space="preserve">
+    <value>3rd digit of name seed id of the segment (0-9)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_D" xml:space="preserve">
+    <value>4th digit of name seed id of the segment (0-9)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_E" xml:space="preserve">
+    <value>5th digit of name seed id of the segment (0-9)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_F" xml:space="preserve">
+    <value>1st digit of segment id of the segment (0-3)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_G" xml:space="preserve">
+    <value>2nd digit of segment id of the segment (0-9)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_H" xml:space="preserve">
+    <value>3rd digit of segment id of the segment (0-9)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_I" xml:space="preserve">
+    <value>4th digit of segment id of the segment (0-9)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_J" xml:space="preserve">
+    <value>5th digit of segment id of the segment (0-9)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_K" xml:space="preserve">
+    <value>Hundreds digit from citywide postal code</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_L" xml:space="preserve">
+    <value>Tens digit from citywide postal code</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_M" xml:space="preserve">
+    <value>Units digit from citywide postal code</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_N" xml:space="preserve">
+    <value>Hundreds digit from district postal code</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_O" xml:space="preserve">
+    <value>Tens digit from district postal code</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_P" xml:space="preserve">
+    <value>Units digit from district postal code</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_X" xml:space="preserve">
+    <value>Map tile coordinate in East-West axis (0-8)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_x_" xml:space="preserve">
+    <value>Tenths of tile coordinate in East-West axis (0-9)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_Y" xml:space="preserve">
+    <value>Map tile coordinate in North-South axis (0-8)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_y_" xml:space="preserve">
+    <value>Tenths of tile coordinate in North-South axis (0-9)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_postalCodeHelpHeaderText" xml:space="preserve">
+    <value>There are all letters that have a special value in the postal code formatting.
 Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;"between double quotes"&lt;/color&gt;.
+Unlisted characters will always be shown literally.</value>
+  </data>
+  <data name="cd_addressingSettingsTab_addressLineDescription_A" xml:space="preserve">
+    <value>Street name</value>
+  </data>
+  <data name="cd_addressingSettingsTab_addressLineDescription_B" xml:space="preserve">
+    <value>Number (distance from start of street)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_addressLineDescription_C" xml:space="preserve">
+    <value>City Name</value>
+  </data>
+  <data name="cd_addressingSettingsTab_addressLineDescription_D" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="cd_addressingSettingsTab_addressLineDescription_E" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="cd_addressingSettingsTab_addressLineDescription_F" xml:space="preserve">
+    <value>Special Area name (Park, industry, etc...)</value>
+  </data>
+  <data name="cd_addressingSettingsTab_addressLineHelpHeaderText" xml:space="preserve">
+    <value>There are all letters that represents a special meaning in addresses lines.
+Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally.
 The text written between brackets &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; won't be shown if there's no district.
-The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won't be shown if there's no special area.</value>  </data>
-
+The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won't be shown if there's no special area.</value>
+  </data>
+  <data name="cd_autoNamingBuildingTab_title" xml:space="preserve">
+    <value>Building auto naming</value>
+  </data>
+  <data name="cd_autoNamingBuildingTab_cargoStationsNamingHeader" xml:space="preserve">
+    <value>Cargo stations</value>
+  </data>
+  <data name="cd_autoNamingBuildingTab_passengerStationsNamingHeader" xml:space="preserve">
+    <value>Passenger stations</value>
+  </data>
+  <data name="cd_autoNamingBuildingTab_ricoNamingHeader" xml:space="preserve">
+    <value>Use address' first line as name</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_CommercialZone" xml:space="preserve">
+    <value>Commercial Zone</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_AirplaneCargo" xml:space="preserve">
+    <value>Cargo Airports</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_AirplanePassenger" xml:space="preserve">
+    <value>Passenger Airports</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_Blimps" xml:space="preserve">
+    <value>Blimps Stops</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_Bus" xml:space="preserve">
+    <value>Bus Stations</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_CableCar" xml:space="preserve">
+    <value>Cable Car Buildings</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_Ferry" xml:space="preserve">
+    <value>Ferryboats Harbors</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_Helicopters" xml:space="preserve">
+    <value>Helicopter Stops</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_IndustrialZone" xml:space="preserve">
+    <value>Industrial Zone</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_IntercityBus" xml:space="preserve">
+    <value>Intercity Bus Stations</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_Metro" xml:space="preserve">
+    <value>Metro Stations</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_Monorail" xml:space="preserve">
+    <value>Monorail Stations</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_OfficeZone" xml:space="preserve">
+    <value>Offices Zone</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_ResidentialZone" xml:space="preserve">
+    <value>Residential Zone</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_ShipCargo" xml:space="preserve">
+    <value>Cargo Harbors</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_ShipPassenger" xml:space="preserve">
+    <value>Passenger Harbors</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_TrainCargo" xml:space="preserve">
+    <value>Cargo Train Stations</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_TrainPassenger" xml:space="preserve">
+    <value>Passenger Train Stations</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_Tram" xml:space="preserve">
+    <value>Tram Stations</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_Trolleybus" xml:space="preserve">
+    <value>Trolleybus Stations</value>
+  </data>
+  <data name="cd_Enum__UseGeneratedNameCategories_Taxi" xml:space="preserve">
+    <value>Taxi Stands</value>
+  </data>
 </root>

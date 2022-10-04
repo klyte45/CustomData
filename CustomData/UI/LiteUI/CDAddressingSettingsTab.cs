@@ -18,17 +18,12 @@ namespace CustomData.UI
         }
 
         private OwnCitySettingsDW m_parsedData = null;
-        private BuildingGeneralDW m_buildingData = null;
 
         public void DrawArea(Vector2 tabAreaSize)
         {
             if (m_parsedData is null)
             {
                 m_parsedData = CDStorage.Instance.GetOwnCitySettings();
-            }
-            if (m_buildingData is null)
-            {
-                m_buildingData = CDStorage.Instance.GetBuildingGeneralSettings();
             }
             using (new GUILayout.AreaScope(new Rect(default, tabAreaSize)))
             {
@@ -48,7 +43,7 @@ namespace CustomData.UI
                     GUILayout.Label(Str.cd_addressingSettingsTab_addressesLines);
                     using (new GUILayout.HorizontalScope())
                     {
-                        GUIKwyttoCommons.TextWithLabel(tabAreaSize.x - 20, Str.cd_addressingSettingsTab_addressLine1, m_buildingData.AddressLine1, (x) => m_buildingData.AddressLine1 = x);
+                        GUIKwyttoCommons.TextWithLabel(tabAreaSize.x - 20, Str.cd_addressingSettingsTab_addressLine1, m_parsedData.AddressLine1, (x) => m_parsedData.AddressLine1 = x);
                         if (GUILayout.Button("?", root.m_inlineBtnStyle))
                         {
                             ShowHelpAddressLinesCode();
@@ -56,7 +51,7 @@ namespace CustomData.UI
                     }
                     using (new GUILayout.HorizontalScope())
                     {
-                        GUIKwyttoCommons.TextWithLabel(tabAreaSize.x - 20, Str.cd_addressingSettingsTab_addressLine2, m_buildingData.AddressLine2, (x) => m_buildingData.AddressLine2 = x);
+                        GUIKwyttoCommons.TextWithLabel(tabAreaSize.x - 20, Str.cd_addressingSettingsTab_addressLine2, m_parsedData.AddressLine2, (x) => m_parsedData.AddressLine2 = x);
                         if (GUILayout.Button("?", root.m_inlineBtnStyle))
                         {
                             ShowHelpAddressLinesCode();
@@ -64,7 +59,7 @@ namespace CustomData.UI
                     }
                     using (new GUILayout.HorizontalScope())
                     {
-                        GUIKwyttoCommons.TextWithLabel(tabAreaSize.x - 20, Str.cd_addressingSettingsTab_addressLine3, m_buildingData.AddressLine3, (x) => m_buildingData.AddressLine3 = x);
+                        GUIKwyttoCommons.TextWithLabel(tabAreaSize.x - 20, Str.cd_addressingSettingsTab_addressLine3, m_parsedData.AddressLine3, (x) => m_parsedData.AddressLine3 = x);
                         if (GUILayout.Button("?", root.m_inlineBtnStyle))
                         {
                             ShowHelpAddressLinesCode();
