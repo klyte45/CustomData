@@ -15,6 +15,6 @@ namespace CustomData.Wrappers
         public string MalesFile { get => xml.mainReference; set => xml.mainReference = value; }
         public string FemalesFile { get => xml.shortReference; set => xml.shortReference = value; }
         public string SurnamesFile { get => xml.qualifiedReference; set => xml.qualifiedReference = value; }
-        public bool OrientalNaming { get => xml.HasAnyFlag(0x1); set => _ = value ? xml.AddFlag(0x1) : xml.RemoveFlag(0x1); }
+        public bool SurnameFirst { get => xml.HasAnyFlag(0x1); set => _ = value ? xml.AddFlag(0x1) : xml.RemoveFlag(0x1); }
     }
 }

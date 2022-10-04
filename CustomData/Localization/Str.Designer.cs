@@ -61,6 +61,52 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Female given names file.
+        /// </summary>
+        internal static string cd_cimNamingTab_femaleNamesTitle {
+            get {
+                return ResourceManager.GetString("cd_cimNamingTab_femaleNamesTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Male given names files.
+        /// </summary>
+        internal static string cd_cimNamingTab_maleNamesTitle {
+            get {
+                return ResourceManager.GetString("cd_cimNamingTab_maleNamesTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Surnames before given names
+        ///(only when using custom surnames).
+        /// </summary>
+        internal static string cd_cimNamingTab_surnameBeforeMainname {
+            get {
+                return ResourceManager.GetString("cd_cimNamingTab_surnameBeforeMainname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Surnames file.
+        /// </summary>
+        internal static string cd_cimNamingTab_surnamesTitle {
+            get {
+                return ResourceManager.GetString("cd_cimNamingTab_surnamesTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Cims&apos; Naming.
+        /// </summary>
+        internal static string cd_cimNamingTab_title {
+            get {
+                return ResourceManager.GetString("cd_cimNamingTab_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a City color.
         /// </summary>
         internal static string cd_districtTab_cityColor {

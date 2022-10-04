@@ -88,6 +88,8 @@ namespace CustomData.Xml
         }
 
         internal void ResetCachedCitiesRegion() => m_cachedCitiesSorted = null;
+
         #endregion
+        public CitizenGeneralDW GetCitizenData() => new CitizenGeneralDW(SafeGet(new InstanceID { Citizen = 0 }));
     }
 }

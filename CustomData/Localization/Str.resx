@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="cd_cimNamingTab_title" xml:space="preserve">
+    <value>Cims' Naming</value>
+  </data>
   <data name="cd_districtTab_cityColor" xml:space="preserve">
     <value>City color</value>
   </data>
@@ -165,4 +168,10 @@
   <data name="root_modDescription" xml:space="preserve">
     <value>Data storage to extra stuff for game Intances</value>
   </data>
+  <data name="cd_cimNamingTab_surnamesTitle" xml:space="preserve">    <value>Surnames file</value>  </data>
+  <data name="cd_cimNamingTab_femaleNamesTitle" xml:space="preserve">    <value>Female given names file</value>  </data>
+  <data name="cd_cimNamingTab_maleNamesTitle" xml:space="preserve">    <value>Male given names files</value>  </data>
+  <data name="cd_cimNamingTab_surnameBeforeMainname" xml:space="preserve">    <value>Surnames before given names
+(only when using custom surnames)</value>  </data>
+
 </root>

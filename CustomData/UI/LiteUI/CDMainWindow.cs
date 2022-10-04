@@ -62,7 +62,8 @@ namespace CustomData.UI
 
             var tabs = new IGUIVerticalITab[] {
                         new CDDistrictDataTab(this),
-                        new CDNeighborDataTab(this)
+                        new CDNeighborDataTab(this),
+                        new CDCitizenNamingTab(this)
                     };
             m_tabsContainer = new GUIVerticalTabsContainer(tabs)
             {
