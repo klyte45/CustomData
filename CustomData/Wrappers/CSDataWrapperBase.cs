@@ -1,4 +1,5 @@
 ﻿using CustomData.Xml;
+using System.Linq;
 
 namespace CustomData.Wrappers
 {
@@ -10,6 +11,7 @@ namespace CustomData.Wrappers
         protected abstract bool ExclusiveToIndex { get; }
         protected abstract bool AnyButIndex { get; }
         protected virtual int RefIndex { get; } = 0;
+        protected virtual uint[] DisallowedIndxes { get; } = new uint[0];
         public CSDataWrapperBase(InstanceDataExtensionXml xml)
         {
             if (xml?.Id.Type != RequiredType)
@@ -25,6 +27,10 @@ namespace CustomData.Wrappers
                 throw new System.Exception($"Invalid xml for Wrapper! (found Index '{xml.Id.Index:X6}', required '{RefIndex:X6}')");
             }
             if (AnyButIndex && xml.Id.Index == RefIndex)
+            {
+                throw new System.Exception($"Invalid xml for Wrapper! (found Index '{xml.Id.Index:X6}' that's not permitted to this wrapper!)");
+            }
+            if (DisallowedIndxes.Length > 0 && DisallowedIndxes.Contains(xml.Id.Index))
             {
                 throw new System.Exception($"Invalid xml for Wrapper! (found Index '{xml.Id.Index:X6}' that's not permitted to this wrapper!)");
             }

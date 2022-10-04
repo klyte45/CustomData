@@ -58,7 +58,7 @@ namespace CustomData.Xml
             {
                 m_cachedCitiesSorted = InstanceExtraData
                     .Values
-                    .Where(x => x.Id.Type == (InstanceType)InstanceIdUtils.TYPE_CD_REGIONCITIES && x.Id.Index > 0)
+                    .Where(x => x.Id.Type == (InstanceType)InstanceIdUtils.TYPE_CD_REGIONCITIES && x.Id.Index > 0 && x.Id.Index < 0xFFFFFF)
                     .Select(x =>
                     {
                         var obj = new RegionCitiesDW(x);
@@ -92,7 +92,8 @@ namespace CustomData.Xml
         #endregion
         public CitizenGeneralDW GetCitizenData() => new CitizenGeneralDW(SafeGet(new InstanceID { Citizen = 0 }));
 
-        public OwnCitySettingsDW GetOwnCitySettings() => new OwnCitySettingsDW(SafeGet(new InstanceID { Index = 0xff, Type = (InstanceType)InstanceIdUtils.TYPE_CD_REGIONCITIES }));
+        public OwnCitySettingsDW GetOwnCitySettings() => new OwnCitySettingsDW(SafeGet(new InstanceID { Index = 0xFFFFFF, Type = (InstanceType)InstanceIdUtils.TYPE_CD_REGIONCITIES }));
 
+        public BuildingGeneralDW GetBuildingGeneralSettings() => new BuildingGeneralDW(SafeGet(new InstanceID { Building = 0 }));
     }
 }

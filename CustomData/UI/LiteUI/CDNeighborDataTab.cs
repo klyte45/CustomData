@@ -66,7 +66,7 @@ namespace CustomData.UI
                         GUILayout.Label(Str.cd_neighborTab_azimuthDirectionShort, m_nowrapLabel, GUILayout.Width(80 * GUIWindow.ResolutionMultiplier));
                         GUILayout.Label(Str.cd_neighborTab_cityName, m_nowrapLabel);
                         GUILayout.Space(20 * GUIWindow.ResolutionMultiplier);
-                        if (GUILayout.Button(root.m_addButton, root.m_reloadBtnStyle))
+                        if (GUILayout.Button(root.m_addButton, root.m_inlineBtnStyle))
                         {
                             cdStorage.CreateRegionCity();
                             m_neighborTextureDirty = true;
@@ -103,12 +103,12 @@ namespace CustomData.UI
                                     city.Name = newValStr;
                                     m_neighborTextureDirty = true;
                                 }
-                                if (GUILayout.Button(root.m_reloadButton, root.m_reloadBtnStyle))
+                                if (GUILayout.Button(root.m_reloadButton, root.m_inlineBtnStyle))
                                 {
                                     city.Name = null;
                                     city.Seed = Random.Range(int.MinValue, int.MaxValue);
                                 }
-                                if (GUILayout.Button(root.m_excludeButton, root.m_reloadBtnStyle))
+                                if (GUILayout.Button(root.m_excludeButton, root.m_inlineBtnStyle))
                                 {
                                     cdStorage.RemoveCity(city.Id);
                                     m_neighborTextureDirty = true;

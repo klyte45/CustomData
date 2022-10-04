@@ -15,6 +15,10 @@ namespace CustomData.Wrappers
         protected override bool ExclusiveToIndex => false;
         protected override bool AnyButIndex => true;
         protected override int RefIndex { get; } = 0;
+        protected override uint[] DisallowedIndxes { get; } = new uint[]
+        {
+            0xFFFFFFu
+        };
         public RegionCitiesDW(InstanceDataExtensionXml xml) : base(xml)
         {
         }

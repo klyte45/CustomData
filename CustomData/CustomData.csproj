@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D8E34F69-179A-4F38-B011-07FCB4395ECF}</ProjectGuid>
+    <ProjectGuid>{D8E34F69-179A-4F38-B011-07FC04395EC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CustomData</RootNamespace>
@@ -34,8 +34,8 @@
     <EmbeddedResource Include="Localization\Str.*.resx" />
     <EmbeddedResource Include="Localization\Str.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Str.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Str.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Images\*.png" />
     <EmbeddedResource Include="UI\VersionNotes.txt" />
@@ -81,6 +81,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Str.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI\LiteUI\CDAddressingSettingsTab.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\KwyttoUtilityCD\KwyttoUtilityCD.csproj">

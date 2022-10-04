@@ -187,21 +187,94 @@
   <data name="cd_areasNamingTab_title" xml:space="preserve">
     <value>Areas' Naming</value>
   </data>
-  <data name="cd_areasNamingTab_simplePatternFile" xml:space="preserve">    <value>Simple patterns file</value>  </data>
-  <data name="cd_areasNamingTab_namesFile" xml:space="preserve">    <value>Names file</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Parks_CityPark" xml:space="preserve">    <value>&lt;color=#00FF00&gt;City Park Areas&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Airports" xml:space="preserve">    <value>&lt;color=#00FFFF&gt;Airport Areas&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Campus_Liberal" xml:space="preserve">    <value>&lt;color=#0044FF&gt;Liberal Arts College&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Campus_Regular" xml:space="preserve">    <value>&lt;color=#0044FF&gt;University&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Campus_Trade" xml:space="preserve">    <value>&lt;color=#0044FF&gt;Trade School&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Industry_Farming" xml:space="preserve">    <value>&lt;color=#FFFF00&gt;Farming Industry Areas&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Industry_Forest" xml:space="preserve">    <value>&lt;color=#FFFF00&gt;Forest Industry Areas&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Industry_Mining" xml:space="preserve">    <value>&lt;color=#FFFF00&gt;Mining Inudstry Areas&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Industry_Oil" xml:space="preserve">    <value>&lt;color=#FFFF00&gt;Oil Industry Areas&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Parks_Amusement" xml:space="preserve">    <value>&lt;color=#00FF00&gt;Amusement Parks&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Parks_Natural" xml:space="preserve">    <value>&lt;color=#00FF00&gt;Natural Reserves&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Parks_Zoo" xml:space="preserve">    <value>&lt;color=#00FF00&gt;Zoo Areas&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Pedestrian" xml:space="preserve">    <value>&lt;color=#888888&gt;Pedestrian Areas&lt;/color&gt;</value>  </data>
-  <data name="cd_Enum__DistrictAreaType_Regular" xml:space="preserve">    <value>Regular districts</value>  </data>
+  <data name="cd_areasNamingTab_simplePatternFile" xml:space="preserve">
+    <value>Simple patterns file</value>
+  </data>
+  <data name="cd_areasNamingTab_namesFile" xml:space="preserve">
+    <value>Names file</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Parks_CityPark" xml:space="preserve">
+    <value>&lt;color=#00FF00&gt;City Park Areas&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Airports" xml:space="preserve">
+    <value>&lt;color=#00FFFF&gt;Airport Areas&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Campus_Liberal" xml:space="preserve">
+    <value>&lt;color=#0044FF&gt;Liberal Arts College&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Campus_Regular" xml:space="preserve">
+    <value>&lt;color=#0044FF&gt;University&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Campus_Trade" xml:space="preserve">
+    <value>&lt;color=#0044FF&gt;Trade School&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Industry_Farming" xml:space="preserve">
+    <value>&lt;color=#FFFF00&gt;Farming Industry Areas&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Industry_Forest" xml:space="preserve">
+    <value>&lt;color=#FFFF00&gt;Forest Industry Areas&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Industry_Mining" xml:space="preserve">
+    <value>&lt;color=#FFFF00&gt;Mining Inudstry Areas&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Industry_Oil" xml:space="preserve">
+    <value>&lt;color=#FFFF00&gt;Oil Industry Areas&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Parks_Amusement" xml:space="preserve">
+    <value>&lt;color=#00FF00&gt;Amusement Parks&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Parks_Natural" xml:space="preserve">
+    <value>&lt;color=#00FF00&gt;Natural Reserves&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Parks_Zoo" xml:space="preserve">
+    <value>&lt;color=#00FF00&gt;Zoo Areas&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Pedestrian" xml:space="preserve">
+    <value>&lt;color=#888888&gt;Pedestrian Areas&lt;/color&gt;</value>
+  </data>
+  <data name="cd_Enum__DistrictAreaType_Regular" xml:space="preserve">
+    <value>Regular districts</value>
+  </data>
+  <data name="cd_addressingSettingsTab_title" xml:space="preserve">
+    <value>Addressing Settings</value>
+  </data>
+  <data name="cd_addressingSettingsTab_addressesLines" xml:space="preserve">    <value>Addresses lines</value>  </data>
+  <data name="cd_addressingSettingsTab_addressLine1" xml:space="preserve">    <value>Address line 1</value>  </data>
+  <data name="cd_addressingSettingsTab_addressLine2" xml:space="preserve">    <value>Address line 2</value>  </data>
+  <data name="cd_addressingSettingsTab_addressLine3" xml:space="preserve">    <value>Address line 3</value>  </data>
+  <data name="cd_addressingSettingsTab_citywidePostalCode" xml:space="preserve">    <value>City postal code digits</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeFormat" xml:space="preserve">    <value>Postal code format</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeSettings" xml:space="preserve">    <value>Postal code settings</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_A" xml:space="preserve">    <value>1st digit of name seed id of the segment (0-6)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_B" xml:space="preserve">    <value>2nd digit of name seed id of the segment (0-9)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_C" xml:space="preserve">    <value>3rd digit of name seed id of the segment (0-9)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_D" xml:space="preserve">    <value>4th digit of name seed id of the segment (0-9)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_E" xml:space="preserve">    <value>5th digit of name seed id of the segment (0-9)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_F" xml:space="preserve">    <value>1st digit of segment id of the segment (0-3)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_G" xml:space="preserve">    <value>2nd digit of segment id of the segment (0-9)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_H" xml:space="preserve">    <value>3rd digit of segment id of the segment (0-9)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_I" xml:space="preserve">    <value>4th digit of segment id of the segment (0-9)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_J" xml:space="preserve">    <value>5th digit of segment id of the segment (0-9)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_K" xml:space="preserve">    <value>Hundreds digit from citywide postal code</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_L" xml:space="preserve">    <value>Tens digit from citywide postal code</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_M" xml:space="preserve">    <value>Units digit from citywide postal code</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_N" xml:space="preserve">    <value>Hundreds digit from district postal code</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_O" xml:space="preserve">    <value>Tens digit from district postal code</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_P" xml:space="preserve">    <value>Units digit from district postal code</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_X" xml:space="preserve">    <value>Map tile coordinate in East-West axis (0-8)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_x_" xml:space="preserve">    <value>Tenths of tile coordinate in East-West axis (0-9)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_Y" xml:space="preserve">    <value>Map tile coordinate in North-South axis (0-8)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeDescription_y_" xml:space="preserve">    <value>Tenths of tile coordinate in North-South axis (0-9)</value>  </data>
+  <data name="cd_addressingSettingsTab_postalCodeHelpHeaderText" xml:space="preserve">    <value>There are all letters that have a special value in the postal code formatting.
+Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;"between double quotes"&lt;/color&gt;.
+Unlisted characters will always be shown literally.</value>  </data>
+  <data name="cd_addressingSettingsTab_addressLineDescription_A" xml:space="preserve">    <value>Street name</value>  </data>
+  <data name="cd_addressingSettingsTab_addressLineDescription_B" xml:space="preserve">    <value>Number (distance from start of street)</value>  </data>
+  <data name="cd_addressingSettingsTab_addressLineDescription_C" xml:space="preserve">    <value>City Name</value>  </data>
+  <data name="cd_addressingSettingsTab_addressLineDescription_D" xml:space="preserve">    <value>District</value>  </data>
+  <data name="cd_addressingSettingsTab_addressLineDescription_E" xml:space="preserve">    <value>Postal Code</value>  </data>
+  <data name="cd_addressingSettingsTab_addressLineHelpHeaderText" xml:space="preserve">    <value>There are all letters that represents a special meaning in addresses lines.
+Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;"between double quotes"&lt;/color&gt;.
+The text written between brackets &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; won't be shown if there's no district.</value>  </data>
 
 </root>

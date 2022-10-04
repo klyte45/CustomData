@@ -61,6 +61,325 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Addresses lines.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_addressesLines {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_addressesLines", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Address line 1.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_addressLine1 {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_addressLine1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Address line 2.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_addressLine2 {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_addressLine2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Address line 3.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_addressLine3 {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_addressLine3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Street name.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_addressLineDescription_A {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_addressLineDescription_A", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Number (distance from start of street).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_addressLineDescription_B {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_addressLineDescription_B", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a City Name.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_addressLineDescription_C {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_addressLineDescription_C", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a District.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_addressLineDescription_D {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_addressLineDescription_D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Postal Code.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_addressLineDescription_E {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_addressLineDescription_E", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a There are all letters that represents a special meaning in addresses lines.
+        ///Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;&quot;between double quotes&quot;&lt;/color&gt;.
+        ///The text written between brackets &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; won&apos;t be shown if there&apos;s no district..
+        /// </summary>
+        internal static string cd_addressingSettingsTab_addressLineHelpHeaderText {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_addressLineHelpHeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a City postal code digits.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_citywidePostalCode {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_citywidePostalCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 1st digit of name seed id of the segment (0-6).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_A {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_A", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 2nd digit of name seed id of the segment (0-9).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_B {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_B", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 3rd digit of name seed id of the segment (0-9).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_C {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_C", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 4th digit of name seed id of the segment (0-9).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_D {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 5th digit of name seed id of the segment (0-9).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_E {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_E", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 1st digit of segment id of the segment (0-3).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_F {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_F", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 2nd digit of segment id of the segment (0-9).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_G {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_G", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 3rd digit of segment id of the segment (0-9).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_H {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_H", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 4th digit of segment id of the segment (0-9).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_I {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_I", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 5th digit of segment id of the segment (0-9).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_J {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_J", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Hundreds digit from citywide postal code.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_K {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_K", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Tens digit from citywide postal code.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_L {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_L", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Units digit from citywide postal code.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_M {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_M", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Hundreds digit from district postal code.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_N {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_N", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Tens digit from district postal code.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_O {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_O", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Units digit from district postal code.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_P {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_P", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Map tile coordinate in East-West axis (0-8).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_X {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_X", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Tenths of tile coordinate in East-West axis (0-9).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_x_ {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_x_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Map tile coordinate in North-South axis (0-8).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_Y {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_Y", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Tenths of tile coordinate in North-South axis (0-9).
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeDescription_y_ {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_y_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Postal code format.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeFormat {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a There are all letters that have a special value in the postal code formatting.
+        ///Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;&quot;between double quotes&quot;&lt;/color&gt;.
+        ///Unlisted characters will always be shown literally..
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeHelpHeaderText {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeHelpHeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Postal code settings.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_postalCodeSettings {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Addressing Settings.
+        /// </summary>
+        internal static string cd_addressingSettingsTab_title {
+            get {
+                return ResourceManager.GetString("cd_addressingSettingsTab_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Names file.
         /// </summary>
         internal static string cd_areasNamingTab_namesFile {

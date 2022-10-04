@@ -46,7 +46,7 @@ namespace CustomData.UI
                     using (new GUILayout.HorizontalScope())
                     {
                         GUIKwyttoCommons.AddComboBox(tabAreaSize.x - 30, Str.cd_districtTab_districtToChange, ref m_selectedIdxDistrict, m_cachedDistrictOptions, root);
-                        if (GUILayout.Button(root.m_reloadButton, root.m_reloadBtnStyle))
+                        if (GUILayout.Button(root.m_reloadButton, root.m_inlineBtnStyle))
                         {
                             ReloadDistrictOptions();
                         }
@@ -100,7 +100,7 @@ namespace CustomData.UI
                     using (new GUILayout.HorizontalScope())
                     {
                         GUIKwyttoCommons.AddIntField(tabAreaSize.x - 20 * GUIWindow.ResolutionMultiplier, selectedDistrictId == 0 ? Str.cd_districtTab_postalCodeDigitsFallback : Str.cd_districtTab_postalCodeDigits, m_parsedData.DigitsPostalCode ?? selectedDistrictId, (x) => m_parsedData.DigitsPostalCode = x, true, 0, 999, "000");
-                        if (GUILayout.Button(root.m_clearButton, root.m_reloadBtnStyle))
+                        if (GUILayout.Button(root.m_clearButton, root.m_inlineBtnStyle))
                         {
                             m_parsedData.DigitsPostalCode = null;
                         }
@@ -108,7 +108,7 @@ namespace CustomData.UI
                     using (new GUILayout.HorizontalScope())
                     {
                         GUIKwyttoCommons.AddColorPicker(selectedDistrictId == 0 ? Str.cd_districtTab_cityColor : Str.cd_districtTab_districtColor, root.m_colorPicker, m_parsedData.Color, (x) => m_parsedData.Color = x);
-                        if (GUILayout.Button(root.m_clearButton, root.m_reloadBtnStyle))
+                        if (GUILayout.Button(root.m_clearButton, root.m_inlineBtnStyle))
                         {
                             m_parsedData.Color = null;
                         }

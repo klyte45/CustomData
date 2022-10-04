@@ -9,13 +9,13 @@ namespace CustomData.Wrappers
         protected override InstanceType RequiredType => (InstanceType)InstanceIdUtils.TYPE_CD_REGIONCITIES;
         protected override bool ExclusiveToIndex => true;
         protected override bool AnyButIndex => false;
-        protected override int RefIndex { get; } = 0xff;
+        protected override int RefIndex { get; } = 0xFFFFFF;
         public OwnCitySettingsDW(InstanceDataExtensionXml xml) : base(xml)
         {
         }
         public ReferenceData GetDistrictGeneratorFile(DistrictAreaType type) => xml.SafeGetReference((long)type) ?? (xml.references[(long)type] = new ReferenceData());
         public int PostalCodeDigits { get => (xml.genericId ?? 0) % 1000; set => xml.genericId = value % 1000; }
-        public string PostalCodeFormat { get => xml.givenStringId; set => xml.givenStringId = value; }
+        public string PostalCodeFormat { get => xml.givenStringId ?? "LMNOP-BCE"; set => xml.givenStringId = value; }
     }
 
 }

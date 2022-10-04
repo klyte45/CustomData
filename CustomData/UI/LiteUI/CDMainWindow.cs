@@ -30,7 +30,7 @@ namespace CustomData.UI
         internal Texture2D m_clearButton;
         internal Texture2D m_folderButton;
         internal Texture2D m_addButton;
-        internal GUIStyle m_reloadBtnStyle;
+        internal GUIStyle m_inlineBtnStyle;
 
         internal GUIColorPicker m_colorPicker;
 
@@ -64,7 +64,8 @@ namespace CustomData.UI
                         new CDDistrictDataTab(this),
                         new CDNeighborDataTab(this),
                         new CDCitizenNamingTab(this),
-                        new CDAreasNamingTab(this)
+                        new CDAreasNamingTab(this),
+                        new CDAddressingSettingsTab(this)
                     };
             m_tabsContainer = new GUIVerticalTabsContainer(tabs)
             {
@@ -85,9 +86,9 @@ namespace CustomData.UI
 
         protected override void DrawWindow(Vector2 size)
         {
-            if (m_reloadBtnStyle is null)
+            if (m_inlineBtnStyle is null)
             {
-                m_reloadBtnStyle = new GUIStyle(GUI.skin.button)
+                m_inlineBtnStyle = new GUIStyle(GUI.skin.button)
                 {
                     fixedHeight = 20 * ResolutionMultiplier,
                     fixedWidth = 20 * ResolutionMultiplier,
@@ -116,15 +117,15 @@ namespace CustomData.UI
                 {
                     onSet(array[newValue]);
                 };
-                if (GUILayout.Button(m_clearButton, m_reloadBtnStyle))
+                if (GUILayout.Button(m_clearButton, m_inlineBtnStyle))
                 {
                     onSet(null);
                 }
-                if (GUILayout.Button(m_folderButton, m_reloadBtnStyle))
+                if (GUILayout.Button(m_folderButton, m_inlineBtnStyle))
                 {
                     ColossalFramework.Utils.OpenInFileBrowser(targetFolder);
                 }
-                if (GUILayout.Button(m_reloadButton, m_reloadBtnStyle))
+                if (GUILayout.Button(m_reloadButton, m_inlineBtnStyle))
                 {
                     onReload();
                 }
