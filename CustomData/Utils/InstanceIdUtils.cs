@@ -24,10 +24,7 @@
         public const byte TYPE_PARK = 0x14;
 
         public const byte TYPE_CD_REGIONCITIES = 0xDF;
-        public const byte TYPE_CD_SOCCERTEAMS = 0xDE;
-        public const byte TYPE_CD_BASKETBALLTEAMS = 0xDC;
-        public const byte TYPE_CD_FOOTBALLTEAMS = 0xDB;
-        public const byte TYPE_CD_BASEBALLTEAMS = 0xDA;
+        public const byte TYPE_CD_TEAMS = 0xDE;
         public const byte TYPE_CD_HIGHWAYKIND = 0xD9;
         public const byte TYPE_CD_HIGHWAYINSTANCE = 0xD8;
 
@@ -36,21 +33,5 @@
         {
             RawData = CURRENT_CITY_INSTANCE
         };
-
-        public static byte RegionCity(this InstanceID instance) => (byte)instance.Type == TYPE_CD_REGIONCITIES ? (byte)(instance.RawData & 0xFF) : (byte)0;
-        public static ushort SoccerTeam(this InstanceID instance) => (byte)instance.Type == TYPE_CD_SOCCERTEAMS ? (ushort)(instance.RawData & 0xFFFF) : (ushort)0;
-        public static ushort BasketballTeam(this InstanceID instance) => (byte)instance.Type == TYPE_CD_BASKETBALLTEAMS ? (ushort)(instance.RawData & 0xFFFF) : (ushort)0;
-        public static ushort FootballTeam(this InstanceID instance) => (byte)instance.Type == TYPE_CD_FOOTBALLTEAMS ? (ushort)(instance.RawData & 0xFFFF) : (ushort)0;
-        public static ushort BaseballTeam(this InstanceID instance) => (byte)instance.Type == TYPE_CD_BASEBALLTEAMS ? (ushort)(instance.RawData & 0xFFFF) : (ushort)0;
-        public static byte HighwayKind(this InstanceID instance) => (byte)instance.Type == TYPE_CD_HIGHWAYKIND ? (byte)(instance.RawData & 0xFF) : (byte)0;
-        public static ushort HighwayInstance(this InstanceID instance) => (byte)instance.Type == TYPE_CD_HIGHWAYINSTANCE ? (ushort)(instance.RawData & 0xFFFF) : (ushort)0;
-
-
-        public static byte SoccerTeamCity(this InstanceID instance) => (byte)instance.Type == TYPE_CD_SOCCERTEAMS ? (byte)((instance.RawData & 0xFF0000) >> 16) : (byte)0;
-        public static byte BasketballTeamCity(this InstanceID instance) => (byte)instance.Type == TYPE_CD_BASKETBALLTEAMS ? (byte)((instance.RawData & 0xFF0000) >> 16) : (byte)0;
-        public static byte FootballTeamCity(this InstanceID instance) => (byte)instance.Type == TYPE_CD_FOOTBALLTEAMS ? (byte)((instance.RawData & 0xFF0000) >> 16) : (byte)0;
-        public static byte BaseballTeamCity(this InstanceID instance) => (byte)instance.Type == TYPE_CD_BASEBALLTEAMS ? (byte)((instance.RawData & 0xFF0000) >> 16) : (byte)0;
-        public static byte HighwayInstanceKind(this InstanceID instance) => (byte)instance.Type == TYPE_CD_HIGHWAYINSTANCE ? (byte)((instance.RawData & 0xFF0000) >> 16) : (byte)0;
-
     }
 }

@@ -66,7 +66,7 @@ namespace CustomData.UI
                         new CDCitizenNamingTab(this),
                         new CDAreasNamingTab(this),
                         new CDAddressingSettingsTab(this),
-                        new CDAutoNameBuildingTab(this)
+                        new CDAutoNameBuildingTab(this),
                     };
             m_tabsContainer = new GUIVerticalTabsContainer(tabs)
             {

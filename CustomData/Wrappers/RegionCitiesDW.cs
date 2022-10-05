@@ -42,9 +42,9 @@ namespace CustomData.Wrappers
         }
         public Color CityColor
         {
-            get => xml.color ?? GetColorForNumber(xml.Id.Index); set
+            get => xml.color1 ?? GetColorForNumber(xml.Id.Index); set
             {
-                xml.color = value;
+                xml.color1 = value;
                 m_cachedColorTextureDirty = true;
             }
         }

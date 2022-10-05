@@ -14,6 +14,12 @@ namespace CustomData.Wrappers
         protected virtual uint[] DisallowedIndxes { get; } = new uint[0];
         public CSDataWrapperBase(InstanceDataExtensionXml xml)
         {
+            this.xml = xml;
+            ValidateXml();
+        }
+
+        protected void ValidateXml()
+        {
             if (xml?.Id.Type != RequiredType)
             {
                 throw new System.Exception($"Invalid xml for Wrapper! (found Type '{(((int)xml?.Id.Type).ToString("X2") ?? "null")}', required '{(int)RequiredType:X2}')");
@@ -34,7 +40,6 @@ namespace CustomData.Wrappers
             {
                 throw new System.Exception($"Invalid xml for Wrapper! (found Index '{xml.Id.Index:X6}' that's not permitted to this wrapper!)");
             }
-            this.xml = xml;
         }
     }
 

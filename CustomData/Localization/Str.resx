@@ -423,4 +423,10 @@ The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won'
   <data name="cd_Enum__UseGeneratedNameCategories_Taxi" xml:space="preserve">
     <value>Taxi Stands</value>
   </data>
+  <data name="cd_stadiumsTab_selectStadiumLabel" xml:space="preserve">
+    <value>Select Arena/Stadium</value>
+  </data>
+  <data name="cd_stadiumsTab_title" xml:space="preserve">
+    <value>Arenas &amp; Stadiums</value>
+  </data>
 </root>

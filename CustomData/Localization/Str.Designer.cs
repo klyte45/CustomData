@@ -958,6 +958,24 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Select Arena/Stadium.
+        /// </summary>
+        internal static string cd_stadiumsTab_selectStadiumLabel {
+            get {
+                return ResourceManager.GetString("cd_stadiumsTab_selectStadiumLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Arenas &amp; Stadiums.
+        /// </summary>
+        internal static string cd_stadiumsTab_title {
+            get {
+                return ResourceManager.GetString("cd_stadiumsTab_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Data storage to extra stuff for game Intances.
         /// </summary>
         internal static string root_modDescription {

@@ -55,8 +55,12 @@ namespace CustomData.Xml
         public uint? sourceEnumeratorReceivedId;
         [XmlAttribute("sourceEnumeratorNextId")]
         public uint? sourceEnumeratorNextId;
-        [XmlElement("color")]
-        public Color? color;
+        [XmlElement("color1")]
+        public Color? color1;
+        [XmlElement("color2")]
+        public Color? color2;
+        [XmlElement("color3")]
+        public Color? color3;
         [XmlIgnore]
         public Texture2D icon;
         [XmlElement("icon")]
