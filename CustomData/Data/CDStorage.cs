@@ -3,10 +3,7 @@ using CustomData.Wrappers;
 using Kwytto.Data;
 using Kwytto.Utils;
 using System.Linq;
-using System.Text.RegularExpressions;
 using System.Xml.Serialization;
-using UnityEngine;
-using static CustomData.Utils.SegmentUtils;
 
 namespace CustomData.Xml
 {
@@ -98,7 +95,7 @@ namespace CustomData.Xml
         public OwnCitySettingsDW GetOwnCitySettings() => new OwnCitySettingsDW(SafeGet(new InstanceID { Index = 0xFFFFFF, Type = (InstanceType)InstanceIdUtils.TYPE_CD_REGIONCITIES }));
 
         public BuildingGeneralDW GetBuildingGeneralSettings() => new BuildingGeneralDW(SafeGet(new InstanceID { Building = 0 }));
+        public HighwayInstanceDW GetHighwayInstance(ushort seedId) => new HighwayInstanceDW(SafeGet(new InstanceID { Index = seedId, Type = (InstanceType)InstanceIdUtils.TYPE_CD_HIGHWAYINSTANCE }));
 
-      
     }
 }

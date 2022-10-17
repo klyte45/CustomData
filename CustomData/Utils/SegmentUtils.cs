@@ -1,10 +1,12 @@
 ﻿using ColossalFramework;
 using ColossalFramework.Math;
+using CustomData.Wrappers;
 using Kwytto.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static CustomData.Wrappers.HighwayInstanceDW;
 
 namespace CustomData.Utils
 {
@@ -553,12 +555,12 @@ namespace CustomData.Utils
             public override string ToString() => $"[n{nodeReference} s{segmentReference} h:{isHighway} p:{isPassing} w{width} l{lanes}]";
         }
 
-        public static CardinalPoint GetCardinalDirectionSegment(ushort segmentID, MileageStartSource axis)
+        public static CardinalPoint GetCardinalDirectionSegment(ushort segmentID, StoredAxis axis)
         {
             SegmentUtils.GetSegmentRoadEdges(segmentID, true, true, true, out ComparableRoad startRef, out ComparableRoad endRef, out _, out _, out _);
             return GetCardinalDirection(startRef, endRef, axis);
         }
-        public static CardinalPoint GetCardinalDirection(ComparableRoad startRef, ComparableRoad endRef, MileageStartSource axis)
+        public static CardinalPoint GetCardinalDirection(ComparableRoad startRef, ComparableRoad endRef, StoredAxis axis)
         {
             ref NetNode nodeS = ref NetManager.instance.m_nodes.m_buffer[startRef.nodeReference];
             ref NetNode nodeE = ref NetManager.instance.m_nodes.m_buffer[endRef.nodeReference];
@@ -566,17 +568,17 @@ namespace CustomData.Utils
             return GetCardinalDirection(axis, nodeS.m_position, nodeE.m_position, NetManager.instance.m_segments.m_buffer[startRef.segmentReference].m_startNode == startRef.nodeReference);
         }
 
-        private static CardinalPoint GetCardinalDirection(MileageStartSource axis, Vector3 nodeS, Vector3 nodeE, bool invert)
+        private static CardinalPoint GetCardinalDirection(StoredAxis axis, Vector3 nodeS, Vector3 nodeE, bool invert)
         {
             var angle = VectorUtils.XZ(nodeS).GetAngleToPoint(VectorUtils.XZ(nodeE));
             CardinalPoint cardinalDirection;
-            if (axis < 0)
+            if (axis == StoredAxis.DEFAULT)
             {
                 cardinalDirection = CardinalPoint.GetCardinalPoint(angle + (invert ? 0 : 180));
             }
             else
             {
-                var axisInt = ((int)axis) % 180;
+                var axisInt = axis.ToAngle();
                 var abs = (angle - axisInt + 720) % 360;
                 if ((abs > 90) && abs < 270)
                 {

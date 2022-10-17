@@ -11,6 +11,7 @@ using System.Text.RegularExpressions;
 using UnityEngine;
 using static CardinalPoint;
 using static CustomData.Utils.SegmentUtils;
+using static CustomData.Wrappers.HighwayInstanceDW;
 
 namespace CustomData.Overrides
 {
@@ -164,7 +165,7 @@ namespace CustomData.Overrides
                 }
                 if (format.Contains("{7}"))//direction
                 {
-                    MileageStartSource axis = MileageStartSource.DEFAULT;
+                    StoredAxis axis = StoredAxis.DEFAULT;
 
                     ///Requires HWY support
                     //var seed = segment.m_nameSeed;
