@@ -390,6 +390,60 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Add logo image (256x256).
+        /// </summary>
+        internal static string cd_addressWindow_addLogoImage {
+            get {
+                return ResourceManager.GetString("cd_addressWindow_addLogoImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Invalid texture!.
+        /// </summary>
+        internal static string cd_addressWindow_invalidTexture {
+            get {
+                return ResourceManager.GetString("cd_addressWindow_invalidTexture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The texture must have exactly 256x256 pixels as dimensions!.
+        /// </summary>
+        internal static string cd_addressWindow_invalidTextureContent {
+            get {
+                return ResourceManager.GetString("cd_addressWindow_invalidTextureContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a No address available for this building.
+        /// </summary>
+        internal static string cd_addressWindow_noAddressAvailable {
+            get {
+                return ResourceManager.GetString("cd_addressWindow_noAddressAvailable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Pick image logo (256x256) for: {0}.
+        /// </summary>
+        internal static string cd_addressWindow_pickALogoFor {
+            get {
+                return ResourceManager.GetString("cd_addressWindow_pickALogoFor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Delete logo.
+        /// </summary>
+        internal static string cd_addressWindow_removeLogo {
+            get {
+                return ResourceManager.GetString("cd_addressWindow_removeLogo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Names file.
         /// </summary>
         internal static string cd_areasNamingTab_namesFile {

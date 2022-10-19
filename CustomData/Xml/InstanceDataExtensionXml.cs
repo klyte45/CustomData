@@ -62,12 +62,44 @@ namespace CustomData.Xml
         [XmlElement("color3")]
         public Color? color3;
         [XmlIgnore]
-        public Texture2D icon;
+        private Texture2D icon;
+        [XmlIgnore]
+        public Texture2D Icon
+        {
+            get
+            {
+                if (icon is null && iconBase64 != null)
+                {
+                    try
+                    {
+                        icon = TextureUtils.Base64ToTexture2D(iconBase64);
+                    }
+                    catch
+                    {
+                        iconBase64 = null;
+                    }
+                }
+                return icon;
+            }
+            set
+            {
+                icon = value;
+                iconBase64 = null;
+            }
+        }
+
+        private string iconBase64;
+
         [XmlElement("icon")]
         public string IconBase64
         {
-            get => icon?.ToBase64();
-            set => icon = value is null ? null : TextureUtils.Base64ToTexture2D(value);
+            get => icon?.ToBase64() ?? iconBase64;
+            set
+            {
+                GameObject.Destroy(icon);
+                icon = null;
+                iconBase64 = value;
+            }
         }
 
         public bool HasAnyFlag(ulong flagsTst) => ((flags ?? 0u) & flagsTst) != 0;

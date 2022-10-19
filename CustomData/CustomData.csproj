@@ -81,6 +81,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Str.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI\LiteUI\Modal\CDFilePicker.cs" />
+    <Compile Include="Wrappers\BuildingDW.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\KwyttoUtilityCD\KwyttoUtilityCD.csproj">

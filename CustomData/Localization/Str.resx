@@ -429,4 +429,13 @@ The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won'
   <data name="cd_stadiumsTab_title" xml:space="preserve">
     <value>Arenas &amp; Stadiums</value>
   </data>
+  <data name="cd_addressWindow_noAddressAvailable" xml:space="preserve">
+    <value>No address available for this building</value>
+  </data>
+  <data name="cd_addressWindow_pickALogoFor" xml:space="preserve">    <value>Pick image logo (256x256) for: {0}</value>  </data>
+  <data name="cd_addressWindow_addLogoImage" xml:space="preserve">    <value>Add logo image (256x256)</value>  </data>
+  <data name="cd_addressWindow_invalidTexture" xml:space="preserve">    <value>Invalid texture!</value>  </data>
+  <data name="cd_addressWindow_invalidTextureContent" xml:space="preserve">    <value>The texture must have exactly 256x256 pixels as dimensions!</value>  </data>
+  <data name="cd_addressWindow_removeLogo" xml:space="preserve">    <value>Delete logo</value>  </data>
+
 </root>

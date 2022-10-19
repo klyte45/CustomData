@@ -25,7 +25,7 @@ namespace CustomData.Wrappers
         public Color? Color1 { get => xml.color1; set => xml.color1 = value; }
         public Color? Color2 { get => xml.color2; set => xml.color2 = value; }
         public Color? Color3 { get => xml.color3; set => xml.color3 = value; }
-        public Texture2D Shield { get => xml.icon; set => xml.icon = value; }
+        public Texture2D Shield { get => xml.Icon; set => xml.Icon = value; }
         public virtual ushort StadiumId => 0;
         public virtual int CityId { get => xml.genericId ?? 0; set => xml.genericId = value; }
         public virtual bool SupportsModality(EventManager.EventType group) => xml.HasAllFlags((uint)group);

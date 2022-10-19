@@ -95,7 +95,9 @@ namespace CustomData.Xml
         public OwnCitySettingsDW GetOwnCitySettings() => new OwnCitySettingsDW(SafeGet(new InstanceID { Index = 0xFFFFFF, Type = (InstanceType)InstanceIdUtils.TYPE_CD_REGIONCITIES }));
 
         public BuildingGeneralDW GetBuildingGeneralSettings() => new BuildingGeneralDW(SafeGet(new InstanceID { Building = 0 }));
+        public BuildingDW GetBuildingSettings(ushort buildingId) => new BuildingDW(SafeGet(new InstanceID { Building = buildingId }));
         public HighwayInstanceDW GetHighwayInstance(ushort seedId) => new HighwayInstanceDW(SafeGet(new InstanceID { Index = seedId, Type = (InstanceType)InstanceIdUtils.TYPE_CD_HIGHWAYINSTANCE }));
 
+        internal void RemoveBuilding(ushort x) => InstanceExtraData.Remove((new InstanceID { Building = x }).RawData);
     }
 }

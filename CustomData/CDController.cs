@@ -1,6 +1,7 @@
 ﻿using CustomData.Overrides;
 using CustomData.UI;
 using CustomData.Utils;
+using CustomData.Xml;
 using Kwytto.Interfaces;
 using Kwytto.Utils;
 using MonoMod.Utils;
@@ -45,6 +46,8 @@ namespace CustomData
             LoadSimplePatterns();
 
             _ = CDAddressWindow.Instance;
+
+            BuildingManager.instance.EventBuildingReleased += (x) => CDStorage.Instance.RemoveBuilding(x);
         }
         public static void LoadGeneralNames()
         {
