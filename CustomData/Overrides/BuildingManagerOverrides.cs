@@ -92,7 +92,7 @@ namespace CustomData.Overrides
         private static bool GetNameRico(ref string __result, ushort buildingID)
         {
             var info = BuildingManager.instance.m_buildings.m_buffer[buildingID].Info;
-            if (CDStorage.Instance.GetBuildingGeneralSettings().IsRenameEnabled(info.m_buildingAI))
+            if (!CDStorage.Instance.GetBuildingGeneralSettings().IsRenameEnabled(info.m_buildingAI))
             {
                 return true;
             }
