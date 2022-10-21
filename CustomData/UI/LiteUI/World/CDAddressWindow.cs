@@ -124,7 +124,7 @@ namespace CustomData.UI
                 {
                     if (x != null)
                     {
-                        var result = TextureAtlasUtils.LoadTextureFromFile(x);
+                        var result = TextureAtlasUtils.LoadTextureFromFile(x, linear: false);
                         if (result.width != 256 || result.height != 256)
                         {
                             ModInstance.Controller.StartCoroutine(ShowErrorModal());

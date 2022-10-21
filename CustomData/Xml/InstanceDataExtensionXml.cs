@@ -72,7 +72,7 @@ namespace CustomData.Xml
                 {
                     try
                     {
-                        icon = TextureUtils.Base64ToTexture2D(iconBase64);
+                        icon = TextureUtils.Base64ToTexture2D(iconBase64, linear: false);
                     }
                     catch
                     {
