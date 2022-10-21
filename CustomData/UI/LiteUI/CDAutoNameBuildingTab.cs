@@ -1,4 +1,5 @@
-﻿using CustomData.Localization;
+﻿using CustomData.Enums;
+using CustomData.Localization;
 using CustomData.Wrappers;
 using CustomData.Xml;
 using Kwytto.LiteUI;
@@ -7,7 +8,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static CustomData.Wrappers.BuildingGeneralDW;
 
 namespace CustomData.UI
 {

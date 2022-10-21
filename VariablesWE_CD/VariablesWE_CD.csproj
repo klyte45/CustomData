@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FF763F3-97CD-49E4-AD35-EDCCB7B47EBE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VariablesWE_CD</RootNamespace>
+    <AssemblyName>VariablesWE_CD</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\_managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WriteEverywhere.Plugins.Ext">
+      <HintPath>..\..\_appdataMods\WriteEverywhere\WriteEverywhere.Plugins.Ext.dll</HintPath>
+      <Aliases>WE</Aliases>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WriteEverywhere.Plugins">
+      <HintPath>..\..\_appdataMods\WriteEverywhere\WriteEverywhere.Plugins.dll</HintPath>
+      <Aliases>WE</Aliases>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ColossalManaged">
+      <HintPath>..\..\_managed\ColossalManaged.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WriteEverywhere.Xml">
+      <HintPath>..\..\_appdataMods\WriteEverywhere\WriteEverywhere.Xml.dll</HintPath>
+      <Aliases>WE</Aliases>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WriteEverywhere.Layout">
+      <HintPath>..\..\_appdataMods\WriteEverywhere\WriteEverywhere.Layout.dll</HintPath>
+      <Aliases>WE</Aliases>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WriteEverywhere.Font">
+      <HintPath>..\..\_appdataMods\WriteEverywhere\WriteEverywhere.Font.dll</HintPath>
+      <Aliases>WE</Aliases>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WriteEverywhere">
+      <HintPath>..\..\_appdataMods\WriteEverywhere\WriteEverywhere.dll</HintPath>
+      <Aliases>WE</Aliases>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\_managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>set "ModDir=%25LOCALAPPDATA%25\Colossal Order\Cities_Skylines\Addons\Mods\$(SolutionName)\"
+
+xcopy /y /e "$(TargetPath)*" "%25ModDir%25"
+</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="**/*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomData.Enums\CustomData.Enums.csproj">
+      <Project>{34566953-5AB7-494B-A6E5-14072F173BBD}</Project>
+      <Name>CustomData.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomData.Localization\CustomData.Localization.csproj">
+      <Project>{21AF54F5-E304-4452-BA5E-FF6A07F3F6F1}</Project>
+      <Name>CustomData.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomData\CustomData.csproj">
+      <Project>{d8e34f69-179a-4f38-b011-07fc04395ec0}</Project>
+      <Name>CustomData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KwyttoUtilityCD\KwyttoUtilityCD.csproj">
+      <Project>{27c920f8-f40f-4d56-0101-9c9025ed0a0c}</Project>
+      <Name>KwyttoUtilityCD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

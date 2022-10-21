@@ -60,7 +60,7 @@ namespace CustomData.UI
 
                         if (m_overlayDistrictTexture is null)
                         {
-                            m_overlayDistrictTexture = new Texture2D(900, 900, TextureFormat.RGBA32, false);
+                            m_overlayDistrictTexture = TextureUtils.New(900, 900);
                         }
                         var cells = DistrictManager.instance.m_districtGrid;
                         int offsets = 0;

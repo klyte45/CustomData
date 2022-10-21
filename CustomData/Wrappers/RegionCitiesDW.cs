@@ -2,6 +2,7 @@
 using ColossalFramework.Globalization;
 using CustomData.Utils;
 using CustomData.Xml;
+using Kwytto.Utils;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -131,7 +132,7 @@ namespace CustomData.Wrappers
         {
             if (m_cachedColorTexture is null)
             {
-                m_cachedColorTexture = new Texture2D(1, 1);
+                m_cachedColorTexture = TextureUtils.New(1, 1);
                 m_cachedColorTextureDirty = true;
             }
             if (m_cachedColorTextureDirty)

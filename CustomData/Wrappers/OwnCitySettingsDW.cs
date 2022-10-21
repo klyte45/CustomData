@@ -1,4 +1,5 @@
-﻿using CustomData.Utils;
+﻿using CustomData.Enums;
+using CustomData.Utils;
 using CustomData.Xml;
 using Kwytto.Utils;
 using System;

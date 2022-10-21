@@ -1,17 +1,27 @@
-﻿using CustomData.Wrappers;
+﻿
+using CustomData.Enums;
 using Kwytto.Localization;
 using System;
 using System.Linq;
-using static CustomData.Wrappers.BuildingGeneralDW;
 
 namespace CustomData.Localization
 {
-    internal static class EnumI18nExtensions
+    public static class EnumI18nExtensions
     {
         public static string ValueToI18n(this Enum variable)
         {
             switch (variable)
             {
+                case CDVars v:
+                    switch (v)
+                    {
+                        case CDVars.CurrentBuilding:
+                            return Str.cd_Enum__CDVars_CurrentBuilding;
+                        case CDVars.SourceBuilding:
+                            return Str.cd_Enum__CDVars_SourceBuilding;
+                    }
+                    break;
+
                 case DistrictAreaType.Regular: return Str.cd_Enum__DistrictAreaType_Regular;
                 case DistrictAreaType.Parks_Amusement: return Str.cd_Enum__DistrictAreaType_Parks_Amusement;
                 case DistrictAreaType.Parks_CityPark: return Str.cd_Enum__DistrictAreaType_Parks_CityPark;
@@ -47,6 +57,7 @@ namespace CustomData.Localization
                 case UseGeneratedNameCategories.IndustrialZone: return Str.cd_Enum__UseGeneratedNameCategories_IndustrialZone;
                 case UseGeneratedNameCategories.OfficeZone: return Str.cd_Enum__UseGeneratedNameCategories_OfficeZone;
                 case UseGeneratedNameCategories.Taxi: return Str.cd_Enum__UseGeneratedNameCategories_Taxi;
+                case VariableBuildingSubType.ImageLogo: return Str.cd_Enum__VariableBuildingSubType_ImageLogo;
             }
             return variable.ValueToI18nKwytto();
         }

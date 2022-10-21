@@ -48,7 +48,7 @@ namespace CustomData.UI
             base.Awake();
             bgSubgroup = ModInstance.Instance.ModColor.SetBrightness(.20f);
 
-            BgTextureSubgroup = new Texture2D(1, 1);
+            BgTextureSubgroup = TextureUtils.New(1, 1);
             BgTextureSubgroup.SetPixel(0, 0, new Color(bgSubgroup.r, bgSubgroup.g, bgSubgroup.b, ModInstance.Instance.UIOpacity));
             BgTextureSubgroup.Apply();
 
@@ -136,7 +136,7 @@ namespace CustomData.UI
         internal void ProcessResourceTexture()
         {
             var reference = NaturalResourceManager.instance.m_resourceTexture;
-            Texture2D result = new Texture2D(reference.width, reference.height);
+            Texture2D result = TextureUtils.New(reference.width, reference.height);
             result.SetPixels(reference.GetPixels().Select(x =>
                     x.b > 0.55f ? WATER
                             : x.b < 0.45f ? FOREST

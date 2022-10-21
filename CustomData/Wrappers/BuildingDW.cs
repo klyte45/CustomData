@@ -1,5 +1,7 @@
-﻿using CustomData.Utils;
+﻿using CustomData.Overrides;
+using CustomData.Utils;
 using CustomData.Xml;
+using Kwytto.Utils;
 using UnityEngine;
 
 namespace CustomData.Wrappers
@@ -18,6 +20,7 @@ namespace CustomData.Wrappers
             get => xml.Icon; set
             {
                 GameObject.Destroy(xml.Icon);
+                CDFacade.Instance.CallEventOnBuildingLogoChanged(xml.Id.Building);
                 xml.Icon = value;
             }
         }

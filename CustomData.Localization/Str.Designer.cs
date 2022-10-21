@@ -22,7 +22,7 @@ namespace CustomData.Localization {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Str {
+    public class Str {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace CustomData.Localization {
         ///   Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CustomData.Localization.Str", typeof(Str).Assembly);
@@ -51,7 +51,7 @@ namespace CustomData.Localization {
         ///   pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Addresses lines.
         /// </summary>
-        internal static string cd_addressingSettingsTab_addressesLines {
+        public static string cd_addressingSettingsTab_addressesLines {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_addressesLines", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Address line 1.
         /// </summary>
-        internal static string cd_addressingSettingsTab_addressLine1 {
+        public static string cd_addressingSettingsTab_addressLine1 {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_addressLine1", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Address line 2.
         /// </summary>
-        internal static string cd_addressingSettingsTab_addressLine2 {
+        public static string cd_addressingSettingsTab_addressLine2 {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_addressLine2", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Address line 3.
         /// </summary>
-        internal static string cd_addressingSettingsTab_addressLine3 {
+        public static string cd_addressingSettingsTab_addressLine3 {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_addressLine3", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Street name.
         /// </summary>
-        internal static string cd_addressingSettingsTab_addressLineDescription_A {
+        public static string cd_addressingSettingsTab_addressLineDescription_A {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_addressLineDescription_A", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Number (distance from start of street).
         /// </summary>
-        internal static string cd_addressingSettingsTab_addressLineDescription_B {
+        public static string cd_addressingSettingsTab_addressLineDescription_B {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_addressLineDescription_B", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a City Name.
         /// </summary>
-        internal static string cd_addressingSettingsTab_addressLineDescription_C {
+        public static string cd_addressingSettingsTab_addressLineDescription_C {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_addressLineDescription_C", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a District.
         /// </summary>
-        internal static string cd_addressingSettingsTab_addressLineDescription_D {
+        public static string cd_addressingSettingsTab_addressLineDescription_D {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_addressLineDescription_D", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Postal Code.
         /// </summary>
-        internal static string cd_addressingSettingsTab_addressLineDescription_E {
+        public static string cd_addressingSettingsTab_addressLineDescription_E {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_addressLineDescription_E", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Special Area name (Park, industry, etc...).
         /// </summary>
-        internal static string cd_addressingSettingsTab_addressLineDescription_F {
+        public static string cd_addressingSettingsTab_addressLineDescription_F {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_addressLineDescription_F", resourceCulture);
             }
@@ -156,7 +156,7 @@ namespace CustomData.Localization {
         ///The text written between brackets &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; won&apos;t be shown if there&apos;s no district.
         ///The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won&apos;t be shown if there&apos;s no special area..
         /// </summary>
-        internal static string cd_addressingSettingsTab_addressLineHelpHeaderText {
+        public static string cd_addressingSettingsTab_addressLineHelpHeaderText {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_addressLineHelpHeaderText", resourceCulture);
             }
@@ -165,7 +165,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a City postal code digits.
         /// </summary>
-        internal static string cd_addressingSettingsTab_citywidePostalCode {
+        public static string cd_addressingSettingsTab_citywidePostalCode {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_citywidePostalCode", resourceCulture);
             }
@@ -174,7 +174,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a 1st digit of name seed id of the segment (0-6).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_A {
+        public static string cd_addressingSettingsTab_postalCodeDescription_A {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_A", resourceCulture);
             }
@@ -183,7 +183,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a 2nd digit of name seed id of the segment (0-9).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_B {
+        public static string cd_addressingSettingsTab_postalCodeDescription_B {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_B", resourceCulture);
             }
@@ -192,7 +192,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a 3rd digit of name seed id of the segment (0-9).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_C {
+        public static string cd_addressingSettingsTab_postalCodeDescription_C {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_C", resourceCulture);
             }
@@ -201,7 +201,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a 4th digit of name seed id of the segment (0-9).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_D {
+        public static string cd_addressingSettingsTab_postalCodeDescription_D {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_D", resourceCulture);
             }
@@ -210,7 +210,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a 5th digit of name seed id of the segment (0-9).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_E {
+        public static string cd_addressingSettingsTab_postalCodeDescription_E {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_E", resourceCulture);
             }
@@ -219,7 +219,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a 1st digit of segment id of the segment (0-3).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_F {
+        public static string cd_addressingSettingsTab_postalCodeDescription_F {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_F", resourceCulture);
             }
@@ -228,7 +228,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a 2nd digit of segment id of the segment (0-9).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_G {
+        public static string cd_addressingSettingsTab_postalCodeDescription_G {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_G", resourceCulture);
             }
@@ -237,7 +237,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a 3rd digit of segment id of the segment (0-9).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_H {
+        public static string cd_addressingSettingsTab_postalCodeDescription_H {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_H", resourceCulture);
             }
@@ -246,7 +246,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a 4th digit of segment id of the segment (0-9).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_I {
+        public static string cd_addressingSettingsTab_postalCodeDescription_I {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_I", resourceCulture);
             }
@@ -255,7 +255,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a 5th digit of segment id of the segment (0-9).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_J {
+        public static string cd_addressingSettingsTab_postalCodeDescription_J {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_J", resourceCulture);
             }
@@ -264,7 +264,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Hundreds digit from citywide postal code.
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_K {
+        public static string cd_addressingSettingsTab_postalCodeDescription_K {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_K", resourceCulture);
             }
@@ -273,7 +273,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Tens digit from citywide postal code.
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_L {
+        public static string cd_addressingSettingsTab_postalCodeDescription_L {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_L", resourceCulture);
             }
@@ -282,7 +282,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Units digit from citywide postal code.
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_M {
+        public static string cd_addressingSettingsTab_postalCodeDescription_M {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_M", resourceCulture);
             }
@@ -291,7 +291,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Hundreds digit from district postal code.
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_N {
+        public static string cd_addressingSettingsTab_postalCodeDescription_N {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_N", resourceCulture);
             }
@@ -300,7 +300,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Tens digit from district postal code.
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_O {
+        public static string cd_addressingSettingsTab_postalCodeDescription_O {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_O", resourceCulture);
             }
@@ -309,7 +309,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Units digit from district postal code.
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_P {
+        public static string cd_addressingSettingsTab_postalCodeDescription_P {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_P", resourceCulture);
             }
@@ -318,7 +318,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Map tile coordinate in East-West axis (0-8).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_X {
+        public static string cd_addressingSettingsTab_postalCodeDescription_X {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_X", resourceCulture);
             }
@@ -327,7 +327,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Tenths of tile coordinate in East-West axis (0-9).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_x_ {
+        public static string cd_addressingSettingsTab_postalCodeDescription_x_ {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_x_", resourceCulture);
             }
@@ -336,7 +336,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Map tile coordinate in North-South axis (0-8).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_Y {
+        public static string cd_addressingSettingsTab_postalCodeDescription_Y {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_Y", resourceCulture);
             }
@@ -345,7 +345,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Tenths of tile coordinate in North-South axis (0-9).
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeDescription_y_ {
+        public static string cd_addressingSettingsTab_postalCodeDescription_y_ {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeDescription_y_", resourceCulture);
             }
@@ -354,7 +354,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Postal code format.
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeFormat {
+        public static string cd_addressingSettingsTab_postalCodeFormat {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeFormat", resourceCulture);
             }
@@ -365,7 +365,7 @@ namespace CustomData.Localization {
         ///Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;&quot;between double quotes&quot;&lt;/color&gt;.
         ///Unlisted characters will always be shown literally..
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeHelpHeaderText {
+        public static string cd_addressingSettingsTab_postalCodeHelpHeaderText {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeHelpHeaderText", resourceCulture);
             }
@@ -374,7 +374,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Postal code settings.
         /// </summary>
-        internal static string cd_addressingSettingsTab_postalCodeSettings {
+        public static string cd_addressingSettingsTab_postalCodeSettings {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_postalCodeSettings", resourceCulture);
             }
@@ -383,7 +383,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Addressing settings.
         /// </summary>
-        internal static string cd_addressingSettingsTab_title {
+        public static string cd_addressingSettingsTab_title {
             get {
                 return ResourceManager.GetString("cd_addressingSettingsTab_title", resourceCulture);
             }
@@ -392,7 +392,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Add logo image (256x256).
         /// </summary>
-        internal static string cd_addressWindow_addLogoImage {
+        public static string cd_addressWindow_addLogoImage {
             get {
                 return ResourceManager.GetString("cd_addressWindow_addLogoImage", resourceCulture);
             }
@@ -401,7 +401,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Invalid texture!.
         /// </summary>
-        internal static string cd_addressWindow_invalidTexture {
+        public static string cd_addressWindow_invalidTexture {
             get {
                 return ResourceManager.GetString("cd_addressWindow_invalidTexture", resourceCulture);
             }
@@ -410,7 +410,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a The texture must have exactly 256x256 pixels as dimensions!.
         /// </summary>
-        internal static string cd_addressWindow_invalidTextureContent {
+        public static string cd_addressWindow_invalidTextureContent {
             get {
                 return ResourceManager.GetString("cd_addressWindow_invalidTextureContent", resourceCulture);
             }
@@ -419,7 +419,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a No address available for this building.
         /// </summary>
-        internal static string cd_addressWindow_noAddressAvailable {
+        public static string cd_addressWindow_noAddressAvailable {
             get {
                 return ResourceManager.GetString("cd_addressWindow_noAddressAvailable", resourceCulture);
             }
@@ -428,7 +428,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Pick image logo (256x256) for: {0}.
         /// </summary>
-        internal static string cd_addressWindow_pickALogoFor {
+        public static string cd_addressWindow_pickALogoFor {
             get {
                 return ResourceManager.GetString("cd_addressWindow_pickALogoFor", resourceCulture);
             }
@@ -437,7 +437,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Delete logo.
         /// </summary>
-        internal static string cd_addressWindow_removeLogo {
+        public static string cd_addressWindow_removeLogo {
             get {
                 return ResourceManager.GetString("cd_addressWindow_removeLogo", resourceCulture);
             }
@@ -446,7 +446,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Names file.
         /// </summary>
-        internal static string cd_areasNamingTab_namesFile {
+        public static string cd_areasNamingTab_namesFile {
             get {
                 return ResourceManager.GetString("cd_areasNamingTab_namesFile", resourceCulture);
             }
@@ -455,7 +455,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Simple patterns file.
         /// </summary>
-        internal static string cd_areasNamingTab_simplePatternFile {
+        public static string cd_areasNamingTab_simplePatternFile {
             get {
                 return ResourceManager.GetString("cd_areasNamingTab_simplePatternFile", resourceCulture);
             }
@@ -464,7 +464,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;i&gt;&lt;color=#FFFF00&gt;NOTE:&lt;/color&gt; Simple pattern files are like the name files, but requires to have a placeholder &quot;&lt;color=#00ff00&gt;{0}&lt;/color&gt;&quot; to be replaced by the generated name.&lt;/i&gt;.
         /// </summary>
-        internal static string cd_areasNamingTab_simplePatternNote {
+        public static string cd_areasNamingTab_simplePatternNote {
             get {
                 return ResourceManager.GetString("cd_areasNamingTab_simplePatternNote", resourceCulture);
             }
@@ -473,7 +473,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Areas&apos; naming.
         /// </summary>
-        internal static string cd_areasNamingTab_title {
+        public static string cd_areasNamingTab_title {
             get {
                 return ResourceManager.GetString("cd_areasNamingTab_title", resourceCulture);
             }
@@ -482,7 +482,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Cargo stations.
         /// </summary>
-        internal static string cd_autoNamingBuildingTab_cargoStationsNamingHeader {
+        public static string cd_autoNamingBuildingTab_cargoStationsNamingHeader {
             get {
                 return ResourceManager.GetString("cd_autoNamingBuildingTab_cargoStationsNamingHeader", resourceCulture);
             }
@@ -491,7 +491,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Passenger stations.
         /// </summary>
-        internal static string cd_autoNamingBuildingTab_passengerStationsNamingHeader {
+        public static string cd_autoNamingBuildingTab_passengerStationsNamingHeader {
             get {
                 return ResourceManager.GetString("cd_autoNamingBuildingTab_passengerStationsNamingHeader", resourceCulture);
             }
@@ -500,7 +500,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Use address&apos; first line as name.
         /// </summary>
-        internal static string cd_autoNamingBuildingTab_ricoNamingHeader {
+        public static string cd_autoNamingBuildingTab_ricoNamingHeader {
             get {
                 return ResourceManager.GetString("cd_autoNamingBuildingTab_ricoNamingHeader", resourceCulture);
             }
@@ -509,7 +509,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Building auto naming.
         /// </summary>
-        internal static string cd_autoNamingBuildingTab_title {
+        public static string cd_autoNamingBuildingTab_title {
             get {
                 return ResourceManager.GetString("cd_autoNamingBuildingTab_title", resourceCulture);
             }
@@ -518,7 +518,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Female given names file.
         /// </summary>
-        internal static string cd_cimNamingTab_femaleNamesTitle {
+        public static string cd_cimNamingTab_femaleNamesTitle {
             get {
                 return ResourceManager.GetString("cd_cimNamingTab_femaleNamesTitle", resourceCulture);
             }
@@ -527,7 +527,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Male given names files.
         /// </summary>
-        internal static string cd_cimNamingTab_maleNamesTitle {
+        public static string cd_cimNamingTab_maleNamesTitle {
             get {
                 return ResourceManager.GetString("cd_cimNamingTab_maleNamesTitle", resourceCulture);
             }
@@ -537,7 +537,7 @@ namespace CustomData.Localization {
         ///   Consulta uma cadeia de caracteres localizada semelhante a Surnames before given names
         ///(only when using custom surnames).
         /// </summary>
-        internal static string cd_cimNamingTab_surnameBeforeMainname {
+        public static string cd_cimNamingTab_surnameBeforeMainname {
             get {
                 return ResourceManager.GetString("cd_cimNamingTab_surnameBeforeMainname", resourceCulture);
             }
@@ -546,7 +546,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Surnames file.
         /// </summary>
-        internal static string cd_cimNamingTab_surnamesTitle {
+        public static string cd_cimNamingTab_surnamesTitle {
             get {
                 return ResourceManager.GetString("cd_cimNamingTab_surnamesTitle", resourceCulture);
             }
@@ -555,7 +555,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Cims&apos; naming.
         /// </summary>
-        internal static string cd_cimNamingTab_title {
+        public static string cd_cimNamingTab_title {
             get {
                 return ResourceManager.GetString("cd_cimNamingTab_title", resourceCulture);
             }
@@ -564,7 +564,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a City color.
         /// </summary>
-        internal static string cd_districtTab_cityColor {
+        public static string cd_districtTab_cityColor {
             get {
                 return ResourceManager.GetString("cd_districtTab_cityColor", resourceCulture);
             }
@@ -573,7 +573,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a District color.
         /// </summary>
-        internal static string cd_districtTab_districtColor {
+        public static string cd_districtTab_districtColor {
             get {
                 return ResourceManager.GetString("cd_districtTab_districtColor", resourceCulture);
             }
@@ -582,7 +582,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Select district.
         /// </summary>
-        internal static string cd_districtTab_districtToChange {
+        public static string cd_districtTab_districtToChange {
             get {
                 return ResourceManager.GetString("cd_districtTab_districtToChange", resourceCulture);
             }
@@ -591,7 +591,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Postal code digits (000 to 999).
         /// </summary>
-        internal static string cd_districtTab_postalCodeDigits {
+        public static string cd_districtTab_postalCodeDigits {
             get {
                 return ResourceManager.GetString("cd_districtTab_postalCodeDigits", resourceCulture);
             }
@@ -600,7 +600,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a City postal code.
         /// </summary>
-        internal static string cd_districtTab_postalCodeDigitsFallback {
+        public static string cd_districtTab_postalCodeDigitsFallback {
             get {
                 return ResourceManager.GetString("cd_districtTab_postalCodeDigitsFallback", resourceCulture);
             }
@@ -609,7 +609,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Road name pattern file.
         /// </summary>
-        internal static string cd_districtTab_roadFormattingFile {
+        public static string cd_districtTab_roadFormattingFile {
             get {
                 return ResourceManager.GetString("cd_districtTab_roadFormattingFile", resourceCulture);
             }
@@ -618,7 +618,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a City default road pattern file.
         /// </summary>
-        internal static string cd_districtTab_roadFormattingFileDefault {
+        public static string cd_districtTab_roadFormattingFileDefault {
             get {
                 return ResourceManager.GetString("cd_districtTab_roadFormattingFileDefault", resourceCulture);
             }
@@ -627,7 +627,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Road naming file.
         /// </summary>
-        internal static string cd_districtTab_roadNamingsFile {
+        public static string cd_districtTab_roadNamingsFile {
             get {
                 return ResourceManager.GetString("cd_districtTab_roadNamingsFile", resourceCulture);
             }
@@ -636,7 +636,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a City default road naming file.
         /// </summary>
-        internal static string cd_districtTab_roadNamingsFileDefault {
+        public static string cd_districtTab_roadNamingsFileDefault {
             get {
                 return ResourceManager.GetString("cd_districtTab_roadNamingsFileDefault", resourceCulture);
             }
@@ -645,16 +645,34 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a District data.
         /// </summary>
-        internal static string cd_districtTab_title {
+        public static string cd_districtTab_title {
             get {
                 return ResourceManager.GetString("cd_districtTab_title", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Extra attributes from Custom Data Mod relatives to current building..
+        /// </summary>
+        public static string cd_Enum__CDVars_CurrentBuilding {
+            get {
+                return ResourceManager.GetString("cd_Enum__CDVars_CurrentBuilding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Extra attributes from Custom Data Mod relatives to the source building of this vehicle..
+        /// </summary>
+        public static string cd_Enum__CDVars_SourceBuilding {
+            get {
+                return ResourceManager.GetString("cd_Enum__CDVars_SourceBuilding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#00FFFF&gt;Airport Areas&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Airports {
+        public static string cd_Enum__DistrictAreaType_Airports {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Airports", resourceCulture);
             }
@@ -663,7 +681,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#0044FF&gt;Liberal Arts College&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Campus_Liberal {
+        public static string cd_Enum__DistrictAreaType_Campus_Liberal {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Campus_Liberal", resourceCulture);
             }
@@ -672,7 +690,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#0044FF&gt;University&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Campus_Regular {
+        public static string cd_Enum__DistrictAreaType_Campus_Regular {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Campus_Regular", resourceCulture);
             }
@@ -681,7 +699,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#0044FF&gt;Trade School&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Campus_Trade {
+        public static string cd_Enum__DistrictAreaType_Campus_Trade {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Campus_Trade", resourceCulture);
             }
@@ -690,7 +708,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#FFFF00&gt;Farming Industry Areas&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Industry_Farming {
+        public static string cd_Enum__DistrictAreaType_Industry_Farming {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Industry_Farming", resourceCulture);
             }
@@ -699,7 +717,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#FFFF00&gt;Forest Industry Areas&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Industry_Forest {
+        public static string cd_Enum__DistrictAreaType_Industry_Forest {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Industry_Forest", resourceCulture);
             }
@@ -708,7 +726,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#FFFF00&gt;Mining Inudstry Areas&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Industry_Mining {
+        public static string cd_Enum__DistrictAreaType_Industry_Mining {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Industry_Mining", resourceCulture);
             }
@@ -717,7 +735,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#FFFF00&gt;Oil Industry Areas&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Industry_Oil {
+        public static string cd_Enum__DistrictAreaType_Industry_Oil {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Industry_Oil", resourceCulture);
             }
@@ -726,7 +744,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#00FF00&gt;Amusement Parks&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Parks_Amusement {
+        public static string cd_Enum__DistrictAreaType_Parks_Amusement {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Parks_Amusement", resourceCulture);
             }
@@ -735,7 +753,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#00FF00&gt;City Park Areas&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Parks_CityPark {
+        public static string cd_Enum__DistrictAreaType_Parks_CityPark {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Parks_CityPark", resourceCulture);
             }
@@ -744,7 +762,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#00FF00&gt;Natural Reserves&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Parks_Natural {
+        public static string cd_Enum__DistrictAreaType_Parks_Natural {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Parks_Natural", resourceCulture);
             }
@@ -753,7 +771,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#00FF00&gt;Zoo Areas&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Parks_Zoo {
+        public static string cd_Enum__DistrictAreaType_Parks_Zoo {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Parks_Zoo", resourceCulture);
             }
@@ -762,7 +780,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=#888888&gt;Pedestrian Areas&lt;/color&gt;.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Pedestrian {
+        public static string cd_Enum__DistrictAreaType_Pedestrian {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Pedestrian", resourceCulture);
             }
@@ -771,7 +789,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Regular districts.
         /// </summary>
-        internal static string cd_Enum__DistrictAreaType_Regular {
+        public static string cd_Enum__DistrictAreaType_Regular {
             get {
                 return ResourceManager.GetString("cd_Enum__DistrictAreaType_Regular", resourceCulture);
             }
@@ -780,7 +798,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Cargo Airports.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_AirplaneCargo {
+        public static string cd_Enum__UseGeneratedNameCategories_AirplaneCargo {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_AirplaneCargo", resourceCulture);
             }
@@ -789,7 +807,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Passenger Airports.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_AirplanePassenger {
+        public static string cd_Enum__UseGeneratedNameCategories_AirplanePassenger {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_AirplanePassenger", resourceCulture);
             }
@@ -798,7 +816,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Blimps Stops.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_Blimps {
+        public static string cd_Enum__UseGeneratedNameCategories_Blimps {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Blimps", resourceCulture);
             }
@@ -807,7 +825,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Bus Stations.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_Bus {
+        public static string cd_Enum__UseGeneratedNameCategories_Bus {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Bus", resourceCulture);
             }
@@ -816,7 +834,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Cable Car Buildings.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_CableCar {
+        public static string cd_Enum__UseGeneratedNameCategories_CableCar {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_CableCar", resourceCulture);
             }
@@ -825,7 +843,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Commercial Zone.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_CommercialZone {
+        public static string cd_Enum__UseGeneratedNameCategories_CommercialZone {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_CommercialZone", resourceCulture);
             }
@@ -834,7 +852,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Ferryboats Harbors.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_Ferry {
+        public static string cd_Enum__UseGeneratedNameCategories_Ferry {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Ferry", resourceCulture);
             }
@@ -843,7 +861,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Helicopter Stops.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_Helicopters {
+        public static string cd_Enum__UseGeneratedNameCategories_Helicopters {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Helicopters", resourceCulture);
             }
@@ -852,7 +870,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Industrial Zone.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_IndustrialZone {
+        public static string cd_Enum__UseGeneratedNameCategories_IndustrialZone {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_IndustrialZone", resourceCulture);
             }
@@ -861,7 +879,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Intercity Bus Stations.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_IntercityBus {
+        public static string cd_Enum__UseGeneratedNameCategories_IntercityBus {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_IntercityBus", resourceCulture);
             }
@@ -870,7 +888,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Metro Stations.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_Metro {
+        public static string cd_Enum__UseGeneratedNameCategories_Metro {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Metro", resourceCulture);
             }
@@ -879,7 +897,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Monorail Stations.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_Monorail {
+        public static string cd_Enum__UseGeneratedNameCategories_Monorail {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Monorail", resourceCulture);
             }
@@ -888,7 +906,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Offices Zone.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_OfficeZone {
+        public static string cd_Enum__UseGeneratedNameCategories_OfficeZone {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_OfficeZone", resourceCulture);
             }
@@ -897,7 +915,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Residential Zone.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_ResidentialZone {
+        public static string cd_Enum__UseGeneratedNameCategories_ResidentialZone {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_ResidentialZone", resourceCulture);
             }
@@ -906,7 +924,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Cargo Harbors.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_ShipCargo {
+        public static string cd_Enum__UseGeneratedNameCategories_ShipCargo {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_ShipCargo", resourceCulture);
             }
@@ -915,7 +933,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Passenger Harbors.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_ShipPassenger {
+        public static string cd_Enum__UseGeneratedNameCategories_ShipPassenger {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_ShipPassenger", resourceCulture);
             }
@@ -924,7 +942,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Taxi Stands.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_Taxi {
+        public static string cd_Enum__UseGeneratedNameCategories_Taxi {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Taxi", resourceCulture);
             }
@@ -933,7 +951,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Cargo Train Stations.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_TrainCargo {
+        public static string cd_Enum__UseGeneratedNameCategories_TrainCargo {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_TrainCargo", resourceCulture);
             }
@@ -942,7 +960,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Passenger Train Stations.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_TrainPassenger {
+        public static string cd_Enum__UseGeneratedNameCategories_TrainPassenger {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_TrainPassenger", resourceCulture);
             }
@@ -951,7 +969,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Tram Stations.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_Tram {
+        public static string cd_Enum__UseGeneratedNameCategories_Tram {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Tram", resourceCulture);
             }
@@ -960,16 +978,25 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Trolleybus Stations.
         /// </summary>
-        internal static string cd_Enum__UseGeneratedNameCategories_Trolleybus {
+        public static string cd_Enum__UseGeneratedNameCategories_Trolleybus {
             get {
                 return ResourceManager.GetString("cd_Enum__UseGeneratedNameCategories_Trolleybus", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Image logo setted up in Custom Data Mod for the building..
+        /// </summary>
+        public static string cd_Enum__VariableBuildingSubType_ImageLogo {
+            get {
+                return ResourceManager.GetString("cd_Enum__VariableBuildingSubType_ImageLogo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Actions.
         /// </summary>
-        internal static string cd_neighborTab_actions {
+        public static string cd_neighborTab_actions {
             get {
                 return ResourceManager.GetString("cd_neighborTab_actions", resourceCulture);
             }
@@ -978,7 +1005,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Azimuth (°).
         /// </summary>
-        internal static string cd_neighborTab_azimuthDirectionShort {
+        public static string cd_neighborTab_azimuthDirectionShort {
             get {
                 return ResourceManager.GetString("cd_neighborTab_azimuthDirectionShort", resourceCulture);
             }
@@ -987,7 +1014,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a City Name.
         /// </summary>
-        internal static string cd_neighborTab_cityName {
+        public static string cd_neighborTab_cityName {
             get {
                 return ResourceManager.GetString("cd_neighborTab_cityName", resourceCulture);
             }
@@ -996,7 +1023,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Default city names file.
         /// </summary>
-        internal static string cd_neighborTab_neighborNamesFile {
+        public static string cd_neighborTab_neighborNamesFile {
             get {
                 return ResourceManager.GetString("cd_neighborTab_neighborNamesFile", resourceCulture);
             }
@@ -1005,7 +1032,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Neighbors.
         /// </summary>
-        internal static string cd_neighborTab_title {
+        public static string cd_neighborTab_title {
             get {
                 return ResourceManager.GetString("cd_neighborTab_title", resourceCulture);
             }
@@ -1014,7 +1041,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Select Arena/Stadium.
         /// </summary>
-        internal static string cd_stadiumsTab_selectStadiumLabel {
+        public static string cd_stadiumsTab_selectStadiumLabel {
             get {
                 return ResourceManager.GetString("cd_stadiumsTab_selectStadiumLabel", resourceCulture);
             }
@@ -1023,7 +1050,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Arenas &amp; Stadiums.
         /// </summary>
-        internal static string cd_stadiumsTab_title {
+        public static string cd_stadiumsTab_title {
             get {
                 return ResourceManager.GetString("cd_stadiumsTab_title", resourceCulture);
             }
@@ -1032,7 +1059,7 @@ namespace CustomData.Localization {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Data storage to extra stuff for game Intances.
         /// </summary>
-        internal static string root_modDescription {
+        public static string root_modDescription {
             get {
                 return ResourceManager.GetString("root_modDescription", resourceCulture);
             }

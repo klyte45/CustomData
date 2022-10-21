@@ -1,4 +1,5 @@
 ﻿using ColossalFramework;
+using CustomData.Localization;
 using CustomData.Utils;
 using CustomData.Wrappers;
 using CustomData.Xml;
@@ -14,11 +15,18 @@ namespace CustomData.Overrides
         public static CDFacade Instance => ModInstance.Controller.Facade;
 
         public event Action EventOnBuildingNameGenStrategyChanged;
+        public event Action<ushort> EventOnBuildingLogoChanged;
         internal void CallBuildingNameGenStrategyChangedEvent() => BuildingManager.instance.StartCoroutine(CallBuildRenamedEvent_impl());
+        internal void CallEventOnBuildingLogoChanged(ushort buildingId) => BuildingManager.instance.StartCoroutine(CallEventOnBuildingLogoChanged_impl(buildingId));
         private IEnumerator CallBuildRenamedEvent_impl()
         {
             yield return 0;
             EventOnBuildingNameGenStrategyChanged?.Invoke();
+        }
+        private IEnumerator CallEventOnBuildingLogoChanged_impl(ushort buildingId)
+        {
+            yield return 0;
+            EventOnBuildingLogoChanged?.Invoke(buildingId);
         }
         public bool GetStreetAndNumber(Vector3 sidewalk, Vector3 midPosBuilding, out int number, out string streetName)
             => OwnCitySettingsDW.GetStreetAndNumber(sidewalk, midPosBuilding, out streetName, out number);

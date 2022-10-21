@@ -33,7 +33,7 @@ namespace CustomData.UI
             var cdStorage = CDStorage.Instance;
             if (m_baseNeighborTexture is null)
             {
-                m_baseNeighborTexture = new Texture2D((int)(IMG_TEXTURE_REGION_SIDE * IMG_PIXEL_MULTIPLIER), (int)(IMG_TEXTURE_REGION_SIDE * IMG_PIXEL_MULTIPLIER));
+                m_baseNeighborTexture = TextureUtils.New((int)(IMG_TEXTURE_REGION_SIDE * IMG_PIXEL_MULTIPLIER), (int)(IMG_TEXTURE_REGION_SIDE * IMG_PIXEL_MULTIPLIER));
                 m_neighborTextureDirty = true;
             }
             if (m_neighborTextureDirty && !m_neighborTextureUpdateInProgress)

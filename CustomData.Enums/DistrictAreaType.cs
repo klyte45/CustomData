@@ -1,6 +1,6 @@
 ﻿using ICities;
 
-namespace CustomData.Wrappers
+namespace CustomData.Enums
 {
     public enum DistrictAreaType
     {

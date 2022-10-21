@@ -1,4 +1,5 @@
-﻿using CustomData.Localization;
+﻿using CustomData.Enums;
+using CustomData.Localization;
 using CustomData.Wrappers;
 using CustomData.Xml;
 using Kwytto.UI;

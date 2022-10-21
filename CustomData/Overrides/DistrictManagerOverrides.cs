@@ -1,6 +1,6 @@
 ﻿using ColossalFramework.Globalization;
 using ColossalFramework.Math;
-using CustomData.Wrappers;
+using CustomData.Enums;
 using CustomData.Xml;
 using Kwytto.Utils;
 using System.Reflection;
