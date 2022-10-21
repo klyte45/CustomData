@@ -4,6 +4,7 @@
     {
         None,
         ImageLogo,
+        PostalCode
     }
 
 

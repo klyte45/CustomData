@@ -426,6 +426,24 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Overrides line color.
+        /// </summary>
+        public static string cd_addressWindow_overrideLineColor {
+            get {
+                return ResourceManager.GetString("cd_addressWindow_overrideLineColor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Spawned vehicles color.
+        /// </summary>
+        public static string cd_addressWindow_ownVehicleColors {
+            get {
+                return ResourceManager.GetString("cd_addressWindow_ownVehicleColors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Pick image logo (256x256) for: {0}.
         /// </summary>
         public static string cd_addressWindow_pickALogoFor {

@@ -2,6 +2,7 @@
 using CustomData.Localization;
 using CustomData.Xml;
 using Kwytto.LiteUI;
+using Kwytto.UI;
 using Kwytto.Utils;
 using System.Collections;
 using System.Linq;
@@ -15,7 +16,10 @@ namespace CustomData.UI
         protected override bool showOverModals => false;
         protected override bool requireModal => false;
         protected override bool ShowCloseButton => false;
-        private const float minHeight = 125;
+        protected override bool ShowMinimizeButton => true;
+        private const float minHeight = 210;
+        private GUIColorPicker picker;
+        private Texture2D m_clearButton;
         public static CDAddressWindow Instance
         {
             get
@@ -36,6 +40,9 @@ namespace CustomData.UI
         public override void Awake()
         {
             base.Awake();
+            m_clearButton = KResourceLoader.LoadTextureKwytto(CommonsSpriteNames.K45_Delete);
+            picker = GameObjectUtils.CreateElement<GUIColorPicker>(transform).Init();
+            picker.Visible = false;
         }
         GUIStyle m_noBreakLabel;
 
@@ -92,12 +99,57 @@ namespace CustomData.UI
                         maxLineWidth = Mathf.Max(maxLineWidth, dimensions.x + 8);
                         GUILayout.Label(Str.cd_addressWindow_noAddressAvailable, m_noBreakLabel, GUILayout.Height(3 * dimensions.y));
                     }
-                    if (CDStorage.Instance.GetBuildingSettings(m_lastBuildingId).Logo is Texture2D tex)
+
+                    var buildingSettings = CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, true);
+
+                    GUILayout.Space(5);
+                    maxLineWidth = Mathf.Max(maxLineWidth, 310, m_noBreakLabel.CalcSize(new GUIContent(Str.cd_addressWindow_ownVehicleColors)).x + 8);
+                    GUILayout.Label(Str.cd_addressWindow_ownVehicleColors, m_noBreakLabel);
+                    var oldVal = buildingSettings?.VehiclesColor;
+                    Color? newVal;
+                    using (new GUILayout.HorizontalScope())
+                    {
+                        newVal = picker.PresentColor("CD_BUILDINGCLR", oldVal, true);
+
+                        if (m_inlineBtnStyle is null)
+                        {
+                            m_inlineBtnStyle = new GUIStyle(GUI.skin.button)
+                            {
+                                fixedHeight = 20 * ResolutionMultiplier,
+                                fixedWidth = 20 * ResolutionMultiplier,
+                                padding = new RectOffset(0, 0, 0, 0),
+                            };
+                        }
+                        if (GUILayout.Button(m_clearButton, m_inlineBtnStyle))
+                        {
+                            newVal = null;
+                        }
+                        GUILayout.Space(3);
+                    }
+                    var changed = newVal != oldVal;
+                    if (changed)
+                    {
+                        if (buildingSettings is null)
+                        {
+                            buildingSettings = CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, false);
+                        }
+                        CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, false).VehiclesColor = newVal;
+                    }
+                    maxLineWidth = Mathf.Max(maxLineWidth, m_noBreakLabel.CalcSize(new GUIContent(Str.cd_addressWindow_overrideLineColor)).x + 16);
+                    GUIKwyttoCommons.AddToggle(Str.cd_addressWindow_overrideLineColor, buildingSettings?.OverrideLineColor ?? false, (x) => CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, false).OverrideLineColor = x, true);
+
+                    GUILayout.Space(5);
+
+                    if (buildingSettings?.Logo is Texture2D tex)
                     {
                         AddLogoPickerButton();
                         if (GUILayout.Button(Str.cd_addressWindow_removeLogo, RedButton))
                         {
-                            CDStorage.Instance.GetBuildingSettings(m_lastBuildingId).Logo = null;
+                            if (buildingSettings is null)
+                            {
+                                buildingSettings = CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, false);
+                            }
+                            buildingSettings.Logo = null;
                         }
 
                         maxLineWidth = Mathf.Max(maxLineWidth, 256 + 8);
@@ -132,7 +184,7 @@ namespace CustomData.UI
                         }
                         else
                         {
-                            CDStorage.Instance.GetBuildingSettings(m_lastBuildingId).Logo = result;
+                            CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, true).Logo = result;
                         }
                     }
                 });
@@ -141,6 +193,7 @@ namespace CustomData.UI
 
         private ushort m_lastBuildingId = 0;
         private string[] addressesLines;
+        private GUIStyle m_inlineBtnStyle;
 
         public IEnumerator ShowErrorModal()
         {

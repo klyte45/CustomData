@@ -1,7 +1,6 @@
 ﻿using CustomData.Overrides;
 using CustomData.Utils;
 using CustomData.Xml;
-using Kwytto.Utils;
 using UnityEngine;
 
 namespace CustomData.Wrappers
@@ -25,5 +24,7 @@ namespace CustomData.Wrappers
             }
         }
 
+        public Color? VehiclesColor { get => xml.color1; set => xml.color1 = value; }
+        public bool OverrideLineColor { get => xml.HasAnyFlag(1); set => _ = value ? xml.AddFlag(1) : xml.RemoveFlag(1); }
     }
 }

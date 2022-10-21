@@ -456,4 +456,10 @@ The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won'
   <data name="cd_Enum__CDVars_SourceBuilding" xml:space="preserve">
     <value>Extra attributes from Custom Data Mod relatives to the source building of this vehicle.</value>
   </data>
+  <data name="cd_addressWindow_overrideLineColor" xml:space="preserve">
+    <value>Overrides line color</value>
+  </data>
+  <data name="cd_addressWindow_ownVehicleColors" xml:space="preserve">
+    <value>Spawned vehicles color</value>
+  </data>
 </root>

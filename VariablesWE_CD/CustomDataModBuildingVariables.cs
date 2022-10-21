@@ -107,12 +107,22 @@ namespace VariablesWE_CD
                 case VariableBuildingSubType.ImageLogo:
                     if (!controller.CachedBuildingImages.ContainsKey(buildingId))
                     {
-                        var data = CDStorage.Instance.GetBuildingSettings(buildingId);
-                        controller.CachedBuildingImages[buildingId] = data.Logo is Texture2D tex
+                        var data = CDStorage.Instance.GetBuildingSettings(buildingId, false);
+                        controller.CachedBuildingImages[buildingId] = data?.Logo is Texture2D tex
                             ? WERenderingHelper.GenerateBri(tex)
                             : null;
                     }
                     multipleOutput = new[] { controller.CachedBuildingImages[buildingId] };
+                    break;
+                case VariableBuildingSubType.PostalCode:
+                    if (!controller.CachedBuildingImages.ContainsKey(buildingId))
+                    {
+                        var data = CDStorage.Instance.GetBuildingSettings(buildingId, false);
+                        controller.CachedBuildingImages[buildingId] = data?.Logo is Texture2D tex
+                            ? WERenderingHelper.GenerateBri(tex)
+                            : null;
+                    }
+                    multipleOutput = null;
                     break;
                 default:
                     multipleOutput = null;

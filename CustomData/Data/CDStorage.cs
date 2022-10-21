@@ -2,6 +2,7 @@
 using CustomData.Wrappers;
 using Kwytto.Data;
 using Kwytto.Utils;
+using System;
 using System.Linq;
 using System.Xml.Serialization;
 
@@ -27,6 +28,14 @@ namespace CustomData.Xml
             }
 
             return selectedDistrictData;
+        }
+        private T ConditionalGetter<T>(bool onlyIfExists, InstanceID instanceID, Func<InstanceDataExtensionXml, T> ifExists) where T : class
+        {
+            return InstanceExtraData.ContainsKey(instanceID.RawData)
+                ? ifExists(InstanceExtraData[instanceID.RawData])
+                : onlyIfExists
+                    ? null
+                    : ifExists(SafeGet(instanceID));
         }
 
         #region Region cities
@@ -95,7 +104,7 @@ namespace CustomData.Xml
         public OwnCitySettingsDW GetOwnCitySettings() => new OwnCitySettingsDW(SafeGet(new InstanceID { Index = 0xFFFFFF, Type = (InstanceType)InstanceIdUtils.TYPE_CD_REGIONCITIES }));
 
         public BuildingGeneralDW GetBuildingGeneralSettings() => new BuildingGeneralDW(SafeGet(new InstanceID { Building = 0 }));
-        public BuildingDW GetBuildingSettings(ushort buildingId) => new BuildingDW(SafeGet(new InstanceID { Building = buildingId }));
+        public BuildingDW GetBuildingSettings(ushort buildingId, bool onlyIfExists) => ConditionalGetter(onlyIfExists, new InstanceID { Building = buildingId }, (x) => new BuildingDW(x));
         public HighwayInstanceDW GetHighwayInstance(ushort seedId) => new HighwayInstanceDW(SafeGet(new InstanceID { Index = seedId, Type = (InstanceType)InstanceIdUtils.TYPE_CD_HIGHWAYINSTANCE }));
 
         internal void RemoveBuilding(ushort x) => InstanceExtraData.Remove((new InstanceID { Building = x }).RawData);

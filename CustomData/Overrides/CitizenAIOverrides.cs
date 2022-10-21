@@ -8,7 +8,6 @@ namespace CustomData.Overrides
 {
     public class CitizenAIOVerrides : Redirector, IRedirectable
     {
-        public Redirector RedirectorInstance { get; } = new Redirector();
         #region Mod
         public static bool GenerateCitizenName(uint citizenID, byte family, ref string __result)
         {
@@ -82,13 +81,10 @@ namespace CustomData.Overrides
             MethodInfo preRename = typeof(CitizenAIOVerrides).GetMethod("GenerateCitizenName", RedirectorUtils.allFlags);
             MethodInfo GetNameMethod = typeof(CitizenAI).GetMethod("GenerateCitizenName", RedirectorUtils.allFlags);
             LogUtils.DoLog($"Overriding GetName ({GetNameMethod} => {preRename})");
-            RedirectorInstance.AddRedirect(GetNameMethod, preRename);
+            AddRedirect(GetNameMethod, preRename);
             #endregion
         }
 
         #endregion
-
-
-
     }
 }
