@@ -453,6 +453,15 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Preferred vehicles skin name (VS only).
+        /// </summary>
+        public static string cd_addressWindow_preferredSkin {
+            get {
+                return ResourceManager.GetString("cd_addressWindow_preferredSkin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Delete logo.
         /// </summary>
         public static string cd_addressWindow_removeLogo {
