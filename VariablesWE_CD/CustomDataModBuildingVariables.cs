@@ -16,7 +16,7 @@ namespace VariablesWE_CD
 {
     public class CustomDataModBuildingVariables : WEVariableExtensionEnum
     {
-        private static Dictionary<Enum, CommandLevel> ReadCommandTree()
+        internal static Dictionary<Enum, CommandLevel> ReadCommandTree()
         {
             Dictionary<Enum, CommandLevel> result = new Dictionary<Enum, CommandLevel>();
             foreach (var value in Enum.GetValues(typeof(VariableBuildingSubType)).Cast<VariableBuildingSubType>())
@@ -36,11 +36,13 @@ namespace VariablesWE_CD
             {
                 case VariableBuildingSubType.ImageLogo:
                     return CommandLevel.m_endLevel;
+                case VariableBuildingSubType.PostalCode:
+                    return CommandLevel.m_appendPrefix;
                 default:
                     return null;
             }
         }
-        private static bool ReadData(VariableBuildingSubType var, string[] relativeParams, ref Enum subtype, out VariableExtraParameterContainer extraParams)
+        internal static bool ReadData(VariableBuildingSubType var, string[] relativeParams, ref Enum subtype, out VariableExtraParameterContainer extraParams)
         {
             var cmdLevel = GetCommandLevel(var);
             if (cmdLevel is null)
@@ -79,7 +81,7 @@ namespace VariablesWE_CD
                         && ReadData(tt, parameterPath.Skip(2).ToArray(), ref subtype, out paramContainer))
                     {
                         type = RootMenuEnumValueWithPrefix;
-                        paramContainer.contentType = TextContent.ParameterizedSpriteSingle;
+                        paramContainer.contentType = tt.GetContentType();
                     }
                 }
                 catch { }
@@ -115,15 +117,8 @@ namespace VariablesWE_CD
                     multipleOutput = new[] { controller.CachedBuildingImages[buildingId] };
                     break;
                 case VariableBuildingSubType.PostalCode:
-                    if (!controller.CachedBuildingImages.ContainsKey(buildingId))
-                    {
-                        var data = CDStorage.Instance.GetBuildingSettings(buildingId, false);
-                        controller.CachedBuildingImages[buildingId] = data?.Logo is Texture2D tex
-                            ? WERenderingHelper.GenerateBri(tex)
-                            : null;
-                    }
                     multipleOutput = null;
-                    break;
+                    return controller.GetBuildingPostalCode(buildingId);
                 default:
                     multipleOutput = null;
                     break;

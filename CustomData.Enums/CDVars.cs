@@ -4,5 +4,6 @@
     {
         CurrentBuilding,
         SourceBuilding,
+        CurrentVehicle
     }
 }

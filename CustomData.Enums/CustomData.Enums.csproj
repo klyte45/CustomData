@@ -45,10 +45,10 @@
       <HintPath>..\..\_managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
-	<Reference Include="ICities">
-	  <HintPath>..\..\_managed\ICities.dll</HintPath>
-	  <Private>False</Private>
-	</Reference>
+    <Reference Include="ICities">
+      <HintPath>..\..\_managed\ICities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\_managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>

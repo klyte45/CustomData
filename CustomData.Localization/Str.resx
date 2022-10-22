@@ -465,4 +465,39 @@ The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won'
   <data name="cd_addressWindow_preferredSkin" xml:space="preserve">
     <value>Preferred vehicles skin name (VS only)</value>
   </data>
+  <data name="cd_addressWindow_vehicleIdentifierPattern" xml:space="preserve">
+    <value>Vehicle identifier pattern</value>
+  </data>
+  <data name="cd_addressWindow_vehicleIdentifierPattern_helpContent" xml:space="preserve">
+    <value>&lt;color=yellow&gt;ABCDE abcde&lt;/color&gt;
+Represents the ordinal value (starting in 0) counting vehicles spawned for its parent depot. Letter case has same behavior than &lt;color=yellow&gt;jkl&lt;/color&gt; group.
+&lt;color=green&gt;Example:&lt;/color&gt; If the bus is the 36th bus to left the garage, &lt;color=yellow&gt;A, B&lt;/color&gt; and &lt;color=yellow&gt;C&lt;/color&gt; will be "0", &lt;color=yellow&gt;a, b&lt;/color&gt; and &lt;color=yellow&gt;c&lt;/color&gt; will be ignored (no hundreds!), &lt;color=yellow&gt;D&lt;/color&gt; and &lt;color=yellow&gt;d&lt;/color&gt; became 3 and &lt;color=yellow&gt;E&lt;/color&gt; and &lt;color=yellow&gt;e&lt;/color&gt; became "5" (first = 0, remember!). Since it's a lifespan account it never reset the counting.
+
+&lt;color=yellow&gt;JKL jkl&lt;/color&gt;
+Represents the value of Nth vehicle in the current vehicle composition, starting at 0 (may be configured to start in 1 in the future). Useful for identify wagons of a train, as example.
+The upper case will print leading zeroes if the number doesn't reach that order of magnitude, the lower case will ignore the digits and print nothing.
+&lt;color=green&gt;Example:&lt;/color&gt; The 4th car of a passenger train will return nothing for &lt;color=yellow&gt;j&lt;/color&gt; nor &lt;color=yellow&gt;k&lt;/color&gt;, "0" for &lt;color=yellow&gt;J&lt;/color&gt; and &lt;color=yellow&gt;K&lt;/color&gt; and "3" for &lt;color=yellow&gt;L&lt;/color&gt; or &lt;color=yellow&gt;l&lt;/color&gt;.
+&lt;color=cyan&gt;NOTE: &lt;color=yellow&gt;L&lt;/color&gt; and &lt;color=yellow&gt;l&lt;/color&gt; always will have the same value since the last zero always counts as significant digit. Same for multicase options below.&lt;/color&gt;
+	
+&lt;color=yellow&gt;VWXYZ vwxyz&lt;/color&gt;
+Represents the internal vehicle ID in game. Varies from 1 to 16383 (or 65535 for More Vehicles users) and are full random. Letter case has the same behavior than &lt;color=yellow&gt;jkl&lt;/color&gt; and &lt;color=yellow&gt;stu&lt;/color&gt; groups.
+&lt;color=green&gt;Example:&lt;/color&gt; The internal id of the vehicle is 7562. So &lt;color=yellow&gt;V&lt;/color&gt; became "0", &lt;color=yellow&gt;v&lt;/color&gt; is ignored, &lt;color=yellow&gt;W&lt;/color&gt; and &lt;color=yellow&gt;w&lt;/color&gt; are "7", &lt;color=yellow&gt;X&lt;/color&gt; and &lt;color=yellow&gt;x&lt;/color&gt; are "5", &lt;color=yellow&gt;Y&lt;/color&gt; and &lt;color=yellow&gt;y&lt;/color&gt; are "6" and &lt;color=yellow&gt;Z&lt;/color&gt; and &lt;color=yellow&gt;z&lt;/color&gt; are "2";
+	
+&lt;color=yellow&gt;\&lt;/color&gt;
+Use the backslash to escape the letter and use it literally (not apply the value). Double it to show a backslash in the output
+&lt;color=green&gt;Example:&lt;/color&gt; Even the internal ID of vehicle being 7562, if &lt;color=yellow&gt;\v&lt;/color&gt; is typed, &lt;color=yellow&gt;v&lt;/color&gt; will print "v" at output instead of being ignored.
+
+&lt;color=yellow&gt;--Any other letter or symbol--&lt;/color&gt;
+Will be printed as is in the output.</value>
+  </data>
+  <data name="cd_addressWindow_vehicleIdentifierPattern_helpHeader" xml:space="preserve">
+    <value>This can pattern will be used to generate the Vehicle Identifier (not the plate) for all vehicles of this building. It defaults to be the internal ID of the vehicle ingame, and can be used as variable in the Write Everywhere text spots.
+Each letter in the pattern represents a different kind of information, as shown in the list below:</value>
+  </data>
+  <data name="cd_Enum__VariableBuildingSubType_PostalCode" xml:space="preserve">
+    <value>Postal code where the building is placed, relative to nearest road.</value>
+  </data>
+  <data name="cd_Enum__VariableVehicleSubType_GeneratedId" xml:space="preserve">
+    <value>It's the ID generated for each vehicle based on pattern setted up in its owner building. Defaults to be the internal game ID.</value>
+  </data>
 </root>

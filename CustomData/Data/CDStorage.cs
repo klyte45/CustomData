@@ -22,20 +22,20 @@ namespace CustomData.Xml
 
         private InstanceDataExtensionXml SafeGet(InstanceID targetIdx)
         {
-            if (!InstanceExtraData.TryGetValue(targetIdx.RawData, out var selectedDistrictData))
+            if (!InstanceExtraData.TryGetValue(targetIdx.RawData, out var data))
             {
-                selectedDistrictData = CDStorage.Instance.InstanceExtraData[targetIdx.RawData] = new InstanceDataExtensionXml { Id = targetIdx };
+                data = CDStorage.Instance.InstanceExtraData[targetIdx.RawData] = new InstanceDataExtensionXml { Id = targetIdx };
             }
 
-            return selectedDistrictData;
+            return data;
         }
-        private T ConditionalGetter<T>(bool onlyIfExists, InstanceID instanceID, Func<InstanceDataExtensionXml, T> ifExists) where T : class
+        private T ConditionalGetter<T>(bool autoCreate, InstanceID instanceID, Func<InstanceDataExtensionXml, T> doWithData) where T : class
         {
             return InstanceExtraData.ContainsKey(instanceID.RawData)
-                ? ifExists(InstanceExtraData[instanceID.RawData])
-                : onlyIfExists
-                    ? null
-                    : ifExists(SafeGet(instanceID));
+                ? doWithData(InstanceExtraData[instanceID.RawData])
+                : autoCreate
+                    ? doWithData(SafeGet(instanceID))
+                    : null;
         }
 
         #region Region cities
@@ -104,7 +104,8 @@ namespace CustomData.Xml
         public OwnCitySettingsDW GetOwnCitySettings() => new OwnCitySettingsDW(SafeGet(new InstanceID { Index = 0xFFFFFF, Type = (InstanceType)InstanceIdUtils.TYPE_CD_REGIONCITIES }));
 
         public BuildingGeneralDW GetBuildingGeneralSettings() => new BuildingGeneralDW(SafeGet(new InstanceID { Building = 0 }));
-        public BuildingDW GetBuildingSettings(ushort buildingId, bool onlyIfExists) => ConditionalGetter(onlyIfExists, new InstanceID { Building = buildingId }, (x) => new BuildingDW(x));
+        public BuildingDW GetBuildingSettings(ushort buildingId, bool autoCreate) => ConditionalGetter(autoCreate, new InstanceID { Building = buildingId }, (x) => new BuildingDW(x));
+        public VehicleDW GetVehicleSettings(ushort vehicleId, bool autoCreate) => ConditionalGetter(autoCreate, new InstanceID { Vehicle = vehicleId }, (x) => new VehicleDW(x));
         public HighwayInstanceDW GetHighwayInstance(ushort seedId) => new HighwayInstanceDW(SafeGet(new InstanceID { Index = seedId, Type = (InstanceType)InstanceIdUtils.TYPE_CD_HIGHWAYINSTANCE }));
 
         internal void RemoveBuilding(ushort x) => InstanceExtraData.Remove((new InstanceID { Building = x }).RawData);

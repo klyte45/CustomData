@@ -1,4 +1,5 @@
 ﻿using CustomData.Enums;
+using CustomData.Overrides;
 using CustomData.Utils;
 using CustomData.Xml;
 using Kwytto.Utils;
@@ -22,13 +23,21 @@ namespace CustomData.Wrappers
         {
         }
         public ReferenceData GetDistrictGeneratorFile(DistrictAreaType type) => xml.SafeGetReference((long)type) ?? (xml.references[(long)type] = new ReferenceData());
-        public int PostalCodeDigits { get => (xml.genericId ?? 0) % 1000; set => xml.genericId = value % 1000; }
+        public int PostalCodeDigits
+        {
+            get => (xml.genericId ?? 0) % 1000; set
+            {
+                xml.genericId = value % 1000;
+                CDFacade.Instance.CallEventPostalCodeParamChanged();
+            }
+        }
         public string PostalCodeFormat
         {
             get => xml.givenStringId ?? "LMNOP-BCE"; set
             {
                 xml.givenStringId = value;
                 m_cachedPostalCodeTokens = null;
+                CDFacade.Instance.CallEventPostalCodeParamChanged();
             }
         }
         public string AddressLine1 { get => xml.SafeGetReference(long.MaxValue).mainReference ?? "B A( - F)"; set => xml.SafeGetReference(0).mainReference = value; }
@@ -85,7 +94,7 @@ namespace CustomData.Wrappers
 
             if (format.Contains("E"))
             {
-                e = TokenToPostalCode(sidewalk);
+                e = PostalCodeAtPosition(sidewalk);
             }
             if (format.Intersect("F()".ToCharArray()).Count() > 0)
             {
@@ -143,7 +152,7 @@ namespace CustomData.Wrappers
 
         private PostalCodeTokenContainer[] m_cachedPostalCodeTokens;
 
-        public string TokenToPostalCode(Vector3 position)
+        public string PostalCodeAtPosition(Vector3 position)
         {
             string result = "";
 

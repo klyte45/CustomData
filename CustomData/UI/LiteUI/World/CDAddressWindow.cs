@@ -1,6 +1,5 @@
 ﻿using ColossalFramework.UI;
 using CustomData.Localization;
-using CustomData.Overrides;
 using CustomData.Xml;
 using Kwytto.LiteUI;
 using Kwytto.UI;
@@ -18,9 +17,10 @@ namespace CustomData.UI
         protected override bool requireModal => false;
         protected override bool ShowCloseButton => false;
         protected override bool ShowMinimizeButton => true;
-        private const float minHeight = 240;
+        private const float minHeight = 315;
         private GUIColorPicker picker;
         private Texture2D m_clearButton;
+        private Texture2D m_helpButton;
         public static CDAddressWindow Instance
         {
             get
@@ -42,6 +42,7 @@ namespace CustomData.UI
         {
             base.Awake();
             m_clearButton = KResourceLoader.LoadTextureKwytto(CommonsSpriteNames.K45_Delete);
+            m_helpButton = KResourceLoader.LoadTextureKwytto(CommonsSpriteNames.K45_QuestionMark);
             picker = GameObjectUtils.CreateElement<GUIColorPicker>(transform).Init();
             picker.Visible = false;
         }
@@ -81,7 +82,19 @@ namespace CustomData.UI
                     alignment = TextAnchor.MiddleLeft,
                 };
             }
-            using (new GUILayout.AreaScope(new Rect(new Vector2(4, 4), size)))
+
+            if (m_inlineBtnStyle is null)
+            {
+                m_inlineBtnStyle = new GUIStyle(GUI.skin.button)
+                {
+                    fixedHeight = 20 * ResolutionMultiplier,
+                    fixedWidth = 20 * ResolutionMultiplier,
+                    padding = new RectOffset(0, 0, 0, 0),
+                };
+            }
+            var offset = new Vector2(4, 4);
+            var effArea = size - offset - offset;
+            using (new GUILayout.AreaScope(new Rect(offset, effArea)))
             {
                 using (new GUILayout.VerticalScope())
                 {
@@ -101,22 +114,47 @@ namespace CustomData.UI
                         GUILayout.Label(Str.cd_addressWindow_noAddressAvailable, m_noBreakLabel, GUILayout.Height(3 * dimensions.y));
                     }
 
-                    var buildingSettings = CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, true);
+                    var buildingSettings = CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, false);
 
                     GUILayout.Space(5);
-                    maxLineWidth = Mathf.Max(maxLineWidth, m_noBreakLabel.CalcSize(new GUIContent(Str.cd_addressWindow_preferredSkin)).x + 8);
-                    GUILayout.Label(Str.cd_addressWindow_preferredSkin, m_noBreakLabel);
-                    var newText = GUILayout.TextField(buildingSettings?.PreferredSkin ?? "", GUILayout.Height(20));
-                    if (buildingSettings?.PreferredSkin != newText)
+                    maxLineWidth = Mathf.Max(maxLineWidth, m_noBreakLabel.CalcSize(new GUIContent(Str.cd_addressWindow_vehicleIdentifierPattern)).x + 8);
+                    GUILayout.Label(Str.cd_addressWindow_vehicleIdentifierPattern, m_noBreakLabel);
+                    using (new GUILayout.HorizontalScope())
                     {
-                        if (buildingSettings is null)
+                        var newText = GUILayout.TextField(buildingSettings?.OwnVehiclesIdFormatter ?? "", GUILayout.Height(20));
+                        if (buildingSettings?.PreferredSkin != newText)
                         {
-                            buildingSettings = CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, false);
+                            if (buildingSettings is null)
+                            {
+                                buildingSettings = CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, true);
+                            }
+                            buildingSettings.OwnVehiclesIdFormatter = newText;
                         }
-                        buildingSettings.PreferredSkin = newText;
-                        CDFacade.Instance.CallEventOnBuildingVehicleSkinChanged(m_lastBuildingId);
-                    };
-
+                        if (GUILayout.Button(m_helpButton, m_inlineBtnStyle))
+                        {
+                            KwyttoDialog.ShowModal(new KwyttoDialog.BindProperties
+                            {
+                                buttons = KwyttoDialog.basicOkButtonBar,
+                                title = Str.cd_addressWindow_vehicleIdentifierPattern,
+                                message = Str.cd_addressWindow_vehicleIdentifierPattern_helpHeader,
+                                scrollText = Str.cd_addressWindow_vehicleIdentifierPattern_helpContent,
+                            });
+                        }
+                    }
+                    {
+                        GUILayout.Space(5);
+                        maxLineWidth = Mathf.Max(maxLineWidth, m_noBreakLabel.CalcSize(new GUIContent(Str.cd_addressWindow_preferredSkin)).x + 8);
+                        GUILayout.Label(Str.cd_addressWindow_preferredSkin, m_noBreakLabel);
+                        var newText = GUILayout.TextField(buildingSettings?.PreferredSkin ?? "", GUILayout.Height(20));
+                        if (buildingSettings?.PreferredSkin != newText)
+                        {
+                            if (buildingSettings is null)
+                            {
+                                buildingSettings = CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, true);
+                            }
+                            buildingSettings.PreferredSkin = newText;
+                        };
+                    }
                     ColorVehiclesEditor(ref maxLineWidth, ref buildingSettings);
 
                     GUILayout.Space(5);
@@ -128,7 +166,7 @@ namespace CustomData.UI
                         {
                             if (buildingSettings is null)
                             {
-                                buildingSettings = CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, false);
+                                buildingSettings = CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, true);
                             }
                             buildingSettings.Logo = null;
                         }
@@ -137,7 +175,7 @@ namespace CustomData.UI
                         GUILayout.Space(256);
                         var lastRect = GUILayoutUtility.GetLastRect();
                         windowRect.height = 256 + minHeight + 30;
-                        GUI.DrawTexture(new Rect(0, lastRect.y + 2, 256, 256), tex, ScaleMode.ScaleToFit, true);
+                        GUI.DrawTexture(new Rect(0, lastRect.y + 2, effArea.x, 256), tex, ScaleMode.ScaleToFit, true);
                     }
                     else
                     {
@@ -159,16 +197,6 @@ namespace CustomData.UI
             using (new GUILayout.HorizontalScope())
             {
                 newVal = picker.PresentColor("CD_BUILDINGCLR", oldVal, true);
-
-                if (m_inlineBtnStyle is null)
-                {
-                    m_inlineBtnStyle = new GUIStyle(GUI.skin.button)
-                    {
-                        fixedHeight = 20 * ResolutionMultiplier,
-                        fixedWidth = 20 * ResolutionMultiplier,
-                        padding = new RectOffset(0, 0, 0, 0),
-                    };
-                }
                 if (GUILayout.Button(m_clearButton, m_inlineBtnStyle))
                 {
                     newVal = null;
@@ -180,12 +208,12 @@ namespace CustomData.UI
             {
                 if (buildingSettings is null)
                 {
-                    buildingSettings = CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, false);
+                    buildingSettings = CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, true);
                 }
-                CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, false).VehiclesColor = newVal;
+                buildingSettings.VehiclesColor = newVal;
             }
             maxLineWidth = Mathf.Max(maxLineWidth, m_noBreakLabel.CalcSize(new GUIContent(Str.cd_addressWindow_overrideLineColor)).x + 16);
-            GUIKwyttoCommons.AddToggle(Str.cd_addressWindow_overrideLineColor, buildingSettings?.OverrideLineColor ?? false, (x) => CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, false).OverrideLineColor = x, true);
+            GUIKwyttoCommons.AddToggle(Str.cd_addressWindow_overrideLineColor, buildingSettings?.OverrideLineColor ?? false, (x) => CDStorage.Instance.GetBuildingSettings(m_lastBuildingId, true).OverrideLineColor = x, true);
         }
 
         private void AddLogoPickerButton()

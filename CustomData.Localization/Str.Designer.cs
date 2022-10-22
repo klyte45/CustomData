@@ -471,6 +471,36 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Vehicle identifier pattern.
+        /// </summary>
+        public static string cd_addressWindow_vehicleIdentifierPattern {
+            get {
+                return ResourceManager.GetString("cd_addressWindow_vehicleIdentifierPattern", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a &lt;color=yellow&gt;ABCDE abcde&lt;/color&gt;
+        ///Represents the ordinal value (starting in 0) counting vehicles spawned for its parent depot. Letter case has same behavior than &lt;color=yellow&gt;jkl&lt;/color&gt; group.
+        ///&lt;color=green&gt;Example:&lt;/color&gt; If the bus is the 36th bus to left the garage, &lt;color=yellow&gt;A, B&lt;/color&gt; and &lt;color=yellow&gt;C&lt;/color&gt; will be &quot;0&quot;, &lt;color=yellow&gt;a, b&lt;/color&gt; and &lt;color=yellow&gt;c&lt;/color&gt; will be ignored (no hundreds!), &lt;color=yellow&gt;D&lt;/color&gt; and &lt;color=yellow&gt;d&lt;/color&gt; became 3 and &lt;color=yellow&gt;E&lt;/c [o restante da cadeia de caracteres foi truncado]&quot;;.
+        /// </summary>
+        public static string cd_addressWindow_vehicleIdentifierPattern_helpContent {
+            get {
+                return ResourceManager.GetString("cd_addressWindow_vehicleIdentifierPattern_helpContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a This can pattern will be used to generate the Vehicle Identifier (not the plate) for all vehicles of this building. It defaults to be the internal ID of the vehicle ingame, and can be used as variable in the Write Everywhere text spots.
+        ///Each letter in the pattern represents a different kind of information, as shown in the list below:.
+        /// </summary>
+        public static string cd_addressWindow_vehicleIdentifierPattern_helpHeader {
+            get {
+                return ResourceManager.GetString("cd_addressWindow_vehicleIdentifierPattern_helpHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Names file.
         /// </summary>
         public static string cd_areasNamingTab_namesFile {
@@ -1017,6 +1047,24 @@ namespace CustomData.Localization {
         public static string cd_Enum__VariableBuildingSubType_ImageLogo {
             get {
                 return ResourceManager.GetString("cd_Enum__VariableBuildingSubType_ImageLogo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Postal code where the building is placed, relative to nearest road..
+        /// </summary>
+        public static string cd_Enum__VariableBuildingSubType_PostalCode {
+            get {
+                return ResourceManager.GetString("cd_Enum__VariableBuildingSubType_PostalCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a It&apos;s the ID generated for each vehicle based on pattern setted up in its owner building. Defaults to be the internal game ID..
+        /// </summary>
+        public static string cd_Enum__VariableVehicleSubType_GeneratedId {
+            get {
+                return ResourceManager.GetString("cd_Enum__VariableVehicleSubType_GeneratedId", resourceCulture);
             }
         }
         

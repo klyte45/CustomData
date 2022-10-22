@@ -11,7 +11,7 @@ namespace CustomData.Overrides
         #region Mod
         public static bool PreGetColor(ushort vehicleID, ref Vehicle data, InfoManager.InfoMode infoMode, ref Color __result)
         {
-            if (infoMode == InfoManager.InfoMode.None && data.m_sourceBuilding > 0 && CDStorage.Instance.GetBuildingSettings(data.m_sourceBuilding, true) is BuildingDW dw && dw.VehiclesColor is Color clr)
+            if (infoMode == InfoManager.InfoMode.None && data.m_sourceBuilding > 0 && CDStorage.Instance.GetBuildingSettings(data.m_sourceBuilding, false) is BuildingDW dw && dw.VehiclesColor is Color clr)
             {
                 __result = clr;
                 return false;
@@ -20,7 +20,7 @@ namespace CustomData.Overrides
         }
         public static bool PreGetColorLinedVehicle(ushort vehicleID, ref Vehicle data, InfoManager.InfoMode infoMode, ref Color __result)
         {
-            if (infoMode == InfoManager.InfoMode.None && data.m_sourceBuilding > 0 && CDStorage.Instance.GetBuildingSettings(data.m_sourceBuilding, true) is BuildingDW dw && dw.OverrideLineColor && dw.VehiclesColor is Color clr)
+            if (infoMode == InfoManager.InfoMode.None && data.m_sourceBuilding > 0 && CDStorage.Instance.GetBuildingSettings(data.m_sourceBuilding, false) is BuildingDW dw && dw.OverrideLineColor && dw.VehiclesColor is Color clr)
             {
                 __result = clr;
                 return false;

@@ -14,47 +14,10 @@ namespace VariablesWE_CD
 {
     public class CustomDataModVehicleBuildingVariables : WEVariableExtensionEnum
     {
-        private static Dictionary<Enum, CommandLevel> ReadCommandTree()
-        {
-            Dictionary<Enum, CommandLevel> result = new Dictionary<Enum, CommandLevel>();
-            foreach (var value in Enum.GetValues(typeof(VariableBuildingSubType)).Cast<VariableBuildingSubType>())
-            {
-                if (value == 0)
-                {
-                    continue;
-                }
-
-                result[value] = GetCommandLevel(value);
-            }
-            return result;
-        }
-        private static CommandLevel GetCommandLevel(VariableBuildingSubType var)
-        {
-            switch (var)
-            {
-                case VariableBuildingSubType.ImageLogo:
-                    return CommandLevel.m_endLevel;
-                default:
-                    return null;
-            }
-        }
-        private static bool ReadData(VariableBuildingSubType var, string[] relativeParams, ref Enum subtype, out VariableExtraParameterContainer extraParams)
-        {
-            var cmdLevel = GetCommandLevel(var);
-            if (cmdLevel is null)
-            {
-                extraParams = default;
-                return false;
-            }
-
-            cmdLevel.ParseFormatting(relativeParams, out extraParams);
-            subtype = var;
-            return true;
-        }
 
         public override Enum[] AccessibleSubmenusEnum => Enum.GetValues(typeof(VariableBuildingSubType)).Cast<Enum>().Where(x => (VariableBuildingSubType)x != VariableBuildingSubType.None).ToArray();
 
-        public override Dictionary<Enum, CommandLevel> CommandTree => ReadCommandTree();
+        public override Dictionary<Enum, CommandLevel> CommandTree => CustomDataModBuildingVariables.ReadCommandTree();
 
         public override Enum DefaultValue => VariableBuildingSubType.None;
 
@@ -71,10 +34,10 @@ namespace VariablesWE_CD
                 try
                 {
                     if (Enum.Parse(typeof(VariableBuildingSubType), parameterPath[1]) is VariableBuildingSubType tt
-                        && ReadData(tt, parameterPath.Skip(2).ToArray(), ref subtype, out paramContainer))
+                        && CustomDataModBuildingVariables.ReadData(tt, parameterPath.Skip(2).ToArray(), ref subtype, out paramContainer))
                     {
                         type = RootMenuEnumValueWithPrefix;
-                        paramContainer.contentType = TextContent.ParameterizedSpriteSingle;
+                        paramContainer.contentType = tt.GetContentType();
                     }
                 }
                 catch { }

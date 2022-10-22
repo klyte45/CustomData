@@ -57,7 +57,21 @@ namespace CustomData.Localization
                 case UseGeneratedNameCategories.IndustrialZone: return Str.cd_Enum__UseGeneratedNameCategories_IndustrialZone;
                 case UseGeneratedNameCategories.OfficeZone: return Str.cd_Enum__UseGeneratedNameCategories_OfficeZone;
                 case UseGeneratedNameCategories.Taxi: return Str.cd_Enum__UseGeneratedNameCategories_Taxi;
-                case VariableBuildingSubType.ImageLogo: return Str.cd_Enum__VariableBuildingSubType_ImageLogo;
+
+                case VariableBuildingSubType x:
+                    switch (x)
+                    {
+                        case VariableBuildingSubType.ImageLogo: return Str.cd_Enum__VariableBuildingSubType_ImageLogo;
+                        case VariableBuildingSubType.PostalCode: return Str.cd_Enum__VariableBuildingSubType_PostalCode;
+                    }
+                    break;
+                case VariableVehicleSubType x:
+                    switch (x)
+                    {
+                        case VariableVehicleSubType.GeneratedId: return Str.cd_Enum__VariableVehicleSubType_GeneratedId;
+                    }
+                    break;
+
             }
             return variable.ValueToI18nKwytto();
         }

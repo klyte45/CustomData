@@ -39,6 +39,22 @@ namespace CustomData.Overrides
         }
 
 
+        public event Action<ushort> EventOnBuildingVehicleIdPatternChanged;
+        internal void CallEventOnBuildingVehicleIdPatternChanged(ushort buildingId) => BuildingManager.instance.StartCoroutine(CallEventOnBuildingVehicleIdPatternChanged_impl(buildingId));
+        private IEnumerator CallEventOnBuildingVehicleIdPatternChanged_impl(ushort buildingId)
+        {
+            yield return 0;
+            EventOnBuildingVehicleIdPatternChanged?.Invoke(buildingId);
+        }
+
+        public event Action EventPostalCodeParamChanged;
+        internal void CallEventPostalCodeParamChanged() => BuildingManager.instance.StartCoroutine(CallEventPostalCodeParamChanged_impl());
+        private IEnumerator CallEventPostalCodeParamChanged_impl()
+        {
+            yield return 0;
+            EventPostalCodeParamChanged?.Invoke();
+        }
+
         public bool GetStreetAndNumber(Vector3 sidewalk, Vector3 midPosBuilding, out int number, out string streetName)
             => OwnCitySettingsDW.GetStreetAndNumber(sidewalk, midPosBuilding, out streetName, out number);
         public Color GetDistrictColor(byte districtId) => CDStorage.Instance.GetDistrictData(districtId).Color ?? CDStorage.Instance.GetDistrictData(0).Color ?? Color.black;
@@ -64,6 +80,6 @@ namespace CustomData.Overrides
             return SegmentUtils.GetCardinalDirectionSegment(segmentId, CDStorage.Instance.GetHighwayInstance(NetManager.instance.m_segments.m_buffer[segmentId].m_nameSeed).HighwayAxis).GetCardinalAngle();
         }
 
-        public string GetPreferredVehiclesSkinForBuilding(ushort buildingId) => buildingId == 0 ? null : CDStorage.Instance.GetBuildingSettings(buildingId, true)?.PreferredSkin;
+        public string GetPreferredVehiclesSkinForBuilding(ushort buildingId) => buildingId == 0 ? null : CDStorage.Instance.GetBuildingSettings(buildingId, false)?.PreferredSkin;
     }
 }
