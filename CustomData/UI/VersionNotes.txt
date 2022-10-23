@@ -1,2 +1,29 @@
-<color=yellow>Custom Data Mod 0!</color>
+<color=yellow>Welcome to the Custom Data Mod</color>
+
+This mod is being designed to replace some other mods that I (Klyte45) did earlier with the goal of extend the data stored for instances in game.
+For now, it replace around 70% of the old Addresses Mod and also have features that appeared in very old Service Vehicle Manager.
+
+<color=yellow>Features available in this first version</color>
+[WE] = Write Everywhere mod
+[VS] = Vehicle Skins mod
+
+- All basic addressing features from Addresses mod, like:
+	> Postal code & Address lines
+	> Auto naming roads from prebuilt bank of names
+	> Change Cims names generation method
+	> Set up a district/city color
+	> Change neighbors names
+	> Auto generate names for buildings based on streets or districts names
+
+- <color=yellow>NEW!</color> Add building extra data:
+	> Color for their generated vehicles (if applicable - like old SVM)
+	> [WE] Logo (use an image with size 256x256 - it will be saved within the savegame)
+	> [WE] Enables to use the Logo in the Write Everywhere mod's layouts
+	> [WE] Serial number format for the vehicles spawned from the building (if applicable)
+	> [VS] Default vehicle skin to be used by all vehicles from this - will ignore if the skin name is not available
+	> Also access Outside Connections buildings, so you can change their custom data too!
+
+It's planned to re-add the stadiums teams options too in a future release.
+
+
 
