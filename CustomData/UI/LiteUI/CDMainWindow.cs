@@ -67,6 +67,7 @@ namespace CustomData.UI
                         new CDAreasNamingTab(this),
                         new CDAddressingSettingsTab(this),
                         new CDAutoNameBuildingTab(this),
+                        new CDOutsideConnectionsTab(),
                     };
             m_tabsContainer = new GUIVerticalTabsContainer(tabs)
             {
@@ -101,7 +102,6 @@ namespace CustomData.UI
         protected override void OnWindowOpened()
         {
             base.OnWindowOpened();
-            m_tabsContainer?.Reset();
         }
 
         protected override void OnWindowDestroyed()

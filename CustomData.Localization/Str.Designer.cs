@@ -1114,6 +1114,42 @@ namespace CustomData.Localization {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Move camera to location when select.
+        /// </summary>
+        public static string cd_outsideConnections_goToWhenSelect {
+            get {
+                return ResourceManager.GetString("cd_outsideConnections_goToWhenSelect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Any outside connection have a hidden building under the hood. Load the list and click in the desired connection below to check it!.
+        /// </summary>
+        public static string cd_outsideConnections_header {
+            get {
+                return ResourceManager.GetString("cd_outsideConnections_header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Reload connections list.
+        /// </summary>
+        public static string cd_outsideConnections_reloadOutsideConnections {
+            get {
+                return ResourceManager.GetString("cd_outsideConnections_reloadOutsideConnections", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Outside Connections.
+        /// </summary>
+        public static string cd_outsideConnections_title {
+            get {
+                return ResourceManager.GetString("cd_outsideConnections_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Select Arena/Stadium.
         /// </summary>
         public static string cd_stadiumsTab_selectStadiumLabel {

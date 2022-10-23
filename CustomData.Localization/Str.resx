@@ -500,4 +500,16 @@ Each letter in the pattern represents a different kind of information, as shown 
   <data name="cd_Enum__VariableVehicleSubType_GeneratedId" xml:space="preserve">
     <value>It's the ID generated for each vehicle based on pattern setted up in its owner building. Defaults to be the internal game ID.</value>
   </data>
+  <data name="cd_outsideConnections_goToWhenSelect" xml:space="preserve">
+    <value>Move camera to location when select</value>
+  </data>
+  <data name="cd_outsideConnections_header" xml:space="preserve">
+    <value>Any outside connection have a hidden building under the hood. Load the list and click in the desired connection below to check it!</value>
+  </data>
+  <data name="cd_outsideConnections_reloadOutsideConnections" xml:space="preserve">
+    <value>Reload connections list</value>
+  </data>
+  <data name="cd_outsideConnections_title" xml:space="preserve">
+    <value>Outside Connections</value>
+  </data>
 </root>

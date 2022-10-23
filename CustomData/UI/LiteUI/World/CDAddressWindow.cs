@@ -17,7 +17,7 @@ namespace CustomData.UI
         protected override bool requireModal => false;
         protected override bool ShowCloseButton => false;
         protected override bool ShowMinimizeButton => true;
-        private const float minHeight = 315;
+        private const float minHeight = 325;
         private GUIColorPicker picker;
         private Texture2D m_clearButton;
         private Texture2D m_helpButton;
