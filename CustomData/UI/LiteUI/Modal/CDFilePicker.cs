@@ -14,7 +14,7 @@ namespace CustomData.UI
 {
     public class CDFilePicker : GUIRootWindowBase
     {
-        ~CDFilePicker()
+        protected override void OnWindowDestroyed()
         {
             Destroy(tempTexture);
         }

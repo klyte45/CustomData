@@ -81,5 +81,17 @@ namespace CustomData.Overrides
         }
 
         public string GetPreferredVehiclesSkinForBuilding(ushort buildingId) => buildingId == 0 ? null : CDStorage.Instance.GetBuildingSettings(buildingId, false)?.PreferredSkin;
+
+        #region ITM
+        public event Action<ushort> EventOnTransportLineLogoChanged;
+        internal void CallEventOnTransportLineLogoChanged(ushort transportLineId) => TransportManager.instance.StartCoroutine(CallEventOnTransportLineLogoChanged_impl(transportLineId));
+        private IEnumerator CallEventOnTransportLineLogoChanged_impl(ushort transportLineId)
+        {
+            yield return 0;
+            EventOnTransportLineLogoChanged?.Invoke(transportLineId);
+        }
+        public Texture2D GetLineIcon(ushort transportLineId) => CDStorage.Instance.GetTransportLineInstance(transportLineId, false)?.LineIcon;
+        public Texture2D SetLineIcon(ushort transportLineId, Texture2D newIcon) => CDStorage.Instance.GetTransportLineInstance(transportLineId, true).LineIcon = newIcon;
+        #endregion
     }
 }

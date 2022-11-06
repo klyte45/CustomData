@@ -107,7 +107,7 @@ namespace CustomData.Xml
         public BuildingDW GetBuildingSettings(ushort buildingId, bool autoCreate) => ConditionalGetter(autoCreate, new InstanceID { Building = buildingId }, (x) => new BuildingDW(x));
         public VehicleDW GetVehicleSettings(ushort vehicleId, bool autoCreate) => ConditionalGetter(autoCreate, new InstanceID { Vehicle = vehicleId }, (x) => new VehicleDW(x));
         public HighwayInstanceDW GetHighwayInstance(ushort seedId) => new HighwayInstanceDW(SafeGet(new InstanceID { Index = seedId, Type = (InstanceType)InstanceIdUtils.TYPE_CD_HIGHWAYINSTANCE }));
-
+        public TransportLineDW GetTransportLineInstance(ushort transportLineId, bool autoCreate) => ConditionalGetter(autoCreate, new InstanceID { TransportLine = transportLineId }, (x) => new TransportLineDW(x));
         internal void RemoveBuilding(ushort x) => InstanceExtraData.Remove((new InstanceID { Building = x }).RawData);
     }
 }
