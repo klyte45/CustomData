@@ -1,6 +1,5 @@
 ﻿using ColossalFramework;
 using CustomData.Xml;
-using Kwytto.Utils;
 using System;
 
 namespace CustomData.Wrappers
@@ -14,6 +13,9 @@ namespace CustomData.Wrappers
         public VehicleDW(InstanceDataExtensionXml xml) : base(xml)
         {
         }
+
+        private string cachedIdentifier;
+        private string formatCachedIdentifier;
 
         public uint GetSeqIdFromDepot()
         {
@@ -41,11 +43,15 @@ namespace CustomData.Wrappers
                 return vehicleId.ToString("00000");
             }
             var buildingConfig = CDStorage.Instance.GetBuildingSettings(VehicleManager.instance.m_vehicles.m_buffer[vehicleId].m_sourceBuilding, false);
-            if (!(buildingConfig?.OwnVehiclesIdFormatter is string identifierFormat) || identifierFormat.TrimToNull() is null)
+            if (!(buildingConfig?.OwnVehiclesIdFormatter is string identifierFormat) || identifierFormat.Length == 0)
             {
                 return vehicleId.ToString("00000");
             }
-
+            if (formatCachedIdentifier == identifierFormat)
+            {
+                return cachedIdentifier;
+            }
+            formatCachedIdentifier = identifierFormat;
 
             var firstVehicle = VehicleManager.instance.m_vehicles.m_buffer[vehicleId].GetFirstVehicle(vehicleId);
             ref Vehicle vehicle = ref VehicleManager.instance.m_vehicles.m_buffer[firstVehicle];
@@ -162,9 +168,7 @@ namespace CustomData.Wrappers
                     result += GetLetter(item);
                 }
             }
-            return result.Replace("\0", "").Trim();
-
-
+            return cachedIdentifier = result.Replace("\0", "").Trim();
         }
 
 

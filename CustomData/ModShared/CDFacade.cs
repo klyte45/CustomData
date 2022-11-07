@@ -92,6 +92,7 @@ namespace CustomData.Overrides
         }
         public Texture2D GetLineIcon(ushort transportLineId) => CDStorage.Instance.GetTransportLineInstance(transportLineId, false)?.LineIcon;
         public Texture2D SetLineIcon(ushort transportLineId, Texture2D newIcon) => CDStorage.Instance.GetTransportLineInstance(transportLineId, true).LineIcon = newIcon;
+        public string GetVehicleIdentifier(ushort vehicleId) => CDStorage.Instance.GetVehicleSettings(vehicleId, true).GetVehicleIdentifier();
         #endregion
     }
 }
