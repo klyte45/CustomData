@@ -97,7 +97,7 @@ namespace CustomData.UI
                     padding = new RectOffset(0, 0, 0, 0),
                 };
             }
-            m_tabsContainer.DrawListTabs(new Rect(default, size), 200 * ResolutionMultiplier);
+            m_tabsContainer.DrawListTabs2(new Rect(default, size), 200);
         }
         protected override void OnWindowOpened()
         {
