@@ -163,7 +163,7 @@
     <value>デフォルトの都市名ファイル</value>
   </data>
   <data name="cd_neighborTab_title" xml:space="preserve">
-    <value>近隣</value>
+    <value>近隣都市</value>
   </data>
   <data name="root_modDescription" xml:space="preserve">
     <value>ゲームインスタンス用の追加の格納データ</value>
@@ -254,7 +254,7 @@
     <value>市内の郵便番号</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeFormat" xml:space="preserve">
-    <value>郵便番号の形式</value>
+    <value>郵便番号のフォーマット</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeSettings" xml:space="preserve">
     <value>郵便番号の設定</value>
@@ -322,7 +322,7 @@
   <data name="cd_addressingSettingsTab_postalCodeHelpHeaderText" xml:space="preserve">
     <value>郵便番号のフォーマット内には、特殊な値と意味を持つ文字があります。
 文字をエスケープしてそのままで表示したい場合は、バックスラッシュ &lt;color=#FFFF00&gt;「\」&lt;/color&gt; を使用するか、文字の内容を &lt;color=#FFFF00&gt;「二重引用符」&lt;/color&gt; で囲って下さい。
-リストに無い文字は通常通りの文字として表示されます。</value>
+リストに無い文字は、通常通りの文字として表示されます。</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_A" xml:space="preserve">
     <value>ストリート名</value>
@@ -343,7 +343,7 @@
     <value>特別エリア名 (パークエリア・産業エリアなど)</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineHelpHeaderText" xml:space="preserve">
-    <value>住所の行には、特殊な値と意味を持つ文字があります。
+    <value>住所の欄には、特殊な値と意味を持つ文字があります。
 バックスラッシュ &lt;color=#FFFF00&gt;\&lt;/color&gt; を使用すれば、文字をエスケープしてそのまま表示します。
 括弧内の文字 &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; は、地区がない場合は表示されません。
 同じく括弧内の文字 &lt;color=#FFFF00&gt;( )&lt;/color&gt; は、 特別エリアがない場合は表示されません。</value>
@@ -457,7 +457,7 @@
     <value>Custom Data Mod関連からこの車両にソース建物への追加属性</value>
   </data>
   <data name="cd_addressWindow_overrideLineColor" xml:space="preserve">
-    <value>ライン色を上書き</value>
+    <value>ラインカラーを上書き</value>
   </data>
   <data name="cd_addressWindow_ownVehicleColors" xml:space="preserve">
     <value>スポーン車両の色</value>
