@@ -154,119 +154,119 @@
     <value>Azioni</value>
   </data>
   <data name="cd_neighborTab_azimuthDirectionShort" xml:space="preserve">
-    <value>Azimuth (°)</value>
+    <value>Azimut (°)</value>
   </data>
   <data name="cd_neighborTab_cityName" xml:space="preserve">
-    <value>City Name</value>
+    <value>Nome della città</value>
   </data>
   <data name="cd_neighborTab_neighborNamesFile" xml:space="preserve">
-    <value>Default city names file</value>
+    <value>File nomi di città predefiniti</value>
   </data>
   <data name="cd_neighborTab_title" xml:space="preserve">
-    <value>Neighbors</value>
+    <value>Vicini</value>
   </data>
   <data name="root_modDescription" xml:space="preserve">
-    <value>Data storage to extra stuff for game Intances</value>
+    <value>Archiviazione dati in cose extra per istanze di gioco</value>
   </data>
   <data name="cd_cimNamingTab_surnamesTitle" xml:space="preserve">
-    <value>Surnames file</value>
+    <value>File dei cognomi</value>
   </data>
   <data name="cd_cimNamingTab_femaleNamesTitle" xml:space="preserve">
-    <value>Female given names file</value>
+    <value>File nomi propri femminili</value>
   </data>
   <data name="cd_cimNamingTab_maleNamesTitle" xml:space="preserve">
-    <value>Male given names files</value>
+    <value>File nomi propri maschili</value>
   </data>
   <data name="cd_cimNamingTab_surnameBeforeMainname" xml:space="preserve">
-    <value>Surnames before given names
-(only when using custom surnames)</value>
+    <value>Cognomi prima dei nomi
+(solo quando si usano cognomi personalizzati)</value>
   </data>
   <data name="cd_areasNamingTab_simplePatternNote" xml:space="preserve">
-    <value>&lt;i&gt;&lt;color=#FFFF00&gt;NOTE:&lt;/color&gt; Simple pattern files are like the name files, but requires to have a placeholder "&lt;color=#00ff00&gt;{0}&lt;/color&gt;" to be replaced by the generated name.&lt;/i&gt;</value>
+    <value>&lt;i&gt;&lt;color=#FFFF00&gt;NOTA:&lt;/color&gt; I file di modello semplici sono come i file di nome, ma richiedono un placeholder "&lt;color=#00ff00&gt;{0}&lt;/color&gt;" che venga sostituito dal nome generato.&lt;/i&gt;</value>
   </data>
   <data name="cd_areasNamingTab_title" xml:space="preserve">
-    <value>Areas' naming</value>
+    <value>Denominazione aree</value>
   </data>
   <data name="cd_areasNamingTab_simplePatternFile" xml:space="preserve">
-    <value>Simple patterns file</value>
+    <value>File di modelli semplici</value>
   </data>
   <data name="cd_areasNamingTab_namesFile" xml:space="preserve">
-    <value>Names file</value>
+    <value>File di nomi</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_CityPark" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;City Park Areas&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;Aree del parco cittadino&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Airports" xml:space="preserve">
-    <value>&lt;color=#00FFFF&gt;Airport Areas&lt;/color&gt;</value>
+    <value>&lt;color=#00FFFF&gt;Aree aeroportuali&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Campus_Liberal" xml:space="preserve">
-    <value>&lt;color=#0044FF&gt;Liberal Arts College&lt;/color&gt;</value>
+    <value>&lt;color=#0044FF&gt;College Arti Liberali&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Campus_Regular" xml:space="preserve">
-    <value>&lt;color=#0044FF&gt;University&lt;/color&gt;</value>
+    <value>&lt;color=#0044FF&gt;Università&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Campus_Trade" xml:space="preserve">
-    <value>&lt;color=#0044FF&gt;Trade School&lt;/color&gt;</value>
+    <value>&lt;color=#0044FF&gt;Scuola Commerciale&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Farming" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Farming Industry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;Zone agricole&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Forest" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Forest Industry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;Zone industrie forestali&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Mining" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Mining Inudstry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;Zone industrie minerarie&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Oil" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Oil Industry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;Zone industrie petrolifere&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Amusement" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;Amusement Parks&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;Parchi di divertimento&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Natural" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;Natural Reserves&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;Riserve naturali&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Zoo" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;Zoo Areas&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;Aree zoologiche&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Pedestrian" xml:space="preserve">
-    <value>&lt;color=#888888&gt;Pedestrian Areas&lt;/color&gt;</value>
+    <value>&lt;color=#888888&gt;Zone pedonali&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Regular" xml:space="preserve">
-    <value>Regular districts</value>
+    <value>Distretti regolari</value>
   </data>
   <data name="cd_addressingSettingsTab_title" xml:space="preserve">
-    <value>Addressing settings</value>
+    <value>Impostazioni degli indirizzi</value>
   </data>
   <data name="cd_addressingSettingsTab_addressesLines" xml:space="preserve">
-    <value>Addresses lines</value>
+    <value>Linee degli indirizzi</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLine1" xml:space="preserve">
-    <value>Address line 1</value>
+    <value>Riga indirizzo 1</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLine2" xml:space="preserve">
-    <value>Address line 2</value>
+    <value>Riga indirizzo 2</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLine3" xml:space="preserve">
-    <value>Address line 3</value>
+    <value>Riga indirizzo 3</value>
   </data>
   <data name="cd_addressingSettingsTab_citywidePostalCode" xml:space="preserve">
-    <value>City postal code digits</value>
+    <value>Cifre del CAP cittadino</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeFormat" xml:space="preserve">
-    <value>Postal code format</value>
+    <value>Formato del CAP</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeSettings" xml:space="preserve">
-    <value>Postal code settings</value>
+    <value>Impostazioni CAP</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_A" xml:space="preserve">
-    <value>1st digit of name seed id of the segment (0-6)</value>
+    <value>1a cifra dell'id del seed dei nomi del segmento (0-6)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_B" xml:space="preserve">
-    <value>2nd digit of name seed id of the segment (0-9)</value>
+    <value>2a cifra dell'id del seed dei nomi del segmento (0-9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_C" xml:space="preserve">
-    <value>3rd digit of name seed id of the segment (0-9)</value>
+    <value>3a cifra dell'id del seed dei nomi del segmento (0-9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_D" xml:space="preserve">
     <value>4th digit of name seed id of the segment (0-9)</value>
