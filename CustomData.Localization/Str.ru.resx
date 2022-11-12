@@ -118,92 +118,92 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="cd_cimNamingTab_title" xml:space="preserve">
-    <value>Cims' naming</value>
+    <value>Название людей</value>
   </data>
   <data name="cd_districtTab_cityColor" xml:space="preserve">
-    <value>City color</value>
+    <value>Цвет города</value>
   </data>
   <data name="cd_districtTab_districtColor" xml:space="preserve">
-    <value>District color</value>
+    <value>Цвет района</value>
   </data>
   <data name="cd_districtTab_districtToChange" xml:space="preserve">
-    <value>Select district</value>
+    <value>Выбрать район</value>
   </data>
   <data name="cd_districtTab_postalCodeDigits" xml:space="preserve">
-    <value>Postal code digits (000 to 999)</value>
+    <value>Цифры почтового индекса (от 000 до 999)</value>
   </data>
   <data name="cd_districtTab_postalCodeDigitsFallback" xml:space="preserve">
-    <value>City postal code</value>
+    <value>Почтовый индекс города</value>
   </data>
   <data name="cd_districtTab_roadFormattingFile" xml:space="preserve">
-    <value>Road name pattern file</value>
+    <value>Шаблон названия дороги</value>
   </data>
   <data name="cd_districtTab_roadFormattingFileDefault" xml:space="preserve">
-    <value>City default road pattern file</value>
+    <value>Шаблон города по умолчанию</value>
   </data>
   <data name="cd_districtTab_roadNamingsFile" xml:space="preserve">
-    <value>Road naming file</value>
+    <value>Файл с именами дороги</value>
   </data>
   <data name="cd_districtTab_roadNamingsFileDefault" xml:space="preserve">
-    <value>City default road naming file</value>
+    <value>Файл названия дорог по умолчанию</value>
   </data>
   <data name="cd_districtTab_title" xml:space="preserve">
-    <value>District data</value>
+    <value>Данные района</value>
   </data>
   <data name="cd_neighborTab_actions" xml:space="preserve">
-    <value>Actions</value>
+    <value>Действия</value>
   </data>
   <data name="cd_neighborTab_azimuthDirectionShort" xml:space="preserve">
-    <value>Azimuth (°)</value>
+    <value>Азимут(°)</value>
   </data>
   <data name="cd_neighborTab_cityName" xml:space="preserve">
-    <value>City Name</value>
+    <value>Название города</value>
   </data>
   <data name="cd_neighborTab_neighborNamesFile" xml:space="preserve">
-    <value>Default city names file</value>
+    <value>Файл названий городов по умолчанию</value>
   </data>
   <data name="cd_neighborTab_title" xml:space="preserve">
-    <value>Neighbors</value>
+    <value>Соседи</value>
   </data>
   <data name="root_modDescription" xml:space="preserve">
-    <value>Data storage to extra stuff for game Intances</value>
+    <value>Хранилище данных для дополнительных возможностей игры</value>
   </data>
   <data name="cd_cimNamingTab_surnamesTitle" xml:space="preserve">
-    <value>Surnames file</value>
+    <value>Файл с фамилиями</value>
   </data>
   <data name="cd_cimNamingTab_femaleNamesTitle" xml:space="preserve">
-    <value>Female given names file</value>
+    <value>Файл с именами женщин</value>
   </data>
   <data name="cd_cimNamingTab_maleNamesTitle" xml:space="preserve">
-    <value>Male given names files</value>
+    <value>Файл с именами мужчин</value>
   </data>
   <data name="cd_cimNamingTab_surnameBeforeMainname" xml:space="preserve">
-    <value>Surnames before given names
-(only when using custom surnames)</value>
+    <value>Фамилии перед заданными именами
+(только при использовании пользовательских фамилий)</value>
   </data>
   <data name="cd_areasNamingTab_simplePatternNote" xml:space="preserve">
-    <value>&lt;i&gt;&lt;color=#FFFF00&gt;NOTE:&lt;/color&gt; Simple pattern files are like the name files, but requires to have a placeholder "&lt;color=#00ff00&gt;{0}&lt;/color&gt;" to be replaced by the generated name.&lt;/i&gt;</value>
+    <value>&lt;i&gt;&lt;color=#FFFF00&gt;ПРИМЕЧАНИЕ:&lt;/color&gt; Простые файлы шаблонов похожи на файлы имен, но требует наличия подсказок"&lt;color=#00ff00&gt;{0}&lt;/color&gt;" для замены на сгенерированное имя.&lt;/i&gt;</value>
   </data>
   <data name="cd_areasNamingTab_title" xml:space="preserve">
-    <value>Areas' naming</value>
+    <value>Наименование областей</value>
   </data>
   <data name="cd_areasNamingTab_simplePatternFile" xml:space="preserve">
-    <value>Simple patterns file</value>
+    <value>Простой файл шаблонов</value>
   </data>
   <data name="cd_areasNamingTab_namesFile" xml:space="preserve">
-    <value>Names file</value>
+    <value>Файл с именами</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_CityPark" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;City Park Areas&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;Районы Городских Парков&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Airports" xml:space="preserve">
-    <value>&lt;color=#00FFFF&gt;Airport Areas&lt;/color&gt;</value>
+    <value>&lt;color=#00FFFF&gt;Районы Аэропорта&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Campus_Liberal" xml:space="preserve">
     <value>&lt;color=#0044FF&gt;Liberal Arts College&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Campus_Regular" xml:space="preserve">
-    <value>&lt;color=#0044FF&gt;University&lt;/color&gt;</value>
+    <value>&lt;color=#0044FF&gt;Университет&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Campus_Trade" xml:space="preserve">
     <value>&lt;color=#0044FF&gt;Trade School&lt;/color&gt;</value>
