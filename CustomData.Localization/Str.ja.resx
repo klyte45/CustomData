@@ -118,355 +118,355 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="cd_cimNamingTab_title" xml:space="preserve">
-    <value>Cims' naming</value>
+    <value>住民の名前</value>
   </data>
   <data name="cd_districtTab_cityColor" xml:space="preserve">
-    <value>City color</value>
+    <value>都市の色</value>
   </data>
   <data name="cd_districtTab_districtColor" xml:space="preserve">
-    <value>District color</value>
+    <value>地区の色</value>
   </data>
   <data name="cd_districtTab_districtToChange" xml:space="preserve">
-    <value>Select district</value>
+    <value>地区を選択</value>
   </data>
   <data name="cd_districtTab_postalCodeDigits" xml:space="preserve">
-    <value>Postal code digits (000 to 999)</value>
+    <value>郵便番号 (000～999)</value>
   </data>
   <data name="cd_districtTab_postalCodeDigitsFallback" xml:space="preserve">
-    <value>City postal code</value>
+    <value>都市の郵便番号</value>
   </data>
   <data name="cd_districtTab_roadFormattingFile" xml:space="preserve">
-    <value>Road name pattern file</value>
+    <value>道路名のパターンファイル</value>
   </data>
   <data name="cd_districtTab_roadFormattingFileDefault" xml:space="preserve">
-    <value>City default road pattern file</value>
+    <value>都市デフォルトの道路パターンファイル</value>
   </data>
   <data name="cd_districtTab_roadNamingsFile" xml:space="preserve">
-    <value>Road naming file</value>
+    <value>道路の命名ファイル</value>
   </data>
   <data name="cd_districtTab_roadNamingsFileDefault" xml:space="preserve">
-    <value>City default road naming file</value>
+    <value>都市デフォルトの道路命名パターンファイル</value>
   </data>
   <data name="cd_districtTab_title" xml:space="preserve">
-    <value>District data</value>
+    <value>地区のデータ</value>
   </data>
   <data name="cd_neighborTab_actions" xml:space="preserve">
-    <value>Actions</value>
+    <value>操作</value>
   </data>
   <data name="cd_neighborTab_azimuthDirectionShort" xml:space="preserve">
-    <value>Azimuth (°)</value>
+    <value>方位角 (°)</value>
   </data>
   <data name="cd_neighborTab_cityName" xml:space="preserve">
-    <value>City Name</value>
+    <value>都市名</value>
   </data>
   <data name="cd_neighborTab_neighborNamesFile" xml:space="preserve">
-    <value>Default city names file</value>
+    <value>デフォルトの都市名ファイル</value>
   </data>
   <data name="cd_neighborTab_title" xml:space="preserve">
-    <value>Neighbors</value>
+    <value>近隣</value>
   </data>
   <data name="root_modDescription" xml:space="preserve">
-    <value>Data storage to extra stuff for game Intances</value>
+    <value>ゲームインスタンス用の追加の格納データ</value>
   </data>
   <data name="cd_cimNamingTab_surnamesTitle" xml:space="preserve">
-    <value>Surnames file</value>
+    <value>苗字ファイル</value>
   </data>
   <data name="cd_cimNamingTab_femaleNamesTitle" xml:space="preserve">
-    <value>Female given names file</value>
+    <value>女性の名前ファイル</value>
   </data>
   <data name="cd_cimNamingTab_maleNamesTitle" xml:space="preserve">
-    <value>Male given names files</value>
+    <value>男性の名前ファイル</value>
   </data>
   <data name="cd_cimNamingTab_surnameBeforeMainname" xml:space="preserve">
-    <value>Surnames before given names
-(only when using custom surnames)</value>
+    <value>苗字の前に名前を付ける
+(カスタムの苗字を使用する場合のみ)</value>
   </data>
   <data name="cd_areasNamingTab_simplePatternNote" xml:space="preserve">
-    <value>&lt;i&gt;&lt;color=#FFFF00&gt;NOTE:&lt;/color&gt; Simple pattern files are like the name files, but requires to have a placeholder "&lt;color=#00ff00&gt;{0}&lt;/color&gt;" to be replaced by the generated name.&lt;/i&gt;</value>
+    <value>&lt;i&gt;&lt;color=#FFFF00&gt;注意:&lt;/color&gt; 単純なパターンファイルは名前ファイルと似ていますが、生成した名前を置き換えるためにプレースホルダー "&lt;color=#00ff00&gt;{0}&lt;/color&gt;" を持つ必要があります。&lt;/i&gt;</value>
   </data>
   <data name="cd_areasNamingTab_title" xml:space="preserve">
-    <value>Areas' naming</value>
+    <value>エリアの命名</value>
   </data>
   <data name="cd_areasNamingTab_simplePatternFile" xml:space="preserve">
-    <value>Simple patterns file</value>
+    <value>単純なパターンファイル</value>
   </data>
   <data name="cd_areasNamingTab_namesFile" xml:space="preserve">
-    <value>Names file</value>
+    <value>名前のファイル</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_CityPark" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;City Park Areas&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;都市公園&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Airports" xml:space="preserve">
-    <value>&lt;color=#00FFFF&gt;Airport Areas&lt;/color&gt;</value>
+    <value>&lt;color=#00FFFF&gt;空港エリア&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Campus_Liberal" xml:space="preserve">
-    <value>&lt;color=#0044FF&gt;Liberal Arts College&lt;/color&gt;</value>
+    <value>&lt;color=#0044FF&gt;リベラルアーツカレッジ&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Campus_Regular" xml:space="preserve">
-    <value>&lt;color=#0044FF&gt;University&lt;/color&gt;</value>
+    <value>&lt;color=#0044FF&gt;総合大学&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Campus_Trade" xml:space="preserve">
-    <value>&lt;color=#0044FF&gt;Trade School&lt;/color&gt;</value>
+    <value>&lt;color=#0044FF&gt;専門職大学&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Farming" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Farming Industry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;農業の産業エリア&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Forest" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Forest Industry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;林業の産業エリア&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Mining" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Mining Inudstry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;鉱業の産業エリア&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Oil" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Oil Industry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;石油の産業エリア&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Amusement" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;Amusement Parks&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;遊園地&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Natural" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;Natural Reserves&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;自然保護区&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Zoo" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;Zoo Areas&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;動物園&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Pedestrian" xml:space="preserve">
-    <value>&lt;color=#888888&gt;Pedestrian Areas&lt;/color&gt;</value>
+    <value>&lt;color=#888888&gt;歩行者エリア&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Regular" xml:space="preserve">
-    <value>Regular districts</value>
+    <value>通常の地区</value>
   </data>
   <data name="cd_addressingSettingsTab_title" xml:space="preserve">
-    <value>Addressing settings</value>
+    <value>住所の設定</value>
   </data>
   <data name="cd_addressingSettingsTab_addressesLines" xml:space="preserve">
-    <value>Addresses lines</value>
+    <value>住所の記入欄</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLine1" xml:space="preserve">
-    <value>Address line 1</value>
+    <value>住所の欄1</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLine2" xml:space="preserve">
-    <value>Address line 2</value>
+    <value>住所の欄2</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLine3" xml:space="preserve">
-    <value>Address line 3</value>
+    <value>住所の欄3</value>
   </data>
   <data name="cd_addressingSettingsTab_citywidePostalCode" xml:space="preserve">
-    <value>City postal code digits</value>
+    <value>市内の郵便番号</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeFormat" xml:space="preserve">
-    <value>Postal code format</value>
+    <value>郵便番号の形式</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeSettings" xml:space="preserve">
-    <value>Postal code settings</value>
+    <value>郵便番号の設定</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_A" xml:space="preserve">
-    <value>1st digit of name seed id of the segment (0-6)</value>
+    <value>セグメントから名前シードIDの1桁目 (0～6)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_B" xml:space="preserve">
-    <value>2nd digit of name seed id of the segment (0-9)</value>
+    <value>セグメントから名前シードIDの2桁目 (0～9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_C" xml:space="preserve">
-    <value>3rd digit of name seed id of the segment (0-9)</value>
+    <value>セグメントから名前シードIDの3桁目 (0～9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_D" xml:space="preserve">
-    <value>4th digit of name seed id of the segment (0-9)</value>
+    <value>セグメントから名前シードIDの4桁目 (0～9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_E" xml:space="preserve">
-    <value>5th digit of name seed id of the segment (0-9)</value>
+    <value>セグメントから名前シードIDの5桁目 (0～9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_F" xml:space="preserve">
-    <value>1st digit of segment id of the segment (0-3)</value>
+    <value>セグメントからセグメントIDの1桁目 (0～3)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_G" xml:space="preserve">
-    <value>2nd digit of segment id of the segment (0-9)</value>
+    <value>セグメントからセグメントIDの2桁目 (0～9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_H" xml:space="preserve">
-    <value>3rd digit of segment id of the segment (0-9)</value>
+    <value>セグメントからセグメントIDの3桁目 (0～9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_I" xml:space="preserve">
-    <value>4th digit of segment id of the segment (0-9)</value>
+    <value>セグメントからセグメントIDの4桁目 (0～9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_J" xml:space="preserve">
-    <value>5th digit of segment id of the segment (0-9)</value>
+    <value>セグメントからセグメントIDの5桁目 (0～9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_K" xml:space="preserve">
-    <value>Hundreds digit from citywide postal code</value>
+    <value>市内の郵便番号から百の位</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_L" xml:space="preserve">
-    <value>Tens digit from citywide postal code</value>
+    <value>市内の郵便番号から十の位</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_M" xml:space="preserve">
-    <value>Units digit from citywide postal code</value>
+    <value>市内の郵便番号から壱の位</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_N" xml:space="preserve">
-    <value>Hundreds digit from district postal code</value>
+    <value>地区の郵便番号から百の位</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_O" xml:space="preserve">
-    <value>Tens digit from district postal code</value>
+    <value>地区の郵便番号から十の位</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_P" xml:space="preserve">
-    <value>Units digit from district postal code</value>
+    <value>地区の郵便番号から壱の位</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_X" xml:space="preserve">
-    <value>Map tile coordinate in East-West axis (0-8)</value>
+    <value>マップのタイルから東西軸のタイル座標 (0～8)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_x_" xml:space="preserve">
-    <value>Tenths of tile coordinate in East-West axis (0-9)</value>
+    <value>タイルを十等分して東西軸のタイル座標 (0～9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_Y" xml:space="preserve">
-    <value>Map tile coordinate in North-South axis (0-8)</value>
+    <value>マップのタイルから南北軸のタイル座標 (0～8)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_y_" xml:space="preserve">
-    <value>Tenths of tile coordinate in North-South axis (0-9)</value>
+    <value>タイルを十等分して南北軸のタイル座標 (0～9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeHelpHeaderText" xml:space="preserve">
-    <value>There are all letters that have a special value in the postal code formatting.
-Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;"between double quotes"&lt;/color&gt;.
-Unlisted characters will always be shown literally.</value>
+    <value>郵便番号のフォーマット内には、特殊な値と意味を持つ文字があります。
+文字をエスケープしてそのままで表示したい場合は、バックスラッシュ &lt;color=#FFFF00&gt;「\」&lt;/color&gt; を使用するか、文字の内容を &lt;color=#FFFF00&gt;「二重引用符」&lt;/color&gt; で囲って下さい。
+リストに無い文字は通常通りの文字として表示されます。</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_A" xml:space="preserve">
-    <value>Street name</value>
+    <value>ストリート名</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_B" xml:space="preserve">
-    <value>Number (distance from start of street)</value>
+    <value>番号 (ストリートの起点からの距離)</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_C" xml:space="preserve">
-    <value>City Name</value>
+    <value>都市名</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_D" xml:space="preserve">
-    <value>District</value>
+    <value>地区</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_E" xml:space="preserve">
-    <value>Postal Code</value>
+    <value>郵便番号</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_F" xml:space="preserve">
-    <value>Special Area name (Park, industry, etc...)</value>
+    <value>特別エリア名 (パークエリア・産業エリアなど)</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineHelpHeaderText" xml:space="preserve">
-    <value>There are all letters that represents a special meaning in addresses lines.
-Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally.
-The text written between brackets &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; won't be shown if there's no district.
-The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won't be shown if there's no special area.</value>
+    <value>住所の行には、特殊な値と意味を持つ文字があります。
+バックスラッシュ &lt;color=#FFFF00&gt;\&lt;/color&gt; を使用すれば、文字をエスケープしてそのまま表示します。
+括弧内の文字 &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; は、地区がない場合は表示されません。
+同じく括弧内の文字 &lt;color=#FFFF00&gt;( )&lt;/color&gt; は、 特別エリアがない場合は表示されません。</value>
   </data>
   <data name="cd_autoNamingBuildingTab_title" xml:space="preserve">
-    <value>Building auto naming</value>
+    <value>建物の自動命名</value>
   </data>
   <data name="cd_autoNamingBuildingTab_cargoStationsNamingHeader" xml:space="preserve">
-    <value>Cargo stations</value>
+    <value>貨物駅</value>
   </data>
   <data name="cd_autoNamingBuildingTab_passengerStationsNamingHeader" xml:space="preserve">
-    <value>Passenger stations</value>
+    <value>旅客駅</value>
   </data>
   <data name="cd_autoNamingBuildingTab_ricoNamingHeader" xml:space="preserve">
-    <value>Use address' first line as name</value>
+    <value>住所欄の1行目を名前に使用</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_CommercialZone" xml:space="preserve">
-    <value>Commercial Zone</value>
+    <value>商業地区</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_AirplaneCargo" xml:space="preserve">
-    <value>Cargo Airports</value>
+    <value>貨物空港</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_AirplanePassenger" xml:space="preserve">
-    <value>Passenger Airports</value>
+    <value>旅客空港</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Blimps" xml:space="preserve">
-    <value>Blimps Stops</value>
+    <value>飛行船乗り場</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Bus" xml:space="preserve">
-    <value>Bus Stations</value>
+    <value>バスターミナル</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_CableCar" xml:space="preserve">
-    <value>Cable Car Buildings</value>
+    <value>ケーブルカーの建物</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Ferry" xml:space="preserve">
-    <value>Ferryboats Harbors</value>
+    <value>フェリー乗り場・停泊所</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Helicopters" xml:space="preserve">
-    <value>Helicopter Stops</value>
+    <value>旅客ヘリ乗り場</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_IndustrialZone" xml:space="preserve">
-    <value>Industrial Zone</value>
+    <value>産業地区</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_IntercityBus" xml:space="preserve">
-    <value>Intercity Bus Stations</value>
+    <value>都市間バスターミナル</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Metro" xml:space="preserve">
-    <value>Metro Stations</value>
+    <value>メトロ駅</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Monorail" xml:space="preserve">
-    <value>Monorail Stations</value>
+    <value>モノレール駅</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_OfficeZone" xml:space="preserve">
-    <value>Offices Zone</value>
+    <value>オフィス地区</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_ResidentialZone" xml:space="preserve">
-    <value>Residential Zone</value>
+    <value>住宅地区</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_ShipCargo" xml:space="preserve">
-    <value>Cargo Harbors</value>
+    <value>貨物港</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_ShipPassenger" xml:space="preserve">
-    <value>Passenger Harbors</value>
+    <value>旅客港</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_TrainCargo" xml:space="preserve">
-    <value>Cargo Train Stations</value>
+    <value>貨物列車駅</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_TrainPassenger" xml:space="preserve">
-    <value>Passenger Train Stations</value>
+    <value>旅客列車駅</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Tram" xml:space="preserve">
-    <value>Tram Stations</value>
+    <value>トラム駅</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Trolleybus" xml:space="preserve">
-    <value>Trolleybus Stations</value>
+    <value>トロリーバス駅</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Taxi" xml:space="preserve">
-    <value>Taxi Stands</value>
+    <value>タクシー乗り場</value>
   </data>
   <data name="cd_stadiumsTab_selectStadiumLabel" xml:space="preserve">
-    <value>Select Arena/Stadium</value>
+    <value>競技場/スタジアムを選択</value>
   </data>
   <data name="cd_stadiumsTab_title" xml:space="preserve">
-    <value>Arenas &amp; Stadiums</value>
+    <value>アリーナ＆スタジアム</value>
   </data>
   <data name="cd_addressWindow_noAddressAvailable" xml:space="preserve">
-    <value>No address available for this building</value>
+    <value>この建物に住所がありません</value>
   </data>
   <data name="cd_addressWindow_pickALogoFor" xml:space="preserve">
-    <value>Pick image logo (256x256) for: {0}</value>
+    <value>画像のロゴ (256x256) を選択: {0}</value>
   </data>
   <data name="cd_addressWindow_addLogoImage" xml:space="preserve">
-    <value>Add logo image (256x256)</value>
+    <value>ロゴの画像を追加 (256x256)</value>
   </data>
   <data name="cd_addressWindow_invalidTexture" xml:space="preserve">
-    <value>Invalid texture!</value>
+    <value>テクスチャが無効です！</value>
   </data>
   <data name="cd_addressWindow_invalidTextureContent" xml:space="preserve">
-    <value>The texture must have exactly 256x256 pixels as dimensions!</value>
+    <value>テクスチャのサイズは、256x256ピクセルにして下さい！</value>
   </data>
   <data name="cd_addressWindow_removeLogo" xml:space="preserve">
-    <value>Delete logo</value>
+    <value>ロゴを削除</value>
   </data>
   <data name="cd_Enum__CDVars_CurrentBuilding" xml:space="preserve">
-    <value>Extra attributes from Custom Data Mod relatives to current building.</value>
+    <value>Custom Data Mod関連から現在の建物への追加属性</value>
   </data>
   <data name="cd_Enum__VariableBuildingSubType_ImageLogo" xml:space="preserve">
-    <value>Image logo setted up in Custom Data Mod for the building.</value>
+    <value>Custom Data Modで設定した建物用の画像のロゴ</value>
   </data>
   <data name="cd_Enum__CDVars_SourceBuilding" xml:space="preserve">
-    <value>Extra attributes from Custom Data Mod relatives to the source building of this vehicle.</value>
+    <value>Custom Data Mod関連からこの車両にソース建物への追加属性</value>
   </data>
   <data name="cd_addressWindow_overrideLineColor" xml:space="preserve">
-    <value>Overrides line color</value>
+    <value>ライン色を上書き</value>
   </data>
   <data name="cd_addressWindow_ownVehicleColors" xml:space="preserve">
-    <value>Spawned vehicles color</value>
+    <value>スポーン車両の色</value>
   </data>
   <data name="cd_addressWindow_preferredSkin" xml:space="preserve">
-    <value>Preferred vehicles skin name (VS only)</value>
+    <value>優先する車両のスキン名 (VSのみ)</value>
   </data>
   <data name="cd_addressWindow_vehicleIdentifierPattern" xml:space="preserve">
-    <value>Vehicle identifier pattern</value>
+    <value>車両の識別子パターン</value>
   </data>
   <data name="cd_addressWindow_vehicleIdentifierPattern_helpContent" xml:space="preserve">
     <value>&lt;color=yellow&gt;ABCDE abcde&lt;/color&gt;
@@ -491,25 +491,25 @@ Use the backslash to escape the letter and use it literally (not apply the value
 Will be printed as is in the output.</value>
   </data>
   <data name="cd_addressWindow_vehicleIdentifierPattern_helpHeader" xml:space="preserve">
-    <value>This can pattern will be used to generate the Vehicle Identifier (not the plate) for all vehicles of this building. It defaults to be the internal ID of the vehicle ingame, and can be used as variable in the Write Everywhere text spots.
-Each letter in the pattern represents a different kind of information, as shown in the list below:</value>
+    <value>このパターンは建物内にある車両の識別番号 (プレートで無く) を生成するために使用されます。デフォルトは個々の車両にある内部IDで、Write Everywhereではテキストスポットの変数として使用出来ます。
+各文字のパターンは以下のリストに示すように、異なる種類の情報を持っています。</value>
   </data>
   <data name="cd_Enum__VariableBuildingSubType_PostalCode" xml:space="preserve">
-    <value>Postal code where the building is placed, relative to nearest road.</value>
+    <value>建物が配置された場所の郵便番号 (最も近い道路を基準)</value>
   </data>
   <data name="cd_Enum__VariableVehicleSubType_GeneratedId" xml:space="preserve">
-    <value>It's the ID generated for each vehicle based on pattern setted up in its owner building. Defaults to be the internal game ID.</value>
+    <value>所有者の建物に設定されたパターンに基づいて、各車両で生成されるIDです。デフォルトはゲームの内部IDです。</value>
   </data>
   <data name="cd_outsideConnections_goToWhenSelect" xml:space="preserve">
-    <value>Move camera to location when select</value>
+    <value>選択した場所にカメラを移動</value>
   </data>
   <data name="cd_outsideConnections_header" xml:space="preserve">
-    <value>Any outside connection have a hidden building under the hood. Load the list and click in the desired connection below to check it!</value>
+    <value>外部接続は建物扱いで、通常は隠されて見えません。リストをロードして、目的の接続箇所をクリックして確認して下さい！</value>
   </data>
   <data name="cd_outsideConnections_reloadOutsideConnections" xml:space="preserve">
-    <value>Reload connections list</value>
+    <value>接続リストをリロード</value>
   </data>
   <data name="cd_outsideConnections_title" xml:space="preserve">
-    <value>Outside Connections</value>
+    <value>外部接続</value>
   </data>
 </root>
