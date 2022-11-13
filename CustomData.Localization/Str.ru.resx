@@ -209,55 +209,55 @@
     <value>&lt;color=#0044FF&gt;Trade School&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Farming" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Farming Industry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;Районы фермерской промышленности&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Forest" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Forest Industry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;Районы промышленности&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Mining" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Mining Inudstry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;Районы горнодобывающей промышленности&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Oil" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Oil Industry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;Районы нефтяной промышленности&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Amusement" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;Amusement Parks&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;Районы парков развлечения&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Natural" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;Natural Reserves&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;Районы заповедников&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Zoo" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;Zoo Areas&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;Районы зоопарков&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Pedestrian" xml:space="preserve">
-    <value>&lt;color=#888888&gt;Pedestrian Areas&lt;/color&gt;</value>
+    <value>&lt;color=#888888&gt;Районы пеших улиц&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Regular" xml:space="preserve">
-    <value>Regular districts</value>
+    <value>Регулярные районы</value>
   </data>
   <data name="cd_addressingSettingsTab_title" xml:space="preserve">
-    <value>Addressing settings</value>
+    <value>Настройки адресов</value>
   </data>
   <data name="cd_addressingSettingsTab_addressesLines" xml:space="preserve">
-    <value>Addresses lines</value>
+    <value>Адресная строка</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLine1" xml:space="preserve">
-    <value>Address line 1</value>
+    <value>Адрес (1-я строка)</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLine2" xml:space="preserve">
-    <value>Address line 2</value>
+    <value>Адрес (2-я строка)</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLine3" xml:space="preserve">
-    <value>Address line 3</value>
+    <value>Адрес (3-я строка)</value>
   </data>
   <data name="cd_addressingSettingsTab_citywidePostalCode" xml:space="preserve">
-    <value>City postal code digits</value>
+    <value>Цифры почтового индекса города</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeFormat" xml:space="preserve">
-    <value>Postal code format</value>
+    <value>Формат почтового индекса</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeSettings" xml:space="preserve">
-    <value>Postal code settings</value>
+    <value>Настройки почтового индекса</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_A" xml:space="preserve">
     <value>1st digit of name seed id of the segment (0-6)</value>
