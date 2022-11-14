@@ -209,16 +209,16 @@
     <value>&lt;color=#0044FF&gt;専門職大学&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Farming" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;農業の産業エリア&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;農業エリア&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Forest" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;林業の産業エリア&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;林業エリア&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Mining" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;鉱業の産業エリア&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;鉱業エリア&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Oil" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;石油の産業エリア&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;石油業エリア&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Amusement" xml:space="preserve">
     <value>&lt;color=#00FF00&gt;遊園地&lt;/color&gt;</value>
