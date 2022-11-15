@@ -124,392 +124,392 @@
     <value>Stadtfarbe</value>
   </data>
   <data name="cd_districtTab_districtColor" xml:space="preserve">
-    <value>District color</value>
+    <value>Distriktfarbe</value>
   </data>
   <data name="cd_districtTab_districtToChange" xml:space="preserve">
-    <value>Select district</value>
+    <value>Distrikt auswählen</value>
   </data>
   <data name="cd_districtTab_postalCodeDigits" xml:space="preserve">
-    <value>Postal code digits (000 to 999)</value>
+    <value>Postleitzahl (000 bis 999)</value>
   </data>
   <data name="cd_districtTab_postalCodeDigitsFallback" xml:space="preserve">
-    <value>City postal code</value>
+    <value>Postleitzahl</value>
   </data>
   <data name="cd_districtTab_roadFormattingFile" xml:space="preserve">
-    <value>Road name pattern file</value>
+    <value>Musterdatei für Straßennamen</value>
   </data>
   <data name="cd_districtTab_roadFormattingFileDefault" xml:space="preserve">
-    <value>City default road pattern file</value>
+    <value>Stadt Standard-Straßenmusterdatei</value>
   </data>
   <data name="cd_districtTab_roadNamingsFile" xml:space="preserve">
-    <value>Road naming file</value>
+    <value>Datei für die Straßennamen</value>
   </data>
   <data name="cd_districtTab_roadNamingsFileDefault" xml:space="preserve">
-    <value>City default road naming file</value>
+    <value>Standard-Straßenbenennungs-Datei</value>
   </data>
   <data name="cd_districtTab_title" xml:space="preserve">
-    <value>District data</value>
+    <value>Distriktdaten</value>
   </data>
   <data name="cd_neighborTab_actions" xml:space="preserve">
-    <value>Actions</value>
+    <value>Aktionen</value>
   </data>
   <data name="cd_neighborTab_azimuthDirectionShort" xml:space="preserve">
-    <value>Azimuth (°)</value>
+    <value>Azimut (°)</value>
   </data>
   <data name="cd_neighborTab_cityName" xml:space="preserve">
-    <value>City Name</value>
+    <value>Ortsname</value>
   </data>
   <data name="cd_neighborTab_neighborNamesFile" xml:space="preserve">
-    <value>Default city names file</value>
+    <value>Standarddatei für Stadtnamen</value>
   </data>
   <data name="cd_neighborTab_title" xml:space="preserve">
-    <value>Neighbors</value>
+    <value>Nachbarschaften</value>
   </data>
   <data name="root_modDescription" xml:space="preserve">
-    <value>Data storage to extra stuff for game Intances</value>
+    <value>Datenspeicherung für zusätzliche Dinge für Spielinstanzen</value>
   </data>
   <data name="cd_cimNamingTab_surnamesTitle" xml:space="preserve">
-    <value>Surnames file</value>
+    <value>Nachnamen-Datei</value>
   </data>
   <data name="cd_cimNamingTab_femaleNamesTitle" xml:space="preserve">
-    <value>Female given names file</value>
+    <value>Weibliche Vornamen-Datei</value>
   </data>
   <data name="cd_cimNamingTab_maleNamesTitle" xml:space="preserve">
-    <value>Male given names files</value>
+    <value>Männliche Vornamen-Datei</value>
   </data>
   <data name="cd_cimNamingTab_surnameBeforeMainname" xml:space="preserve">
-    <value>Surnames before given names
-(only when using custom surnames)</value>
+    <value>Nachnamen vor den Vornamen
+(nur bei Verwendung benutzerdefinierter Nachnamen)</value>
   </data>
   <data name="cd_areasNamingTab_simplePatternNote" xml:space="preserve">
-    <value>&lt;i&gt;&lt;color=#FFFF00&gt;NOTE:&lt;/color&gt; Simple pattern files are like the name files, but requires to have a placeholder "&lt;color=#00ff00&gt;{0}&lt;/color&gt;" to be replaced by the generated name.&lt;/i&gt;</value>
+    <value>&lt;i&gt;&lt;color=#FFFF00&gt;HINWEIS:&lt;/color&gt; Einfache Musterdateien sind wie die Namensdateien aber benötigten einen Platzhalter "&lt;color=#00ff00&gt;{0}&lt;/color&gt;", um durch den generierten Namen ersetzt zu werden.&lt;/i&gt;</value>
   </data>
   <data name="cd_areasNamingTab_title" xml:space="preserve">
-    <value>Areas' naming</value>
+    <value>Benennung von Gebieten</value>
   </data>
   <data name="cd_areasNamingTab_simplePatternFile" xml:space="preserve">
-    <value>Simple patterns file</value>
+    <value>Einfache Musterdatei</value>
   </data>
   <data name="cd_areasNamingTab_namesFile" xml:space="preserve">
-    <value>Names file</value>
+    <value>Namensdatei</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_CityPark" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;City Park Areas&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;Stadtparkgebiete&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Airports" xml:space="preserve">
-    <value>&lt;color=#00FFFF&gt;Airport Areas&lt;/color&gt;</value>
+    <value>&lt;color=#00FFFF&gt;Flughafengebiete&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Campus_Liberal" xml:space="preserve">
-    <value>&lt;color=#0044FF&gt;Liberal Arts College&lt;/color&gt;</value>
+    <value>&lt;color=#0044FF&gt;Hochschule der Freien Künste&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Campus_Regular" xml:space="preserve">
-    <value>&lt;color=#0044FF&gt;University&lt;/color&gt;</value>
+    <value>&lt;color=#0044FF&gt;Universität&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Campus_Trade" xml:space="preserve">
-    <value>&lt;color=#0044FF&gt;Trade School&lt;/color&gt;</value>
+    <value>&lt;color=#0044FF&gt;Handelsschule&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Farming" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Farming Industry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;Landwirtschaftsgebiete&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Forest" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Forest Industry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;Forstwirtschaftsgebiete&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Mining" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Mining Inudstry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;Erzindustriegebiete&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Industry_Oil" xml:space="preserve">
-    <value>&lt;color=#FFFF00&gt;Oil Industry Areas&lt;/color&gt;</value>
+    <value>&lt;color=#FFFF00&gt;Ölindustriegebiete&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Amusement" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;Amusement Parks&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;Vergnügungsparks&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Natural" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;Natural Reserves&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;Naturschutzgebiete&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Parks_Zoo" xml:space="preserve">
-    <value>&lt;color=#00FF00&gt;Zoo Areas&lt;/color&gt;</value>
+    <value>&lt;color=#00FF00&gt;Zoos&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Pedestrian" xml:space="preserve">
-    <value>&lt;color=#888888&gt;Pedestrian Areas&lt;/color&gt;</value>
+    <value>&lt;color=#888888&gt;Fußgängerzonen&lt;/color&gt;</value>
   </data>
   <data name="cd_Enum__DistrictAreaType_Regular" xml:space="preserve">
-    <value>Regular districts</value>
+    <value>Regelmäßige Distrikte</value>
   </data>
   <data name="cd_addressingSettingsTab_title" xml:space="preserve">
-    <value>Addressing settings</value>
+    <value>Adresseinstellungen</value>
   </data>
   <data name="cd_addressingSettingsTab_addressesLines" xml:space="preserve">
-    <value>Addresses lines</value>
+    <value>Adresszeilen</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLine1" xml:space="preserve">
-    <value>Address line 1</value>
+    <value>Adresszeile 1</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLine2" xml:space="preserve">
-    <value>Address line 2</value>
+    <value>Adresszeile 2</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLine3" xml:space="preserve">
-    <value>Address line 3</value>
+    <value>Adresszeile 3</value>
   </data>
   <data name="cd_addressingSettingsTab_citywidePostalCode" xml:space="preserve">
-    <value>City postal code digits</value>
+    <value>Postleitzahl der Stadt</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeFormat" xml:space="preserve">
-    <value>Postal code format</value>
+    <value>Postleitzahl-Format</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeSettings" xml:space="preserve">
-    <value>Postal code settings</value>
+    <value>Postleitzahleinstellungen</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_A" xml:space="preserve">
-    <value>1st digit of name seed id of the segment (0-6)</value>
+    <value>1. Ziffer des Namenschlüssels des Segments (0-6)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_B" xml:space="preserve">
-    <value>2nd digit of name seed id of the segment (0-9)</value>
+    <value>2. Ziffer des Namenschlüssels des Segments (0-9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_C" xml:space="preserve">
-    <value>3rd digit of name seed id of the segment (0-9)</value>
+    <value>3. Ziffer des Namenschlüssels des Segments (0-9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_D" xml:space="preserve">
-    <value>4th digit of name seed id of the segment (0-9)</value>
+    <value>4. Ziffer des Namenschlüssels des Segments (0-9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_E" xml:space="preserve">
-    <value>5th digit of name seed id of the segment (0-9)</value>
+    <value>5. Ziffer des Namenschlüssels des Segments (0-9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_F" xml:space="preserve">
-    <value>1st digit of segment id of the segment (0-3)</value>
+    <value>1. Ziffer der Segment ID des Segments (0-3)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_G" xml:space="preserve">
-    <value>2nd digit of segment id of the segment (0-9)</value>
+    <value>2. Ziffer der Segment ID des Segments (0-9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_H" xml:space="preserve">
-    <value>3rd digit of segment id of the segment (0-9)</value>
+    <value>3. Ziffer der Segment ID des Segments (0-9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_I" xml:space="preserve">
-    <value>4th digit of segment id of the segment (0-9)</value>
+    <value>4. Ziffer der Segment ID des Segments (0-9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_J" xml:space="preserve">
-    <value>5th digit of segment id of the segment (0-9)</value>
+    <value>5. Ziffer der Segment ID des Segments (0-9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_K" xml:space="preserve">
-    <value>Hundreds digit from citywide postal code</value>
+    <value>Hunderter-Ziffern aus der Stadt-Postleitzahl</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_L" xml:space="preserve">
-    <value>Tens digit from citywide postal code</value>
+    <value>Zehner-Ziffern aus der Stadt-Postleitzahl</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_M" xml:space="preserve">
-    <value>Units digit from citywide postal code</value>
+    <value>Start-Ziffern aus der Stadt-Postleitzahl</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_N" xml:space="preserve">
-    <value>Hundreds digit from district postal code</value>
+    <value>Hunderter-Ziffern aus der Distrikt-Postleitzahl</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_O" xml:space="preserve">
-    <value>Tens digit from district postal code</value>
+    <value>Zehner-Ziffern aus der Distrikt-Postleitzahl</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_P" xml:space="preserve">
-    <value>Units digit from district postal code</value>
+    <value>Start-Ziffern aus der Distrikt-Postleitzahl</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_X" xml:space="preserve">
-    <value>Map tile coordinate in East-West axis (0-8)</value>
+    <value>Karten-Koordinate in der Ost-West-Achse (0-8)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_x_" xml:space="preserve">
-    <value>Tenths of tile coordinate in East-West axis (0-9)</value>
+    <value>Zehntel-Koordinate in der Ost-West-Achse (0-9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_Y" xml:space="preserve">
-    <value>Map tile coordinate in North-South axis (0-8)</value>
+    <value>Karten-Koordinate in der Nord-Süd-Achse (0-8)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_y_" xml:space="preserve">
-    <value>Tenths of tile coordinate in North-South axis (0-9)</value>
+    <value>Zehntel-Koordinate in der Nord-Süd-Achse (0-9)</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeHelpHeaderText" xml:space="preserve">
-    <value>There are all letters that have a special value in the postal code formatting.
-Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally, or put the literal content &lt;color=#FFFF00&gt;"between double quotes"&lt;/color&gt;.
-Unlisted characters will always be shown literally.</value>
+    <value>Es gibt Buchstaben, die einen besonderen Wert in der Postleitzahl-Formatierung haben.
+Verwende Backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; um ein Zeichen zu maskieren und es buchstäblich anzuzeigen oder setze den wörtlichen Inhalt &lt;color=#FFFF00&gt;"zwischen doppelte Anführungszeichen"&lt;/color&gt;.
+Nicht gelistete Zeichen werden immer wörtlich angezeigt.</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_A" xml:space="preserve">
-    <value>Street name</value>
+    <value>Straßenname</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_B" xml:space="preserve">
-    <value>Number (distance from start of street)</value>
+    <value>Nummer (Abstand vom Straßenanfang)</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_C" xml:space="preserve">
-    <value>City Name</value>
+    <value>Ortsname</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_D" xml:space="preserve">
-    <value>District</value>
+    <value>Distrikt</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_E" xml:space="preserve">
-    <value>Postal Code</value>
+    <value>Postleitzahl</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineDescription_F" xml:space="preserve">
-    <value>Special Area name (Park, industry, etc...)</value>
+    <value>Spezieller Gebietsname (Park, Industrie, etc.)</value>
   </data>
   <data name="cd_addressingSettingsTab_addressLineHelpHeaderText" xml:space="preserve">
-    <value>There are all letters that represents a special meaning in addresses lines.
-Use backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; to escape a character and show it literally.
-The text written between brackets &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; won't be shown if there's no district.
-The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won't be shown if there's no special area.</value>
+    <value>Es gibt Buchstaben, die eine besondere Bedeutung in Adresszeilen darstellen.
+Verwende Backslash &lt;color=#FFFF00&gt;\&lt;/color&gt; um ein Zeichen zu maskieren und es buchstäblich anzuzeigen.
+Der Text zwischen Klammern &lt;color=#FFFF00&gt;[ ]&lt;/color&gt; wird nicht angezeigt, wenn es keinen Distrikt gibt.
+Der zwischen Klammern geschriebene Text &lt;color=#FFFF00&gt;( )&lt;/color&gt; wird nicht angezeigt, wenn kein spezieller Bereich vorhanden ist.</value>
   </data>
   <data name="cd_autoNamingBuildingTab_title" xml:space="preserve">
-    <value>Building auto naming</value>
+    <value>Automatische Benennung von Gebäuden</value>
   </data>
   <data name="cd_autoNamingBuildingTab_cargoStationsNamingHeader" xml:space="preserve">
-    <value>Cargo stations</value>
+    <value>Frachtzentren</value>
   </data>
   <data name="cd_autoNamingBuildingTab_passengerStationsNamingHeader" xml:space="preserve">
-    <value>Passenger stations</value>
+    <value>Personenstationen</value>
   </data>
   <data name="cd_autoNamingBuildingTab_ricoNamingHeader" xml:space="preserve">
-    <value>Use address' first line as name</value>
+    <value>Erste Zeile der Adresse als Name verwenden</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_CommercialZone" xml:space="preserve">
-    <value>Commercial Zone</value>
+    <value>Gewerbegebiete</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_AirplaneCargo" xml:space="preserve">
-    <value>Cargo Airports</value>
+    <value>Frachtflughäfen</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_AirplanePassenger" xml:space="preserve">
-    <value>Passenger Airports</value>
+    <value>Passagierflughäfen</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Blimps" xml:space="preserve">
-    <value>Blimps Stops</value>
+    <value>Zeppelinhaltestellen</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Bus" xml:space="preserve">
-    <value>Bus Stations</value>
+    <value>Busbahnhöfe</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_CableCar" xml:space="preserve">
-    <value>Cable Car Buildings</value>
+    <value>Seilbahn-Gebäude</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Ferry" xml:space="preserve">
-    <value>Ferryboats Harbors</value>
+    <value>Fährschiffhäfen</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Helicopters" xml:space="preserve">
-    <value>Helicopter Stops</value>
+    <value>Hubschrauberlandeplätze</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_IndustrialZone" xml:space="preserve">
-    <value>Industrial Zone</value>
+    <value>Industriegebiete</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_IntercityBus" xml:space="preserve">
-    <value>Intercity Bus Stations</value>
+    <value>Intercity Busbahnhöfe</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Metro" xml:space="preserve">
-    <value>Metro Stations</value>
+    <value>U-Bahn-Stationen</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Monorail" xml:space="preserve">
-    <value>Monorail Stations</value>
+    <value>Einschienenbahn-Haltestelle</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_OfficeZone" xml:space="preserve">
-    <value>Offices Zone</value>
+    <value>Bürogebiete</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_ResidentialZone" xml:space="preserve">
-    <value>Residential Zone</value>
+    <value>Wohngebiete</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_ShipCargo" xml:space="preserve">
-    <value>Cargo Harbors</value>
+    <value>Frachthäfen</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_ShipPassenger" xml:space="preserve">
-    <value>Passenger Harbors</value>
+    <value>Passagierhäfen</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_TrainCargo" xml:space="preserve">
-    <value>Cargo Train Stations</value>
+    <value>Güterbahnhöfe</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_TrainPassenger" xml:space="preserve">
-    <value>Passenger Train Stations</value>
+    <value>Personenbahnhöfe</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Tram" xml:space="preserve">
-    <value>Tram Stations</value>
+    <value>Straßenbahnstationen</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Trolleybus" xml:space="preserve">
-    <value>Trolleybus Stations</value>
+    <value>Trolleybus-Stationen</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Taxi" xml:space="preserve">
-    <value>Taxi Stands</value>
+    <value>Taxistände</value>
   </data>
   <data name="cd_stadiumsTab_selectStadiumLabel" xml:space="preserve">
-    <value>Select Arena/Stadium</value>
+    <value>Arena/Stadion auswählen</value>
   </data>
   <data name="cd_stadiumsTab_title" xml:space="preserve">
-    <value>Arenas &amp; Stadiums</value>
+    <value>Arenas &amp; Stadien</value>
   </data>
   <data name="cd_addressWindow_noAddressAvailable" xml:space="preserve">
-    <value>No address available for this building</value>
+    <value>Keine Adresse für dieses Gebäude verfügbar</value>
   </data>
   <data name="cd_addressWindow_pickALogoFor" xml:space="preserve">
-    <value>Pick image logo (256x256) for: {0}</value>
+    <value>Wähle Bildlogo (256x256) für: {0}</value>
   </data>
   <data name="cd_addressWindow_addLogoImage" xml:space="preserve">
-    <value>Add logo image (256x256)</value>
+    <value>Logobild hinzufügen (256x256)</value>
   </data>
   <data name="cd_addressWindow_invalidTexture" xml:space="preserve">
-    <value>Invalid texture!</value>
+    <value>Ungültige Textur!</value>
   </data>
   <data name="cd_addressWindow_invalidTextureContent" xml:space="preserve">
-    <value>The texture must have exactly 256x256 pixels as dimensions!</value>
+    <value>Die Textur muss exakt 256x256 Pixel als Größe haben!</value>
   </data>
   <data name="cd_addressWindow_removeLogo" xml:space="preserve">
-    <value>Delete logo</value>
+    <value>Logo löschen</value>
   </data>
   <data name="cd_Enum__CDVars_CurrentBuilding" xml:space="preserve">
-    <value>Extra attributes from Custom Data Mod relatives to current building.</value>
+    <value>Zusätzliche Attribute von Custom Data Mod in Verbindung zum aktuellen Gebäude.</value>
   </data>
   <data name="cd_Enum__VariableBuildingSubType_ImageLogo" xml:space="preserve">
-    <value>Image logo setted up in Custom Data Mod for the building.</value>
+    <value>Bildlogo wurde in Custom Data Mod für das Gebäude eingestellt.</value>
   </data>
   <data name="cd_Enum__CDVars_SourceBuilding" xml:space="preserve">
-    <value>Extra attributes from Custom Data Mod relatives to the source building of this vehicle.</value>
+    <value>Zusätzliche Attribute von Custom Data Mod in Verbindung zum Ursprung dieses Fahrzeugs.</value>
   </data>
   <data name="cd_addressWindow_overrideLineColor" xml:space="preserve">
-    <value>Overrides line color</value>
+    <value>Linienfarbe überschreiben</value>
   </data>
   <data name="cd_addressWindow_ownVehicleColors" xml:space="preserve">
-    <value>Spawned vehicles color</value>
+    <value>Farbe der erzeugten Fahrzeuge</value>
   </data>
   <data name="cd_addressWindow_preferredSkin" xml:space="preserve">
-    <value>Preferred vehicles skin name (VS only)</value>
+    <value>Bevorzugter Vehicle Skin für Fahrzeuge (nur VS)</value>
   </data>
   <data name="cd_addressWindow_vehicleIdentifierPattern" xml:space="preserve">
-    <value>Vehicle identifier pattern</value>
+    <value>Fahrzeugkennungsmuster</value>
   </data>
   <data name="cd_addressWindow_vehicleIdentifierPattern_helpContent" xml:space="preserve">
     <value>&lt;color=yellow&gt;ABCDE abcde&lt;/color&gt;
-Represents the ordinal value (starting in 0) counting vehicles spawned for its parent depot. Letter case has same behavior than &lt;color=yellow&gt;jkl&lt;/color&gt; group.
-&lt;color=green&gt;Example:&lt;/color&gt; If the bus is the 36th bus to left the garage, &lt;color=yellow&gt;A, B&lt;/color&gt; and &lt;color=yellow&gt;C&lt;/color&gt; will be "0", &lt;color=yellow&gt;a, b&lt;/color&gt; and &lt;color=yellow&gt;c&lt;/color&gt; will be ignored (no hundreds!), &lt;color=yellow&gt;D&lt;/color&gt; and &lt;color=yellow&gt;d&lt;/color&gt; became 3 and &lt;color=yellow&gt;E&lt;/color&gt; and &lt;color=yellow&gt;e&lt;/color&gt; became "5" (first = 0, remember!). Since it's a lifespan account it never reset the counting.
+Stellt den original Wertr dar (startend mit 0) beim Zählen von Fahrzeugen, die für das übergeordnete Depot gespawnt wurden. Groß-/Kleinschreibung hat das gleiche Verhalten wie die &lt;color=yellow&gt;jkl&lt;/color&gt; Gruppe.
+&lt;color=green&gt;Beispiel:&lt;/color&gt; Wenn der Bus der 36. Bus ist, der die Garage verlässt, &lt;color=yellow&gt;A, B&lt;/color&gt; und &lt;color=yellow&gt;C&lt;/color&gt; "0" ist, &lt;color=yellow&gt;a, b&lt;/color&gt; und &lt;color=yellow&gt;c&lt;/color&gt; werden dann ignoriert (keine hundert!), &lt;color=yellow&gt;D&lt;/color&gt; und &lt;color=yellow&gt;d&lt;/color&gt; werden 3 und &lt;color=yellow&gt;E&lt;/color&gt; und &lt;color=yellow&gt;e&lt;/color&gt; werden"5" (erster = 0, zur Erinnerung!). Da es sich um ein Lebensspannenkonto handelt, wird die Zählung nie zurückgesetzt.
 
 &lt;color=yellow&gt;JKL jkl&lt;/color&gt;
-Represents the value of Nth vehicle in the current vehicle composition, starting at 0 (may be configured to start in 1 in the future). Useful for identify wagons of a train, as example.
-The upper case will print leading zeroes if the number doesn't reach that order of magnitude, the lower case will ignore the digits and print nothing.
-&lt;color=green&gt;Example:&lt;/color&gt; The 4th car of a passenger train will return nothing for &lt;color=yellow&gt;j&lt;/color&gt; nor &lt;color=yellow&gt;k&lt;/color&gt;, "0" for &lt;color=yellow&gt;J&lt;/color&gt; and &lt;color=yellow&gt;K&lt;/color&gt; and "3" for &lt;color=yellow&gt;L&lt;/color&gt; or &lt;color=yellow&gt;l&lt;/color&gt;.
-&lt;color=cyan&gt;NOTE: &lt;color=yellow&gt;L&lt;/color&gt; and &lt;color=yellow&gt;l&lt;/color&gt; always will have the same value since the last zero always counts as significant digit. Same for multicase options below.&lt;/color&gt;
+Stellt den Wert des N-ten Fahrzeugs in der aktuellen Fahrzeugzusammensetzung dar, beginnend bei 0 (kann so konfiguriert werden, dass es in Zukunft bei 1 beginnt). Nützlich, um beispielsweise Waggons eines Zuges zu identifizieren.
+Der Großbuchstabe druckt führende Nullen, wenn die Zahl diese Größenordnung nicht erreicht, der Kleinbuchstabe ignoriert die Ziffern und druckt nichts.
+&lt;color=green&gt;Beispiel:&lt;/color&gt; Der 4. Wagen eines Personenzuges gibt nichts zurück &lt;color=yellow&gt;j&lt;/color&gt; noch &lt;color=yellow&gt;k&lt;/color&gt;, "0" für &lt;color=yellow&gt;J&lt;/color&gt; und &lt;color=yellow&gt;K&lt;/color&gt; und "3" für &lt;color=yellow&gt;L&lt;/color&gt; oder &lt;color=yellow&gt;l&lt;/color&gt;.
+&lt;color=cyan&gt;ANMERKUNG: &lt;color=yellow&gt;L&lt;/color&gt; und &lt;color=yellow&gt;l&lt;/color&gt; werden immer denselben Wert haben, da die letzte Null immer als signifikante Stelle zählt. Gleiches gilt für die folgenden Multicase-Optionen.&lt;/color&gt;
 	
 &lt;color=yellow&gt;VWXYZ vwxyz&lt;/color&gt;
-Represents the internal vehicle ID in game. Varies from 1 to 16383 (or 65535 for More Vehicles users) and are full random. Letter case has the same behavior than &lt;color=yellow&gt;jkl&lt;/color&gt; and &lt;color=yellow&gt;stu&lt;/color&gt; groups.
-&lt;color=green&gt;Example:&lt;/color&gt; The internal id of the vehicle is 7562. So &lt;color=yellow&gt;V&lt;/color&gt; became "0", &lt;color=yellow&gt;v&lt;/color&gt; is ignored, &lt;color=yellow&gt;W&lt;/color&gt; and &lt;color=yellow&gt;w&lt;/color&gt; are "7", &lt;color=yellow&gt;X&lt;/color&gt; and &lt;color=yellow&gt;x&lt;/color&gt; are "5", &lt;color=yellow&gt;Y&lt;/color&gt; and &lt;color=yellow&gt;y&lt;/color&gt; are "6" and &lt;color=yellow&gt;Z&lt;/color&gt; and &lt;color=yellow&gt;z&lt;/color&gt; are "2";
+Stellt die interne Fahrzeug-ID im Spiel dar. Variiert von 1 bis 16383 (oder 65535 für Benutzer von More Vehicles) und ist vollständig zufällig. Groß-/Kleinschreibung hat das gleiche Verhalten wie &lt;color=yellow&gt;jkl&lt;/color&gt; und &lt;color=yellow&gt;stu&lt;/color&gt; Gruppen.
+&lt;color=green&gt;Beispiel:&lt;/color&gt; Die interne ID des Fahrzeugs ist 7562. Also &lt;color=yellow&gt;V&lt;/color&gt; wird "0", &lt;color=yellow&gt;v&lt;/color&gt; ignoriert, &lt;color=yellow&gt;W&lt;/color&gt; und &lt;color=yellow&gt;w&lt;/color&gt; sind "7", &lt;color=yellow&gt;X&lt;/color&gt; und &lt;color=yellow&gt;x&lt;/color&gt; sind "5", &lt;color=yellow&gt;Y&lt;/color&gt; und &lt;color=yellow&gt;y&lt;/color&gt; sind "6" und &lt;color=yellow&gt;Z&lt;/color&gt; und &lt;color=yellow&gt;z&lt;/color&gt; sind "2";
 	
 &lt;color=yellow&gt;\&lt;/color&gt;
-Use the backslash to escape the letter and use it literally (not apply the value). Double it to show a backslash in the output
-&lt;color=green&gt;Example:&lt;/color&gt; Even the internal ID of vehicle being 7562, if &lt;color=yellow&gt;\v&lt;/color&gt; is typed, &lt;color=yellow&gt;v&lt;/color&gt; will print "v" at output instead of being ignored.
+Verwende den umgekehrten Schrägstrich, um den Buchstaben zu maskieren und verwende ihn wörtlich (wenden den Wert nicht an). Verdoppele es, um einen umgekehrten Schrägstrich in der Ausgabe anzuzeigen
+&lt;color=green&gt;Beispiel:&lt;/color&gt; Selbst die interne ID des Fahrzeugs ist 7562, wenn &lt;color=yellow&gt;\v&lt;/color&gt; eingegeben wird, &lt;color=yellow&gt;v&lt;/color&gt; wird "v" bei der Ausgabe ausgeben, anstatt ignoriert zu werden.
 
-&lt;color=yellow&gt;--Any other letter or symbol--&lt;/color&gt;
-Will be printed as is in the output.</value>
+&lt;color=yellow&gt;--Jeder andere Buchstabe oder Symbol--&lt;/color&gt;
+Wird wie in der Ausgabe gedruckt.</value>
   </data>
   <data name="cd_addressWindow_vehicleIdentifierPattern_helpHeader" xml:space="preserve">
-    <value>This can pattern will be used to generate the Vehicle Identifier (not the plate) for all vehicles of this building. It defaults to be the internal ID of the vehicle ingame, and can be used as variable in the Write Everywhere text spots.
-Each letter in the pattern represents a different kind of information, as shown in the list below:</value>
+    <value>Dieses Muster wird verwendet, um den Fahrzeug-Identifikator (nicht die Plakette) für alle Fahrzeuge dieses Gebäudes zu generieren. Es ist standardmäßig die interne ID des Fahrzeugs und kann als Variable in den Write Everywhere Text-Spots verwendet werden.
+Jeder Buchstabe im Muster stellt eine andere Art von Informationen dar, wie in der folgenden Liste angezeigt:</value>
   </data>
   <data name="cd_Enum__VariableBuildingSubType_PostalCode" xml:space="preserve">
-    <value>Postal code where the building is placed, relative to nearest road.</value>
+    <value>Postleitzahl, wo sich das Gebäude befindet, relativ zur nächstgelegenen Straße.</value>
   </data>
   <data name="cd_Enum__VariableVehicleSubType_GeneratedId" xml:space="preserve">
-    <value>It's the ID generated for each vehicle based on pattern setted up in its owner building. Defaults to be the internal game ID.</value>
+    <value>Es ist die ID, die für jedes Fahrzeug generiert wird, basierend auf dem Muster, das für das Gebäude des Eigentümers erstellt wurden. Standard ist die interne Spiel-ID.</value>
   </data>
   <data name="cd_outsideConnections_goToWhenSelect" xml:space="preserve">
-    <value>Move camera to location when select</value>
+    <value>Kamera zum Ort bewegen, wenn ausgewählt wird</value>
   </data>
   <data name="cd_outsideConnections_header" xml:space="preserve">
-    <value>Any outside connection have a hidden building under the hood. Load the list and click in the desired connection below to check it!</value>
+    <value>Jede externe Verbindung beinhaltet ein verborgenes Gebäude. Lade die Liste und klicke in der gewünschten Verbindung unten, um es zu überprüfen!</value>
   </data>
   <data name="cd_outsideConnections_reloadOutsideConnections" xml:space="preserve">
-    <value>Reload connections list</value>
+    <value>Verbindungsliste neu laden</value>
   </data>
   <data name="cd_outsideConnections_title" xml:space="preserve">
-    <value>Outside Connections</value>
+    <value>Externe Verbindungen</value>
   </data>
 </root>
