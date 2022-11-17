@@ -34,8 +34,6 @@ namespace CustomData
         internal static Dictionary<string, string[]> LoadedSimplePatterns { get; } = new Dictionary<string, string[]>();
         public static string[] LoadedSimplePatternsIdx { get; private set; }
 
-        public CDFacade Facade { get; } = new CDFacade();
-
         public void Awake()
         {
             KFileUtils.EnsureFolderCreation(GeneralNamesPath);

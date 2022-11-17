@@ -2,6 +2,7 @@
 using CustomData.Utils;
 using CustomData.Wrappers;
 using CustomData.Xml;
+using ICities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,9 +10,9 @@ using UnityEngine;
 
 namespace CustomData.Overrides
 {
-    public class CDFacade
+    public class CDFacade : ILoadingExtension
     {
-        public static CDFacade Instance => ModInstance.Controller.Facade;
+        public static CDFacade Instance { get; private set; } = new CDFacade();
 
         public event Action EventOnBuildingNameGenStrategyChanged;
         internal void CallBuildingNameGenStrategyChangedEvent() => BuildingManager.instance.StartCoroutine(CallBuildRenamedEvent_impl());
@@ -93,6 +94,15 @@ namespace CustomData.Overrides
         public Texture2D GetLineIcon(ushort transportLineId) => CDStorage.Instance.GetTransportLineInstance(transportLineId, false)?.LineIcon;
         public Texture2D SetLineIcon(ushort transportLineId, Texture2D newIcon) => CDStorage.Instance.GetTransportLineInstance(transportLineId, true).LineIcon = newIcon;
         public string GetVehicleIdentifier(ushort vehicleId) => CDStorage.Instance.GetVehicleSettings(vehicleId, true).GetVehicleIdentifier();
+
+        public void OnCreated(ILoading loading) { }
+
+        public void OnReleased() { Instance = new CDFacade(); }
+
+        public void OnLevelLoaded(LoadMode mode) { }
+
+        public void OnLevelUnloading() => Instance = new CDFacade();
         #endregion
+
     }
 }

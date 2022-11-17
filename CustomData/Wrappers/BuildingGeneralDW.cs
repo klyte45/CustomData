@@ -1,4 +1,5 @@
 ﻿using CustomData.Enums;
+using CustomData.Overrides;
 using CustomData.Utils;
 using CustomData.Xml;
 
@@ -17,13 +18,13 @@ namespace CustomData.Wrappers
         public void SetAutogen(UseGeneratedNameCategories cat)
         {
             xml.AddFlag(1ul << (int)cat);
-            ModInstance.Controller.Facade.CallBuildingNameGenStrategyChangedEvent();
+            CDFacade.Instance.CallBuildingNameGenStrategyChangedEvent();
         }
 
         public void UnsetAutogen(UseGeneratedNameCategories cat)
         {
             xml.RemoveFlag(1ul << (int)cat);
-            ModInstance.Controller.Facade.CallBuildingNameGenStrategyChangedEvent();
+            CDFacade.Instance.CallBuildingNameGenStrategyChangedEvent();
         }
 
         internal bool IsRenameEnabled(BuildingAI buildingAi)
