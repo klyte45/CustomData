@@ -25,7 +25,7 @@ namespace CustomData.UI
             var container = new GameObject();
             container.transform.SetParent(parent.transform);
             var window = container.AddComponent<CDFilePicker>();
-            window.Init(title ?? ModInstance.Instance.GeneralName, new Rect(new Vector2((Screen.width / 2) - 400 * GUIWindow.ResolutionMultiplier, (Screen.height / 2) - 250 * GUIWindow.ResolutionMultiplier) / UIScaler.UIScale, new Vector2(800, 500) * GUIWindow.ResolutionMultiplier / UIScaler.UIScale), true, true, new Vector2(500, 500));
+            window.Init(title ?? ModInstance.Instance.GeneralName, new Rect(new Vector2((Screen.width / 2) - 400, (Screen.height / 2) - 250) / UIScaler.UIScale, new Vector2(800, 500) / UIScaler.UIScale), true, true, new Vector2(500, 500));
             window.onReturn = onReturn;
             window.RestartFilterCoroutine();
         }
@@ -53,18 +53,18 @@ namespace CustomData.UI
             var topHeight = DrawTop(size);
             using (new GUILayout.HorizontalScope())
             {
-                using (var scroll = new GUILayout.ScrollViewScope(m_leftPanelScroll, false, true, GUILayout.Width(size.x / 2), GUILayout.Height(size.y - topHeight - 30 * GUIWindow.ResolutionMultiplier)))
+                using (var scroll = new GUILayout.ScrollViewScope(m_leftPanelScroll, false, true, GUILayout.Width(size.x / 2), GUILayout.Height(size.y - topHeight - 30)))
                 {
                     DrawLeftPanel(size);
                     m_leftPanelScroll = scroll.scrollPosition;
                 };
-                using (new GUILayout.VerticalScope(GUILayout.Width(size.x / 2 - 20 * GUIWindow.ResolutionMultiplier), GUILayout.Height(size.y - topHeight - 30 * GUIWindow.ResolutionMultiplier)))
+                using (new GUILayout.VerticalScope(GUILayout.Width(size.x / 2 - 20), GUILayout.Height(size.y - topHeight - 30)))
                 {
                     GUILayout.Label(m_currentDirectory, new GUIStyle(GUI.skin.label) { normal = new GUIStyleState() { textColor = Color.yellow } });
                     GUILayout.Space(8);
                     using (var scroll = new GUILayout.ScrollViewScope(m_rightPanelScroll))
                     {
-                        DrawRightPanel(new Vector2(size.x / 2 - 20 * GUIWindow.ResolutionMultiplier, size.y - topHeight - 50 * GUIWindow.ResolutionMultiplier));
+                        DrawRightPanel(new Vector2(size.x / 2 - 20, size.y - topHeight - 50));
                         m_rightPanelScroll = scroll.scrollPosition;
                     }
                 };
@@ -127,7 +127,7 @@ namespace CustomData.UI
             var selectItem = GUILayout.SelectionGrid(HoverIdx, m_searchResult.Value, 1, new GUIStyle(GUI.skin.button)
             {
                 alignment = TextAnchor.MiddleLeft
-            }, GUILayout.Width((areaRect.x / 2) - 25 * GUIWindow.ResolutionMultiplier));
+            }, GUILayout.Width((areaRect.x / 2) - 25));
             if (selectItem >= 0)
             {
                 OnSelectItem(selectItem);

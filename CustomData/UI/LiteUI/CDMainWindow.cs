@@ -92,8 +92,8 @@ namespace CustomData.UI
             {
                 m_inlineBtnStyle = new GUIStyle(GUI.skin.button)
                 {
-                    fixedHeight = 20 * ResolutionMultiplier,
-                    fixedWidth = 20 * ResolutionMultiplier,
+                    fixedHeight = 20 ,
+                    fixedWidth = 20 ,
                     padding = new RectOffset(0, 0, 0, 0),
                 };
             }
@@ -114,7 +114,7 @@ namespace CustomData.UI
         {
             using (new GUILayout.HorizontalScope())
             {
-                if (GUIKwyttoCommons.AddComboBox(tabAreaSize.x - 60 * ResolutionMultiplier, lbl, Array.IndexOf(array, value), array, out var newValue, this, name: namePrefix + lbl))
+                if (GUIKwyttoCommons.AddComboBox(tabAreaSize.x - 60 , lbl, Array.IndexOf(array, value), array, out var newValue, this, name: namePrefix + lbl))
                 {
                     onSet(array[newValue]);
                 };

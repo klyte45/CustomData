@@ -99,7 +99,7 @@ namespace CustomData.UI
                     root.ComboBoxWithButtons(tabAreaSize, selectedDistrictId == 0 ? Str.cd_districtTab_roadFormattingFileDefault : Str.cd_districtTab_roadFormattingFile, m_parsedData.RoadQualifierFile, CDController.LoadedRoadPatternsIdx, ApplyQualifierFile, CDController.RoadPatternPath, CDController.LoadRoadPatternFiles);
                     using (new GUILayout.HorizontalScope())
                     {
-                        GUIKwyttoCommons.AddIntField(tabAreaSize.x - 20 * GUIWindow.ResolutionMultiplier, selectedDistrictId == 0 ? Str.cd_districtTab_postalCodeDigitsFallback : Str.cd_districtTab_postalCodeDigits, m_parsedData.DigitsPostalCode ?? selectedDistrictId, (x) => m_parsedData.DigitsPostalCode = x, true, 0, 999, "000");
+                        GUIKwyttoCommons.AddIntField(tabAreaSize.x - 20, selectedDistrictId == 0 ? Str.cd_districtTab_postalCodeDigitsFallback : Str.cd_districtTab_postalCodeDigits, m_parsedData.DigitsPostalCode ?? selectedDistrictId, (x) => m_parsedData.DigitsPostalCode = x, true, 0, 999, "000");
                         if (GUILayout.Button(root.m_clearButton, root.m_inlineBtnStyle))
                         {
                             m_parsedData.DigitsPostalCode = null;
@@ -113,7 +113,7 @@ namespace CustomData.UI
                             m_parsedData.Color = null;
                         }
                     }
-                    var mapRect = GUILayoutUtility.GetRect(256 * GUIWindow.ResolutionMultiplier, 512 * GUIWindow.ResolutionMultiplier, 256 * GUIWindow.ResolutionMultiplier, 512 * GUIWindow.ResolutionMultiplier);
+                    var mapRect = GUILayoutUtility.GetRect(256, 512, 256, 512);
                     GUI.DrawTexture(mapRect, root.CityTexture, ScaleMode.ScaleToFit, true, 1);
                     GUI.DrawTexture(mapRect, m_overlayDistrictTexture, ScaleMode.ScaleToFit, true, 1);
                 }

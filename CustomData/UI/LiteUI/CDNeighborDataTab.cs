@@ -62,10 +62,10 @@ namespace CustomData.UI
                     GUILayout.Space(4);
                     using (new GUILayout.HorizontalScope())
                     {
-                        GUILayout.Label("#", m_nowrapLabel, GUILayout.Width(30 * GUIWindow.ResolutionMultiplier));
-                        GUILayout.Label(Str.cd_neighborTab_azimuthDirectionShort, m_nowrapLabel, GUILayout.Width(80 * GUIWindow.ResolutionMultiplier));
+                        GUILayout.Label("#", m_nowrapLabel, GUILayout.Width(30));
+                        GUILayout.Label(Str.cd_neighborTab_azimuthDirectionShort, m_nowrapLabel, GUILayout.Width(80));
                         GUILayout.Label(Str.cd_neighborTab_cityName, m_nowrapLabel);
-                        GUILayout.Space(20 * GUIWindow.ResolutionMultiplier);
+                        GUILayout.Space(20);
                         if (GUILayout.Button(root.m_addButton, root.m_inlineBtnStyle))
                         {
                             cdStorage.CreateRegionCity();
@@ -79,7 +79,7 @@ namespace CustomData.UI
                             var city = cityPair.First;
                             using (new GUILayout.HorizontalScope())
                             {
-                                GUILayout.Box("A", GUILayout.Width(30 * GUIWindow.ResolutionMultiplier));
+                                GUILayout.Box("A", GUILayout.Width(30));
                                 var rectBg = GUILayoutUtility.GetLastRect();
                                 GUI.DrawTexture(rectBg, city.CachedColorTexture, ScaleMode.StretchToFill, true, 1);
                                 GUI.Label(rectBg, city.Id.Index.ToString("X3"), new GUIStyle(GUI.skin.label)
@@ -96,7 +96,7 @@ namespace CustomData.UI
                                     city.Azimuth = newVal;
                                     m_neighborTextureDirty = true;
                                 }
-                                GUILayout.Label(CardinalPoint.GetCardinalPoint((city.Azimuth + cityPair.Second.Azimuth + (cityPair.Second.Azimuth < city.Azimuth ? 360 : 0)) / 2).GetCardinal16().ValueToI18n(), GUILayout.Width(45 * GUIWindow.ResolutionMultiplier));
+                                GUILayout.Label(CardinalPoint.GetCardinalPoint((city.Azimuth + cityPair.Second.Azimuth + (cityPair.Second.Azimuth < city.Azimuth ? 360 : 0)) / 2).GetCardinal16().ValueToI18n(), GUILayout.Width(45));
                                 var newValStr = GUILayout.TextField(city.SafeName);
                                 if (newValStr != city.SafeName)
                                 {

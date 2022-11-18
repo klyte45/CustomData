@@ -87,8 +87,8 @@ namespace CustomData.UI
             {
                 m_inlineBtnStyle = new GUIStyle(GUI.skin.button)
                 {
-                    fixedHeight = 20 * ResolutionMultiplier,
-                    fixedWidth = 20 * ResolutionMultiplier,
+                    fixedHeight = 20,
+                    fixedWidth = 20,
                     padding = new RectOffset(0, 0, 0, 0),
                 };
             }

@@ -3,6 +3,9 @@
 This mod is being designed to replace some other mods that I (Klyte45) did earlier with the goal of extend the data stored for instances in game.
 For now, it replace around 70% of the old Addresses Mod and also have features that appeared in very old Service Vehicle Manager.
 
+<color=green>Update r6 (18/NOV/22)</color>
+- Fixed UI scale in non-1080p based resolutions
+
 <color=yellow>Features available in this first version</color>
 [WE] = Write Everywhere mod
 [VS] = Vehicle Skins mod
