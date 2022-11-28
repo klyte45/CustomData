@@ -139,13 +139,13 @@
     <value>Arquivo de padrões de nome de ruas</value>
   </data>
   <data name="cd_districtTab_roadFormattingFileDefault" xml:space="preserve">
-    <value>City default road pattern file</value>
+    <value>Arquivo de padrão de ruas da cidade</value>
   </data>
   <data name="cd_districtTab_roadNamingsFile" xml:space="preserve">
     <value>Arquivo de nomes de ruas</value>
   </data>
   <data name="cd_districtTab_roadNamingsFileDefault" xml:space="preserve">
-    <value>City default road naming file</value>
+    <value>Arquivo de nomes de ruas padrão da cidade</value>
   </data>
   <data name="cd_districtTab_title" xml:space="preserve">
     <value>Dados de distritos</value>
@@ -166,7 +166,7 @@
     <value>Vizinhos</value>
   </data>
   <data name="root_modDescription" xml:space="preserve">
-    <value>Data storage to extra stuff for game Intances</value>
+    <value>Armazenamento de dados para coisas extras para Instâncias de jogo</value>
   </data>
   <data name="cd_cimNamingTab_surnamesTitle" xml:space="preserve">
     <value>Arquivo de sobrenomes</value>
@@ -293,19 +293,19 @@
     <value>Hundreds digit from citywide postal code</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_L" xml:space="preserve">
-    <value>Tens digit from citywide postal code</value>
+    <value>Penúltimo dígito do código postal da cidade</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_M" xml:space="preserve">
-    <value>Units digit from citywide postal code</value>
+    <value>Último dígito do código postal da cidade</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_N" xml:space="preserve">
-    <value>Hundreds digit from district postal code</value>
+    <value>Antepenúltimo dígito do código postal da cidade</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_O" xml:space="preserve">
-    <value>Tens digit from district postal code</value>
+    <value>Penúltimo dígito do código postal do distrito</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_P" xml:space="preserve">
-    <value>Units digit from district postal code</value>
+    <value>Último dígito do código postal do distrito</value>
   </data>
   <data name="cd_addressingSettingsTab_postalCodeDescription_X" xml:space="preserve">
     <value>Map tile coordinate in East-West axis (0-8)</value>
