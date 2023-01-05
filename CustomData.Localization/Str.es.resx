@@ -373,7 +373,7 @@ The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won'
     <value>Blimps Stops</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Bus" xml:space="preserve">
-    <value>Bus Stations</value>
+    <value>Estaciones de autobús</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_CableCar" xml:space="preserve">
     <value>Cable Car Buildings</value>
@@ -391,25 +391,25 @@ The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won'
     <value>Intercity Bus Stations</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Metro" xml:space="preserve">
-    <value>Metro Stations</value>
+    <value>Estaciones de metro</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_Monorail" xml:space="preserve">
-    <value>Monorail Stations</value>
+    <value>Estaciones de Monoraíl</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_OfficeZone" xml:space="preserve">
-    <value>Offices Zone</value>
+    <value>Zona de oficinas</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_ResidentialZone" xml:space="preserve">
-    <value>Residential Zone</value>
+    <value>Zona residencial</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_ShipCargo" xml:space="preserve">
-    <value>Cargo Harbors</value>
+    <value>Puertos de Carga</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_ShipPassenger" xml:space="preserve">
-    <value>Passenger Harbors</value>
+    <value>Puertos de pasajeros</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_TrainCargo" xml:space="preserve">
-    <value>Cargo Train Stations</value>
+    <value>Estaciones de Carga</value>
   </data>
   <data name="cd_Enum__UseGeneratedNameCategories_TrainPassenger" xml:space="preserve">
     <value>Passenger Train Stations</value>
@@ -439,13 +439,13 @@ The text written between parentheses &lt;color=#FFFF00&gt;( )&lt;/color&gt; won'
     <value>Add logo image (256x256)</value>
   </data>
   <data name="cd_addressWindow_invalidTexture" xml:space="preserve">
-    <value>Invalid texture!</value>
+    <value>¡Textura inválida!</value>
   </data>
   <data name="cd_addressWindow_invalidTextureContent" xml:space="preserve">
-    <value>The texture must have exactly 256x256 pixels as dimensions!</value>
+    <value>¡La textura debe medir exactamente 256x256 píxeles!</value>
   </data>
   <data name="cd_addressWindow_removeLogo" xml:space="preserve">
-    <value>Delete logo</value>
+    <value>Eliminar logo</value>
   </data>
   <data name="cd_Enum__CDVars_CurrentBuilding" xml:space="preserve">
     <value>Extra attributes from Custom Data Mod relatives to current building.</value>
